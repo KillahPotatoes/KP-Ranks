@@ -1,4 +1,4 @@
-name = "KP Ranks 1.2";
+name = "KP Ranks 1.3";
 description = "Killah Potatoes Gaming Community ArmA 3 Ranks";
 picture = "kplogo_ca.paa";
 logo = "kplogo_ca.paa";

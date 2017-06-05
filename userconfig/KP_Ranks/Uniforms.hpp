@@ -24,8 +24,8 @@ KP_Ranks_uniforms =
 	["U_B_CTRG_1", 2],
 	["U_B_CTRG_2", 2],
 	["U_B_CTRG_3", 2],
-	["U_B_CTRG_Soldier_3_F", 2],
 	["U_B_CTRG_Soldier_F", 2],
+	["U_B_CTRG_Soldier_3_F", 2],
 	["U_B_CTRG_Soldier_urb_1_F", 2],
 	["U_B_CTRG_Soldier_urb_3_F", 2],
 	["U_B_CombatUniform_mcam", 2],
@@ -38,7 +38,22 @@ KP_Ranks_uniforms =
 	["U_I_CombatUniform", 2],
 	["U_I_CombatUniform_shortsleeve", 2],
 	["U_I_HeliPilotCoveralls", 2],
-	["U_I_pilotCoveralls", 2]
+	["U_I_pilotCoveralls", 2],
+	["U_DMan_CA_CombatUniform_Des", 2],
+	["U_DMan_CA_CombatUniform_Des_vest", 2],
+	["U_DMan_CA_CombatUniform_Des_tshirt", 2],
+	["U_DMan_CA_CombatUniform_Wdl", 2],
+	["U_DMan_CA_CombatUniform_Wdl_vest", 2],
+	["U_DMan_CA_CombatUniform_Wdl_tshirt", 2],
+	["U_DMan_CA_HeliPilotCoveralls", 2],
+	["U_DMan_CA_HeliPilotCoveralls_Des", 2],
+	["U_DMan_N_CombatUniform_Nav", 2],
+	["U_DMan_N_CombatUniform_Nav_vest", 2],
+	["U_DMan_N_CombatUniform_Nav_tshirt", 2],
+	["U_DMan_SFC_CombatUniform_Blk", 2],
+	["U_DMan_SFC_CombatUniform_Blk_vest", 2],
+	["U_DMan_SFC_CombatUniform_Urb", 2],
+	["U_DMan_SFC_CombatUniform_Urb_vest", 2]	
 ];
 
 publicVariable "KP_Ranks_uniforms";
