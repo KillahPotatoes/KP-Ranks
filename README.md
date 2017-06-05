@@ -1,13 +1,18 @@
 # KP_Ranks
 **Version:** 1.3
+
 **Serverkey:** Yes
+
 **Requires:** CBA_A3
+
 **BI Forum:** [KP Ranks](https://forums.bistudio.com/topic/195034-kp-ranks/)
+
 **Workshop:** [KP Ranks](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641)
 
 
 ## Description:
 This mod provides a automatic ranksign system for players, based on the users own config via dedicated server userconfig files or via unit init line in the editor.
+
 The ranksign for the german Bundeswehr (green and brown ranksigns) and the US Army are implemented. They will be automaticly attached to a players uniform.
 
 
@@ -22,34 +27,41 @@ The ranksign for the german Bundeswehr (green and brown ranksigns) and the US Ar
 * Mission module included to force the usage of this mod.
 
 This Mod works on vanilla uniforms, Uniforms of the BW Mod, the KSK 2035 Tropic Mod and D-Man's Croatian Military mod.
+
 RHS Mod was checked, but the RHS uniforms don't have a proper position for apply the ranksigns, so if you wear a RHS uniform you won't get a ranksign applied.
 
 
 ## Script Commands:
 To apply a rank via unit init file:
+
 this setVariable ["KP_Ranks_rank", x];
+
 x = int of the desired rank (0-19)
 
 To apply a new rank during a running mission you have to run this on the machine of the client which rank you want to change:
-player setVariable ["KP_Ranks_rank", x];
 
+player setVariable ["KP_Ranks_rank", x];
 
 ## Licence:
 You can modify and use the mod for own projects, as long as you mention the original mod and author.
-You are not allowed to use this mod for something like a "pay for a rank" donation system or something equal.
-[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+You are not allowed to use this mod for something like a "pay for a rank" donation system or something equal.
+
+[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Textured for the ranksigns are made by our community- and clanmember [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/).
 
 If you like the work and think it's worth a small donation, feel free to use the following link:
+
 https://www.paypal.me/wyqer
 
 # ------------------------------------------------------------
 
 ## Beschreibung:
 Diese Mod bietet ein automatisiertes Dienstgradsystem für Spieler.
+
 Es basiert auf einer userconfig Datei für dedizierte Server bzw. auf das Init Feld der Einheit für Missionsbauer.
+
 Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), sowie die Dienstgrade der US Army.
 
 
@@ -64,25 +76,30 @@ Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), sowie 
 * Missionsmodul, um die Benutzung dieser Mod zu verlangen, ist vorhanden.
 
 Diese Mod funktioniert mit den Vanilla Uniformen, den Uniformen der BW Mod, der KSK 2035 Tropic Mod und denen der D-Man's Croatian Military Mod.
+
 RHS unterstützt leider nicht die entsprechende Positionierung der Dienstgrade, weshalb auf RHS Uniformen kein Dienstgrad erscheinen wird.
 
 
 ## Scriptbefehle:
 Um einen Dienstgrad per Einheiten Initzeile im Editor zuzuweisen:
+
 this setVariable ["KP_Ranks_rank", x];
+
 x = int des gewünschten Dienstgrades (0-19)
 
 Um einen Dienstgrad während einer laufenden Mission zu ändern, muss folgender Code bei dem Client ausgeführt werden, der eine entsprechende Änderung erfahren soll:
-player setVariable ["KP_Ranks_rank", x];
 
+player setVariable ["KP_Ranks_rank", x];
 
 ## Lizenz:
 Diese Mod kann verändert und für eigene Projekte benutzt werden, solange die originale Mod und Autor entsprechend erwähnt werden.
-Es ist nicht erlaubt mit dieser Mod etwas wie ein "Spende X Euro, um Dienstgrad Y zu bekommen" Spendensystem oder ähnliches zu betreiben.
-[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Es ist nicht erlaubt mit dieser Mod etwas wie ein "Spende X Euro, um Dienstgrad Y zu bekommen" Spendensystem oder ähnliches zu betreiben.
+
+[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Texturen der Dienstgradabzeichen wurden durch unser Community- und Clanmitglied [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) erstellt.
 
 Wenn dir meine Arbeit gefällt und du denkst, dass sie eine Kleinigkeit wert ist, benutze gerne folgenden Link:
+
 https://www.paypal.me/wyqer
