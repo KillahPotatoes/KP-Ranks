@@ -1,4 +1,4 @@
-# KP_Ranks
+# KP Ranks
 **Version:** 1.4
 
 **Serverkey:** Yes
