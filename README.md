@@ -1,5 +1,5 @@
 # KP_Ranks
-**Version:** 1.3
+**Version:** 1.4
 
 **Serverkey:** Yes
 
