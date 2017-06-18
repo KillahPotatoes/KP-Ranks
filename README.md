@@ -55,6 +55,29 @@ If you like the work and think it's worth a small donation, feel free to use the
 
 https://www.paypal.me/wyqer
 
+## Changelog:
+
+### v1.4
+* Tweaked: Brighten up the german "Tropentarn" ranksigns a little bit
+
+### v1.3
+* Added: Support for Croatian Military Mod
+* Tweaked: Some Code optimizations
+* Fixed: Small error when the player is virtual zeus
+
+### v1.2
+* Added: own textures for the ranksigns
+* Added: uniform list
+* Added: Mission Module
+* Tweaked: Rewritten the Code
+* Tweaked: Renamed from "KP Dienstgrade" to "KP Ranks"
+
+### v1.1
+* Fixed: Full Ghillies got weird textures
+
+### v1.0
+Initial Release
+
 # ------------------------------------------------------------
 
 ## Beschreibung:
