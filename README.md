@@ -76,7 +76,7 @@ https://www.paypal.me/wyqer
 * Fixed: Full Ghillies got weird textures
 
 ### v1.0
-Initial Release
+* Initial Release
 
 # ------------------------------------------------------------
 
