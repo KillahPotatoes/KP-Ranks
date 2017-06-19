@@ -1,10 +1,8 @@
 waitUntil {!isNull player};
-waitUntil {uisleep 1; alive player};
+waitUntil {sleep 1; alive player};
 
 // If unit not listed on the server or has no init entry, set it to lowest rank
-private _rank = player getVariable "KP_Ranks_rank";
-
-if (isNil "_rank") then {
+if ((player getVariable ["KP_Ranks_rank", 0]) == 0) then {
 	player setVariable ["KP_Ranks_rank", 0];
 };
 
@@ -54,21 +52,21 @@ if (isNil "KP_Ranks_uniforms") then {
 		["U_I_CombatUniform_shortsleeve", 2],
 		["U_I_HeliPilotCoveralls", 2],
 		["U_I_pilotCoveralls", 2],
-		["U_DMan_CA_CombatUniform_Des", 2],
-		["U_DMan_CA_CombatUniform_Des_vest", 2],
-		["U_DMan_CA_CombatUniform_Des_tshirt", 2],
-		["U_DMan_CA_CombatUniform_Wdl", 2],
-		["U_DMan_CA_CombatUniform_Wdl_vest", 2],
-		["U_DMan_CA_CombatUniform_Wdl_tshirt", 2],
-		["U_DMan_CA_HeliPilotCoveralls", 2],
-		["U_DMan_CA_HeliPilotCoveralls_Des", 2],
-		["U_DMan_N_CombatUniform_Nav", 2],
-		["U_DMan_N_CombatUniform_Nav_vest", 2],
-		["U_DMan_N_CombatUniform_Nav_tshirt", 2],
-		["U_DMan_SFC_CombatUniform_Blk", 2],
-		["U_DMan_SFC_CombatUniform_Blk_vest", 2],
-		["U_DMan_SFC_CombatUniform_Urb", 2],
-		["U_DMan_SFC_CombatUniform_Urb_vest", 2]
+		["U_DMan_CA_CombatUniform_Des", 3],
+		["U_DMan_CA_CombatUniform_Des_vest", 3],
+		["U_DMan_CA_CombatUniform_Des_tshirt", 3],
+		["U_DMan_CA_CombatUniform_Wdl", 3],
+		["U_DMan_CA_CombatUniform_Wdl_vest", 3],
+		["U_DMan_CA_CombatUniform_Wdl_tshirt", 3],
+		["U_DMan_CA_HeliPilotCoveralls", 3],
+		["U_DMan_CA_HeliPilotCoveralls_Des", 3],
+		["U_DMan_N_CombatUniform_Nav", 3],
+		["U_DMan_N_CombatUniform_Nav_vest", 3],
+		["U_DMan_N_CombatUniform_Nav_tshirt", 3],
+		["U_DMan_SFC_CombatUniform_Blk", 3],
+		["U_DMan_SFC_CombatUniform_Blk_vest", 3],
+		["U_DMan_SFC_CombatUniform_Urb", 3],
+		["U_DMan_SFC_CombatUniform_Urb_vest", 3]
 	]
 };
 
@@ -82,10 +80,11 @@ KP_Ranks_uniform_classnames = [];
 		switch (_x select 1) do {
 			case 1: {KP_Ranks_faction = "\KP_Ranks\ranks\brown\"};
 			case 2: {KP_Ranks_faction = "\KP_Ranks\ranks\us\"};
+			case 3: {KP_Ranks_faction = "\KP_Ranks\ranks\cro\"};
 			default {KP_Ranks_faction = "\KP_Ranks\ranks\green\"};
 		}; 
 		
-		if !(((_x select 1) == 2) && ((player getVariable "KP_Ranks_rank") == 0)) then {
+		if !((((_x select 1) == 2) || ((_x select 1) == 3)) && ((player getVariable "KP_Ranks_rank") == 0)) then {
 			player setObjectTextureGlobal [1, KP_Ranks_faction + KP_Ranks_patch];
 		};
 	};

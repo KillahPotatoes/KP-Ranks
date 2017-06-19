@@ -58,6 +58,7 @@ https://www.paypal.me/wyqer
 ## Changelog:
 
 ### v1.4
+* Added: Croatian ranksigns. Many thanks to [Degman](http://steamcommunity.com/id/degman)
 * Tweaked: Brighten up the german "Tropentarn" ranksigns a little bit
 
 ### v1.3

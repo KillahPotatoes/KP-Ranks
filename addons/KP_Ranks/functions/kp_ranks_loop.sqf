@@ -1,9 +1,10 @@
 KP_Ranks_check = true;
-waitUntil {KP_Ranks_init_done};
+waitUntil {sleep 1; KP_Ranks_init_done};
 
 while {true} do {
-	waitUntil {sleep 3;
-		(((((getObjectTextures player) select 1) find "kpd" + (str (player getVariable "KP_Ranks_rank")) + "_ca.paa") == -1) && ((uniform player) in KP_Ranks_uniform_classnames))
+	waitUntil {uiSleep 3;
+		(((((getObjectTextures player) select 1) find "kpd" + (str (player getVariable "KP_Ranks_rank")) + "_ca.paa") == -1)
+		 && ((uniform player) in KP_Ranks_uniform_classnames))
 	};
 	KP_ranks_patch = "kpd" + (str (player getVariable "KP_Ranks_rank")) + "_ca.paa";
 	{
@@ -11,10 +12,11 @@ while {true} do {
 			switch (_x select 1) do {
 				case 1: {KP_Ranks_faction = "\KP_Ranks\ranks\brown\"};
 				case 2: {KP_Ranks_faction = "\KP_Ranks\ranks\us\"};
+				case 3: {KP_Ranks_faction = "\KP_Ranks\ranks\cro\"};
 				default {KP_Ranks_faction = "\KP_Ranks\ranks\green\"};
 			};
 			
-			if !(((_x select 1) == 2) && ((player getVariable "KP_Ranks_rank") == 0)) then {
+			if !((((_x select 1) == 2) || ((_x select 1) == 3)) && ((player getVariable "KP_Ranks_rank") == 0)) then {
 				player setObjectTextureGlobal [1, KP_Ranks_faction + KP_Ranks_patch];
 			};
 		};
