@@ -6,6 +6,7 @@ KP_Ranks_uniforms =
 	// 0 = German Flecktarn
 	// 1 = German Tropentarn
 	// 2 = Vanilla NATO (US Army Ranksigns)
+	// 3 = Croatian ranksigns
 	
 	["BWA3_Uniform2_Fleck", 0],
 	["BWA3_Uniform2_Tropen", 1],
