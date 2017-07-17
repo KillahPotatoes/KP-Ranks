@@ -15,11 +15,11 @@
 ## Description:
 This mod provides a automatic ranksign system for players, based on the users own config via dedicated server userconfig files or via unit init line in the editor.
 
-The ranksign for the german Bundeswehr (green and brown ranksigns) and the US Army are implemented. They will be automaticly attached to a players uniform.
+The ranksign for the german Bundeswehr (green and brown ranksigns), the US Army and Croatian Army are implemented. They will be automaticly attached to a players uniform.
 
 
 ## Features:
-* 3x 20 ranks for german "Flecktarn", "Tropentarn" and for US troops. (from the bottom til Colonel / Oberst)
+* Ranks for German "Flecktarn", "Tropentarn", US Army and Croatian Troops. (from the bottom til Colonel / Oberst)
 * Server owners can manage the applied ranks with a serverside userconfig file, where they can list every player via steamID and the proper rank for them.
 * Missionmakers can set the rank of a player unit via init line.
 * The ranksign get's reapplied after uniform change or opening the arsenal.
@@ -94,11 +94,11 @@ Diese Mod bietet ein automatisiertes Dienstgradsystem für Spieler.
 
 Es basiert auf einer userconfig Datei für dedizierte Server bzw. auf das Init Feld der Einheit für Missionsbauer.
 
-Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), sowie die Dienstgrade der US Army.
+Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), der US Army und der Kroatischen Armee.
 
 
 ## Features:
-* 3x 20 Dienstgrade für Flecktarn, Tropentarn und US Truppen.
+* Dienstgrade für Flecktarn, Tropentarn, US und kroatische Truppen.
 * Serverbetreiber können die Dienstgrade einzelner Spieler direkt per userconfig Datei verwalten. Benötigt ist dazu nur die steamID des Spielers und die gewünschte Nummer des Dienstgrades.
 * Missionsbauer können den Spielereinheiten per Init Zeile einen Dienstgrad zuweisen.
 * Dienstgrade werden neu auf die Uniform gebracht, wenn die Uniform gewechselt oder das Arsenal betreten wird.

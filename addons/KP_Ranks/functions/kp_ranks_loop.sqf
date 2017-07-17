@@ -1,7 +1,7 @@
 waitUntil {sleep 1; KP_Ranks_init_done};
 
 if (isNil "KP_Ranks_enable") exitWith {KP_Ranks_check = false; diag_log "[KP RANKS] Automatic insignia assignment not enabled";};
-if (KP_Ranks_enable == false) exitWith {KP_Ranks_check = false; diag_log "[KP RANKS] Automatic insignia assignment not enabled";};
+if (!KP_Ranks_enable) exitWith {KP_Ranks_check = false; diag_log "[KP RANKS] Automatic insignia assignment not enabled";};
 
 KP_Ranks_check = true;
 
