@@ -1,3 +1,5 @@
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 # KP Ranks
 **Version:** 1.4
 
@@ -43,11 +45,11 @@ To apply a new rank during a running mission you have to run this on the machine
 player setVariable ["KP_Ranks_rank", x];
 
 ## Licence:
-You can modify and use the mod for own projects, as long as you mention the original mod and author.
+Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
 
-You are not allowed to use this mod for something like a "pay for a rank" donation system or something equal.
+This work is licensed under the CC BY-NC-SA 4.0 License.
 
-[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Textured for the ranksigns are made by our community- and clanmember [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/).
 
@@ -122,11 +124,11 @@ Um einen Dienstgrad während einer laufenden Mission zu ändern, muss folgender 
 player setVariable ["KP_Ranks_rank", x];
 
 ## Lizenz:
-Diese Mod kann verändert und für eigene Projekte benutzt werden, solange die originale Mod und Autor entsprechend erwähnt werden.
+Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
 
-Es ist nicht erlaubt mit dieser Mod etwas wie ein "Spende X Euro, um Dienstgrad Y zu bekommen" Spendensystem oder ähnliches zu betreiben.
+Diese Mod wird unter der CC BY-NC-SA 4.0 Lizenz veröffentlicht.
 
-[![license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)
 
 Texturen der Dienstgradabzeichen wurden durch unser Community- und Clanmitglied [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) erstellt.
 
