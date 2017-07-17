@@ -57,6 +57,12 @@ https://www.paypal.me/wyqer
 
 ## Changelog:
 
+### v1.5
+* Added: All insignias are now available in the arsenal and editor
+* Added: initPlayerLocal.sqf example for mission creators
+* Tweaked: Automatic insignia assignment functionality can only be enabled via initPlayerLocal.sqf or by placing the "Force KP Ranks" module
+* Tweaked: Some small code and config changes 
+
 ### v1.4
 * Added: Croatian ranksigns. Many thanks to [Degman](http://steamcommunity.com/id/degman)
 * Tweaked: Brighten up the german "Tropentarn" ranksigns a little bit

@@ -1,24 +1,27 @@
 waitUntil {!isNull player};
 waitUntil {sleep 1; alive player};
 
+diag_log "[KP RANKS] Initialising...";
+
 // If unit not listed on the server or has no init entry, set it to lowest rank
 if ((player getVariable ["KP_Ranks_rank", 0]) == 0) then {
 	player setVariable ["KP_Ranks_rank", 0];
 };
 
 if (!isNil "KP_Ranks_list") then {
+	diag_log "[KP RANKS] Server ranks list found";
 	{
 		if ( (getPlayerUID player) isEqualTo (_x select 0) ) then {
 			player setVariable ["KP_Ranks_rank", (_x select 1)];
 		};
 	} forEach KP_Ranks_list;
+} else {
+	diag_log "[KP RANKS] No server ranks list found";
 };
-	
-// Set the rank texture for this unit
-KP_ranks_patch = "kpd" + (str (player getVariable "KP_Ranks_rank")) + "_ca.paa";
 
 // If no serverconfig available for the uniforms, use the standard list
 if (isNil "KP_Ranks_uniforms") then {
+	diag_log "[KP RANKS] No server uniform list found";
 	KP_Ranks_uniforms = [
 		["BWA3_Uniform2_Fleck", 0],
 		["BWA3_Uniform2_Tropen", 1],
@@ -68,6 +71,8 @@ if (isNil "KP_Ranks_uniforms") then {
 		["U_DMan_SFC_CombatUniform_Urb", 3],
 		["U_DMan_SFC_CombatUniform_Urb_vest", 3]
 	]
+} else {
+	diag_log "[KP RANKS] Server uniform list found";	
 };
 
 KP_Ranks_uniform_classnames = [];
@@ -75,19 +80,6 @@ KP_Ranks_uniform_classnames = [];
 	KP_Ranks_uniform_classnames pushBack (_x select 0);
 } forEach KP_Ranks_uniforms;
 
-{
-	if (((uniform player) == (_x select 0)) && ((player isKindOf "B_Soldier_base_F") || (player isKindOf "I_Soldier_base_F"))) then {
-		switch (_x select 1) do {
-			case 1: {KP_Ranks_faction = "\KP_Ranks\ranks\brown\"};
-			case 2: {KP_Ranks_faction = "\KP_Ranks\ranks\us\"};
-			case 3: {KP_Ranks_faction = "\KP_Ranks\ranks\cro\"};
-			default {KP_Ranks_faction = "\KP_Ranks\ranks\green\"};
-		}; 
-		
-		if !((((_x select 1) == 2) || ((_x select 1) == 3)) && ((player getVariable "KP_Ranks_rank") == 0)) then {
-			player setObjectTextureGlobal [1, KP_Ranks_faction + KP_Ranks_patch];
-		};
-	};
-} forEach KP_Ranks_uniforms;
 
+diag_log "[KP RANKS] Initialising done";
 KP_Ranks_init_done = true;
