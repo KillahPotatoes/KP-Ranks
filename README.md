@@ -37,13 +37,13 @@ RHS Mod was checked, but the RHS uniforms don't have a proper position for apply
 ## Script Commands:
 To apply a rank via unit init file to a playable unit:
 
-   this setVariable ["KP_Ranks_rank", x];
+    this setVariable ["KP_Ranks_rank", x];
 
 x = int of the desired rank (0-19)
 
 To apply a new rank during a running mission you have to run this on the machine of the client which rank you want to change:
 
-   player setVariable ["KP_Ranks_rank", x];
+    player setVariable ["KP_Ranks_rank", x];
 
 ## Licence:
 Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
