@@ -27,6 +27,7 @@ The ranksign for the german Bundeswehr (green and brown ranksigns), the US Army 
 * There is also a userconfig file with the uniform list, on which the mod will apply the ranksigns. Server owners can extend this list as they want.
 * You get automaticly the right ranksign, even during running missions. If you wear a german Flecktarn uniform, you'll get a green german one. If you wear a german Tropentarn uniform, you'll get a brown german one and if you wear a vanilla NATO ArmA uniform, you'll get the US ranksign.
 * Mission module included to force the usage of this mod.
+* Add the rank insignia to every unit in the editor via the identity attributes.
 
 This Mod works on vanilla uniforms, Uniforms of the BW Mod, the KSK 2035 Tropic Mod and D-Man's Croatian Military mod.
 
@@ -34,15 +35,15 @@ RHS Mod was checked, but the RHS uniforms don't have a proper position for apply
 
 
 ## Script Commands:
-To apply a rank via unit init file:
+To apply a rank via unit init file to a playable unit:
 
-this setVariable ["KP_Ranks_rank", x];
+   this setVariable ["KP_Ranks_rank", x];
 
 x = int of the desired rank (0-19)
 
 To apply a new rank during a running mission you have to run this on the machine of the client which rank you want to change:
 
-player setVariable ["KP_Ranks_rank", x];
+   player setVariable ["KP_Ranks_rank", x];
 
 ## Licence:
 Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
@@ -106,6 +107,7 @@ Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), der US
 * Außerdem ist eine userconfig Datei für die Uniformen vorhanden. Diese kann durch Serverbetreiber natürlich erweitert werden.
 * Der Dienstgrad ist immer entsprechend der Uniform, selbst in laufenden Missionen. Trägt man Flecktarn bzw. Tropentarn, so bekommt man den deutschen grünen bzw. braunen Dienstgrad. Trägt man eine Vanilla NATO ArmA Uniform, erhält man den entsprechenden US Dienstgrad.
 * Missionsmodul, um die Benutzung dieser Mod zu verlangen, ist vorhanden.
+* Dienstgrade können jeder Einheit im Editor über die Identitäts Attribute zugewiesen werden.
 
 Diese Mod funktioniert mit den Vanilla Uniformen, den Uniformen der BW Mod, der KSK 2035 Tropic Mod und denen der D-Man's Croatian Military Mod.
 
@@ -113,15 +115,15 @@ RHS unterstützt leider nicht die entsprechende Positionierung der Dienstgrade, 
 
 
 ## Scriptbefehle:
-Um einen Dienstgrad per Einheiten Initzeile im Editor zuzuweisen:
+Um den Dienstgrad einer spielbaren Einheit per Initzeile im Editor zuzuweisen:
 
-this setVariable ["KP_Ranks_rank", x];
+    this setVariable ["KP_Ranks_rank", x];
 
 x = int des gewünschten Dienstgrades (0-19)
 
 Um einen Dienstgrad während einer laufenden Mission zu ändern, muss folgender Code bei dem Client ausgeführt werden, der eine entsprechende Änderung erfahren soll:
 
-player setVariable ["KP_Ranks_rank", x];
+    player setVariable ["KP_Ranks_rank", x];
 
 ## Lizenz:
 Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
