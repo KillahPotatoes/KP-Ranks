@@ -5,8 +5,16 @@
         "*.hpp": "sqf"
     },
     "sqflint.ignoredVariables": [
-        "_input0",
         "findIf",
+        "ace_interact_menu_fnc_addActionToClass",
+        "ace_interact_menu_fnc_createAction",
+        "CBA_Settings_fnc_init",
+        "KPR_autoMode",
+        "KPR_autoModeInterval",
+        "KPR_fnc_addActions",
+        "KPR_fnc_applyRank",
+        "KPR_fnc_autoLoop",
+        "KPR_fnc_initACE",
         "KPR_fnc_setDefaultUniforms",
         "KPR_fnc_showHint"
     ]

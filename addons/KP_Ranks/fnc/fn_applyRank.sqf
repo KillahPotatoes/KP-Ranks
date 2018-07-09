@@ -1,7 +1,7 @@
 /*
-    KPR_fnc_checkRank
+    KPR_fnc_applyRank
 
-    File: fn_checkRank.sqf
+    File: fn_applyRank.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
     Last Update: 2018-07-09
@@ -9,55 +9,68 @@
 
     Description:
     Updates and applies the insignia on the players uniform.
+    Optionally shows a hint for the player.
 
     Parameter(s):
-    NONE
+        0: BOOL - Show hint for player (default: false)
 
     Returns:
     BOOL
 */
 
+params [["_showHint", false]];
+
+// Get current player rank
 private _rank = player getVariable ["KPR_rank", 0];
-private _uniform = uniform player;
+
+// Bool for kind of hint
+private _validUniform = false;
+
+// Classname of the insignia
 private _insigniaClass = "";
 
-private _uniformIndex = KPR_uniforms findIf {_x select 0 == _uniform};
+// Get index of the current player uniform
+private _uniformIndex = KPR_uniforms findIf {_x select 0 == uniform player};
 
+// Apply insignia, if player wears a supported uniform
 if (_uniformIndex != -1) then {
+    _validUniform = true;
     if (KPR_uniforms select _uniformIndex select 1 == 0) exitWith {
         _insigniaClass = "KPR_BWF_" + str _rank;
-        [_insigniaClass, true] spawn KPR_fnc_showHint;
     };
     if (KPR_uniforms select _uniformIndex select 1 == 1) exitWith {
         _insigniaClass = "KPR_BWT_" + str _rank;
-        [_insigniaClass, true] spawn KPR_fnc_showHint;
     };
     if (KPR_uniforms select _uniformIndex select 1 == 2) exitWith {
         if (_rank != 0) then {
             _insigniaClass = "KPR_USA_" + str _rank;
-            [_insigniaClass, true] spawn KPR_fnc_showHint;
         };
     };
     if (KPR_uniforms select _uniformIndex select 1 == 3) exitWith {
         if (_rank != 0) then {
             _insigniaClass = "KPR_CRO_" + str _rank;
-            [_insigniaClass, true] spawn KPR_fnc_showHint;
         };
     };
-} else {
-    ["Uniform not supported"] spawn KPR_fnc_showHint;
 };
 
-private _text = format [
-    "[KP RANKS] [%1 (%2)] Check Rank - Rank: %3 - Uniform: %4 - Insignia: %5",
-    name player,
-    getPlayerUID player,
-    _rank,
-    _uniform,
-    _insigniaClass
-];
-_text remoteExec ["diag_log", 2];
+// Show hint with the picture of the insignia or that the uniform isn't supported
+if (_showHint) then {
+    if (_validUniform) then {
+        [_insigniaClass, true] spawn KPR_fnc_showHint;
+    } else {
+        ["Uniform not supported"] spawn KPR_fnc_showHint;
+    };
+    private _text = format [
+        "[KP RANKS] [%1 (%2)] Apply Rank %3 on uniform %4",
+        name player,
+        getPlayerUID player,
+        _insigniaClass,
+        uniform player
+    ];
+    _text remoteExec ["diag_log", 2];
+};
 
+// Apply insignia
 [player, _insigniaClass] call BIS_fnc_setUnitInsignia;
 
 true

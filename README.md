@@ -1,5 +1,5 @@
 # KP Ranks
-[![license](https://img.shields.io/github/license/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/LICENSE.md)
+[![license](https://img.shields.io/github/license/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/releases)
 [![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/KP-Ranks/total.svg)](https://github.com/KillahPotatoes/KP-Ranks)
@@ -19,12 +19,20 @@ If you like the work and think it's worth a small donation, feel free to use the
 
 [Donate via paypal.me](https://www.paypal.me/wyqer)
 
-## Description
-**Requires:** [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+## Mods
+Required:
+* [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
-This mod provides a automatic ranksign system for players, based on the users own config via dedicated server userconfig files or via unit init line in the editor.
+Supported:
+* [ACE 3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
 
-The ranksign for the german Bundeswehr (green and brown ranksigns), the US Army and Croatian Army are implemented. They will be automaticly attached to a players uniform.
+Supports Uniforms from:
+* Vanilla NATO Uniforms
+* [BW Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
+* [D-Man's Croatian Military mod](https://steamcommunity.com/sharedfiles/filedetails/?id=662483132)
+* [KSK 2035](https://steamcommunity.com/sharedfiles/filedetails/?id=705947357)
+
+**RHS Mod was checked, but the RHS uniforms have a different format for the insignia area on their uniforms. Therefore it's not compatible with the KP Ranks insignias.**
 
 ## Features
 * Ranks for German "Flecktarn", "Tropentarn", US Army and Croatian Troops. (from the bottom til Colonel / Oberst)
@@ -37,12 +45,11 @@ The ranksign for the german Bundeswehr (green and brown ranksigns), the US Army 
 * Mission module included to force the usage of this mod.
 * Add the rank insignia to every unit in the editor via the identity attributes.
 
-This Mod works on vanilla uniforms, Uniforms of the BW Mod, the KSK 2035 Tropic Mod and D-Man's Croatian Military mod.
-
-RHS Mod was checked, but the RHS uniforms don't have a proper position for apply the ranksigns, so if you wear a RHS uniform you won't get a ranksign applied.
-
 ## Licence
-Copyright (C) 2016 [Wyqer](https://github.com/Wyqer) (Code) and [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) (Insignias)
+Copyright (C) 2016
+* [Wyqer](https://github.com/Wyqer) (Code)
+* [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) (Insignias)
+* [Degman](http://steamcommunity.com/id/degman) (Croatian Insignias)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -51,30 +58,42 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 ## Changelog
+### v2.0
+* Added: New codebase.
+* Added: CfgFunctions.
+* Added: Uniforms and player ranks stored in the servers profile namespace.
+* Added: CBA config entries.
+* Added: CBA Settings.
+* Added: ACE Interaction to check rank.
+* Tweaked: Editor module is now just available to create a dependency in a mission.
+* Removed: Unnecessary loops.
+* Removed: Manual function compiling.
+* Removed: Userconfig folder and files.
+
 ### v1.5
-* Added: All insignias are now available in the arsenal and editor
-* Added: initPlayerLocal.sqf example for mission creators
-* Tweaked: Automatic insignia assignment functionality can only be enabled via initPlayerLocal.sqf or by placing the "Force KP Ranks" module
-* Tweaked: Some small code and config changes
+* Added: All insignias are now available in the arsenal and editor.
+* Added: initPlayerLocal.sqf example for mission creators.
+* Tweaked: Automatic insignia assignment functionality can only be enabled via initPlayerLocal.sqf or by placing the "Force KP Ranks" module.
+* Tweaked: Some small code and config changes.
 
 ### v1.4
 * Added: Croatian ranksigns. Many thanks to [Degman](http://steamcommunity.com/id/degman)
-* Tweaked: Brighten up the german "Tropentarn" ranksigns a little bit
+* Tweaked: Brighten up the german "Tropentarn" ranksigns a little bit.
 
 ### v1.3
-* Added: Support for Croatian Military Mod
-* Tweaked: Some Code optimizations
-* Fixed: Small error when the player is virtual zeus
+* Added: Support for Croatian Military Mod.
+* Tweaked: Some Code optimizations.
+* Fixed: Small error when the player is virtual zeus.
 
 ### v1.2
-* Added: own textures for the ranksigns
-* Added: uniform list
-* Added: Mission Module
-* Tweaked: Rewritten the Code
-* Tweaked: Renamed from "KP Dienstgrade" to "KP Ranks"
+* Added: own textures for the ranksigns.
+* Added: uniform list.
+* Added: Mission Module.
+* Tweaked: Rewritten the Code.
+* Tweaked: Renamed from "KP Dienstgrade" to "KP Ranks".
 
 ### v1.1
-* Fixed: Full Ghillies got weird textures
+* Fixed: Full Ghillies got weird textures.
 
 ### v1.0
-* Initial Release
+* Initial Release.

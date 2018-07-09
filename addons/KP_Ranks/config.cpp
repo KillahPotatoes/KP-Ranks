@@ -1,17 +1,32 @@
 class CfgPatches {
-    class KPR {
-        name = "KP Ranks 2.0";
-        author = "[KP] Wyqer";
+    class KP_Ranks {
+        author = "Wyqer";
+        name = "KP Ranks";
         url = "https://www.killahpotatoes.de";
-
+        units[] = {"KPR_force"};
+        weapons[] = {};
         requiredVersion = 1.82;
-
         requiredAddons[] = {
-            "A3_Modules_F"
+            "A3_Modules_F",
+            "cba_main"
         };
+        versionDesc = "KP Ranks";
+        version = 2.0.0;
+        versionStr = "2.0.0";
+        versionAr[] = {2,0,0};
+        authors[] = {"Wyqer"};
+    };
+};
 
-        units[] = {
-            "KPR_force"
+class CfgSettings {
+    class CBA {
+        class Versioning {
+            class KP_Ranks {
+                main_addon = "KP_Ranks";
+                class Dependencies {
+                    CBA[]={"cba_main", {3,7,1}, "true"};
+                };
+            };
         };
     };
 };
@@ -67,16 +82,30 @@ class CfgVehicles {
 
 class CfgFunctions {
     class KPR {
-        class KPR_functions {
+        class KP_Ranks {
             file = "\KP_Ranks\fnc";
 
-            // Checks and applies the players rank insignia
-            class checkRank {};
+            // Add vanilla actions
+            class addActions {};
+
+            // Applies rank insignia to player
+            class applyRank {};
+
+            // Loop for automatic mode
+            class autoLoop {};
 
             // Dummy function of the editor module to force a dependency to KP Ranks
             class forceRanks {};
 
-            // initialize KP Ranks
+            // Inizialize ACE self interaction entries
+            class initACE {};
+
+            // Initialize the CBA Settings
+            class initCBA {
+                preInit = 1;
+            };
+
+            // Initialize KP Ranks
             class initRanks {
                 postInit = 1;
             };
@@ -94,7 +123,7 @@ class CfgUnitInsignia {
     // Bundeswehr Flecktarn
     class KPR_BWF_0 {
         displayName = "BWF00 Schütze";
-        author = "[KP] Nils";
+        author = "Nils";
         texture = "\KP_Ranks\ranks\green\kpd0_ca.paa";
         textureVehicle = "";
     };
@@ -321,64 +350,66 @@ class CfgUnitInsignia {
     };
 
     // Croatian Army
-    class KPR_CRO_1: KPR_BWF_0 {
+    class KPR_CRO_1 {
         displayName = "CRO00 Pozornik";
+        author = "Degman";
         texture = "\KP_Ranks\ranks\cro\kpd1_ca.paa";
+        textureVehicle = "";
     };
     class KPR_CRO_2: KPR_CRO_1 {};
-    class KPR_CRO_3: KPR_BWF_0 {
+    class KPR_CRO_3: KPR_CRO_1 {
         displayName = "CRO01 Razvodnik";
         texture = "\KP_Ranks\ranks\cro\kpd3_ca.paa";
     };
     class KPR_CRO_4: KPR_CRO_3 {};
     class KPR_CRO_5: KPR_CRO_3 {};
-    class KPR_CRO_6: KPR_BWF_0 {
+    class KPR_CRO_6: KPR_CRO_1 {
         displayName = "CRO02 Skupnik";
         texture = "\KP_Ranks\ranks\cro\kpd6_ca.paa";
     };
-    class KPR_CRO_7: KPR_BWF_0 {
+    class KPR_CRO_7: KPR_CRO_1 {
         displayName = "CRO03 Desetnik";
         texture = "\KP_Ranks\ranks\cro\kpd7_ca.paa";
     };
-    class KPR_CRO_8: KPR_BWF_0 {
+    class KPR_CRO_8: KPR_CRO_1 {
         displayName = "CRO04 Narednik";
         texture = "\KP_Ranks\ranks\cro\kpd8_ca.paa";
     };
-    class KPR_CRO_9: KPR_BWF_0 {
+    class KPR_CRO_9: KPR_CRO_1 {
         displayName = "CRO05 Nadnarednik";
         texture = "\KP_Ranks\ranks\cro\kpd9_ca.paa";
     };
-    class KPR_CRO_10: KPR_BWF_0 {
+    class KPR_CRO_10: KPR_CRO_1 {
         displayName = "CRO06 Stozerni Narednik";
         texture = "\KP_Ranks\ranks\cro\kpd10_ca.paa";
     };
-    class KPR_CRO_11: KPR_BWF_0 {
+    class KPR_CRO_11: KPR_CRO_1 {
         displayName = "CRO07 Casnicki Namjesnik";
         texture = "\KP_Ranks\ranks\cro\kpd11_ca.paa";
     };
     class KPR_CRO_12: KPR_CRO_11 {};
-    class KPR_CRO_13: KPR_BWF_0 {
+    class KPR_CRO_13: KPR_CRO_1 {
         displayName = "CRO08 Porucnik";
         texture = "\KP_Ranks\ranks\cro\kpd13_ca.paa";
     };
-    class KPR_CRO_14: KPR_BWF_0 {
+    class KPR_CRO_14: KPR_CRO_1 {
         displayName = "CRO09 Natporucnik";
         texture = "\KP_Ranks\ranks\cro\kpd14_ca.paa";
     };
-    class KPR_CRO_15: KPR_BWF_0 {
+    class KPR_CRO_15: KPR_CRO_1 {
         displayName = "CRO10 Satnik";
         texture = "\KP_Ranks\ranks\cro\kpd15_ca.paa";
     };
     class KPR_CRO_16: KPR_CRO_15 {};
-    class KPR_CRO_17: KPR_BWF_0 {
+    class KPR_CRO_17: KPR_CRO_1 {
         displayName = "CRO11 Bojnik";
         texture = "\KP_Ranks\ranks\cro\kpd17_ca.paa";
     };
-    class KPR_CRO_18: KPR_BWF_0 {
+    class KPR_CRO_18: KPR_CRO_1 {
         displayName = "CRO12 Pukovnik";
         texture = "\KP_Ranks\ranks\cro\kpd18_ca.paa";
     };
-    class KPR_CRO_19: KPR_BWF_0 {
+    class KPR_CRO_19: KPR_CRO_1 {
         displayName = "CRO013 Brigadir";
         texture = "\KP_Ranks\ranks\cro\kpd19_ca.paa";
     };

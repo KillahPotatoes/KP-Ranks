@@ -66,6 +66,17 @@ if (hasInterface) then {
         _text remoteExec ["diag_log", 2];
     };
 
+    // Check for ACE
+    if (isClass (configfile >> "CfgPatches" >> "ace_interact_menu")) then {
+        _text = format ["[KP RANKS] [%1 (%2)] ACE detected", name player, getPlayerUID player];
+        _text remoteExec ["diag_log", 2];
+        // Add self interaction menu entries
+        call KPR_fnc_initACE;
+    } else {
+        // Add vanilla actions
+        call KPR_fnc_addActions;
+    };
+
     _text = format ["[KP RANKS] [%1 (%2)] Initialization finished", name player, getPlayerUID player];
     _text remoteExec ["diag_log", 2];
 };
