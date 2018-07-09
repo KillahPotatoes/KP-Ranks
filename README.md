@@ -1,24 +1,32 @@
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 # KP Ranks
-**Version:** 1.5
+[![license](https://img.shields.io/github/license/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/LICENSE.md)
+[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/KP-Ranks/total.svg)](https://github.com/KillahPotatoes/KP-Ranks)
 
-**Serverkey:** Yes
+[![GitHub issues](https://img.shields.io/github/issues-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/pulls)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/pulls?q=is%3Apr+is%3Aclosed)
 
-**Requires:** CBA_A3
+[BI Forum Thread](https://forums.bistudio.com/topic/195034-kp-ranks/)
 
-**BI Forum:** [KP Ranks](https://forums.bistudio.com/topic/195034-kp-ranks/)
+[Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641)
 
-**Workshop:** [KP Ranks](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641)
+[Discord](https://discord.gg/bpPUU48)
 
+If you like the work and think it's worth a small donation, feel free to use the following link:
 
-## Description:
+[Donate via paypal.me](https://www.paypal.me/wyqer)
+
+## Description
+**Requires:** [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+
 This mod provides a automatic ranksign system for players, based on the users own config via dedicated server userconfig files or via unit init line in the editor.
 
 The ranksign for the german Bundeswehr (green and brown ranksigns), the US Army and Croatian Army are implemented. They will be automaticly attached to a players uniform.
 
-
-## Features:
+## Features
 * Ranks for German "Flecktarn", "Tropentarn", US Army and Croatian Troops. (from the bottom til Colonel / Oberst)
 * Server owners can manage the applied ranks with a serverside userconfig file, where they can list every player via steamID and the proper rank for them.
 * Missionmakers can set the rank of a player unit via init line.
@@ -33,38 +41,21 @@ This Mod works on vanilla uniforms, Uniforms of the BW Mod, the KSK 2035 Tropic 
 
 RHS Mod was checked, but the RHS uniforms don't have a proper position for apply the ranksigns, so if you wear a RHS uniform you won't get a ranksign applied.
 
+## Licence
+Copyright (C) 2016 [Wyqer](https://github.com/Wyqer) (Code) and [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) (Insignias)
 
-## Script Commands:
-To apply a rank via unit init file to a playable unit:
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-    this setVariable ["KP_Ranks_rank", x];
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-x = int of the desired rank (0-19)
+You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
-To apply a new rank during a running mission you have to run this on the machine of the client which rank you want to change:
-
-    player setVariable ["KP_Ranks_rank", x];
-
-## Licence:
-Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
-
-This work is licensed under the CC BY-NC-SA 4.0 License.
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-Textured for the ranksigns are made by our community- and clanmember [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/).
-
-If you like the work and think it's worth a small donation, feel free to use the following link:
-
-https://www.paypal.me/wyqer
-
-## Changelog:
-
+## Changelog
 ### v1.5
 * Added: All insignias are now available in the arsenal and editor
 * Added: initPlayerLocal.sqf example for mission creators
 * Tweaked: Automatic insignia assignment functionality can only be enabled via initPlayerLocal.sqf or by placing the "Force KP Ranks" module
-* Tweaked: Some small code and config changes 
+* Tweaked: Some small code and config changes
 
 ### v1.4
 * Added: Croatian ranksigns. Many thanks to [Degman](http://steamcommunity.com/id/degman)
@@ -87,53 +78,3 @@ https://www.paypal.me/wyqer
 
 ### v1.0
 * Initial Release
-
-# ------------------------------------------------------------
-
-## Beschreibung:
-Diese Mod bietet ein automatisiertes Dienstgradsystem für Spieler.
-
-Es basiert auf einer userconfig Datei für dedizierte Server bzw. auf das Init Feld der Einheit für Missionsbauer.
-
-Die Mod beinhaltet Dienstgrade der Bundeswehr (Flecktarn und Tropentarn), der US Army und der Kroatischen Armee.
-
-
-## Features:
-* Dienstgrade für Flecktarn, Tropentarn, US und kroatische Truppen.
-* Serverbetreiber können die Dienstgrade einzelner Spieler direkt per userconfig Datei verwalten. Benötigt ist dazu nur die steamID des Spielers und die gewünschte Nummer des Dienstgrades.
-* Missionsbauer können den Spielereinheiten per Init Zeile einen Dienstgrad zuweisen.
-* Dienstgrade werden neu auf die Uniform gebracht, wenn die Uniform gewechselt oder das Arsenal betreten wird.
-* Ist ein Spieler nicht in der userconfig Datei gelistet oder hat seine Einheit keinen Init Eintrag, so bekommt er den niedrigsten Dienstgrad zugewiesen.
-* Außerdem ist eine userconfig Datei für die Uniformen vorhanden. Diese kann durch Serverbetreiber natürlich erweitert werden.
-* Der Dienstgrad ist immer entsprechend der Uniform, selbst in laufenden Missionen. Trägt man Flecktarn bzw. Tropentarn, so bekommt man den deutschen grünen bzw. braunen Dienstgrad. Trägt man eine Vanilla NATO ArmA Uniform, erhält man den entsprechenden US Dienstgrad.
-* Missionsmodul, um die Benutzung dieser Mod zu verlangen, ist vorhanden.
-* Dienstgrade können jeder Einheit im Editor über die Identitäts Attribute zugewiesen werden.
-
-Diese Mod funktioniert mit den Vanilla Uniformen, den Uniformen der BW Mod, der KSK 2035 Tropic Mod und denen der D-Man's Croatian Military Mod.
-
-RHS unterstützt leider nicht die entsprechende Positionierung der Dienstgrade, weshalb auf RHS Uniformen kein Dienstgrad erscheinen wird.
-
-
-## Scriptbefehle:
-Um den Dienstgrad einer spielbaren Einheit per Initzeile im Editor zuzuweisen:
-
-    this setVariable ["KP_Ranks_rank", x];
-
-x = int des gewünschten Dienstgrades (0-19)
-
-Um einen Dienstgrad während einer laufenden Mission zu ändern, muss folgender Code bei dem Client ausgeführt werden, der eine entsprechende Änderung erfahren soll:
-
-    player setVariable ["KP_Ranks_rank", x];
-
-## Lizenz:
-Copyright (c) 2016 [Wyqer](https://github.com/Wyqer)
-
-Diese Mod wird unter der CC BY-NC-SA 4.0 Lizenz veröffentlicht.
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)
-
-Texturen der Dienstgradabzeichen wurden durch unser Community- und Clanmitglied [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) erstellt.
-
-Wenn dir meine Arbeit gefällt und du denkst, dass sie eine Kleinigkeit wert ist, benutze gerne folgenden Link:
-
-https://www.paypal.me/wyqer

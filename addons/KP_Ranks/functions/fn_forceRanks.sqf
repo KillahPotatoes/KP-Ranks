@@ -1,1 +1,0 @@
-KP_Ranks_enable = true;
