@@ -4,7 +4,7 @@
     File: fn_initRanks.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-09
+    Last Update: 2018-07-10
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -20,13 +20,13 @@
 if (!isMultiplayer) exitWith {};
 
 if (isServer) then {
-    diag_log "[KP RANKS] Initializing KP Ranks...";
+    diag_log "[KP RANKS] [SERVER] Initializing KP Ranks...";
 
     // Load saved or set default uniform list
     KPR_uniforms = profileNamespace getVariable ["KPR_uniforms",[]];
 
     if (KPR_uniforms isEqualTo []) then {
-        diag_log "[KP RANKS] No uniform list on server...";
+        diag_log "[KP RANKS] [SERVER] No uniform list on server...";
 
         // Get default list
         call KPR_fnc_setDefaultUniforms;
@@ -35,19 +35,21 @@ if (isServer) then {
         profileNamespace setVariable ["KPR_uniforms", KPR_uniforms];
         saveProfileNamespace;
     } else {
-        diag_log "[KP RANKS] Found uniform list on server...";
+        diag_log "[KP RANKS] [SERVER] Sending uniform list to clients...";
     };
-
     // Provide list of uniforms for clients
     publicVariable "KPR_uniforms";
-    diag_log "[KP RANKS] Sending uniform list to clients...";
 
     // Get the servers player list and provide it for clients
     KPR_players = profileNamespace getVariable ["KPR_players",[]];
+    if (KPR_players isEqualTo []) then {
+        diag_log "[KP RANKS] [SERVER] No player list on server...";
+    } else {
+        diag_log "[KP RANKS] [SERVER] Sending player list to clients...";
+    };
     publicVariable "KPR_players";
-    diag_log "[KP RANKS] Sending player list to clients...";
 
-    diag_log format ["[KP RANKS] Server initialized - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3", count KPR_players, count KPR_uniforms, KPR_autoMode];
+    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3", count KPR_players, count KPR_uniforms, KPR_autoMode];
 };
 
 if (hasInterface) then {

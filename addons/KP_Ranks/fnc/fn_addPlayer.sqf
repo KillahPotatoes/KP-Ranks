@@ -21,7 +21,7 @@ if (!isServer) exitWith {};
 
 params [["_newPlayer",[]]];
 
-diag_log format ["[KP RANKS] KPR_fnc_addPlayer called with: %1", _newPlayer];
+diag_log format ["[KP RANKS] [SERVER] KPR_fnc_addPlayer called with: %1", _newPlayer];
 
 KPR_players pushBack _newPlayer;
 [KPR_players] call KPR_fnc_savePlayers;

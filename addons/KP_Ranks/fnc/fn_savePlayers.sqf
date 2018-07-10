@@ -22,9 +22,9 @@ if (!isServer) exitWith {};
 params [["_newList",[]]];
 
 if (_newList isEqualTo []) then {
-    diag_log "[KP RANKS] KPR_fnc_savePlayers called with no data. Skipping the saving.";
+    diag_log "[KP RANKS] [SERVER] KPR_fnc_savePlayers called with no data. Skipping the saving.";
 } else {
-    diag_log format ["[KP RANKS] KPR_fnc_savePlayers called with %1 entries.", count _newList];
+    diag_log format ["[KP RANKS] [SERVER] KPR_fnc_savePlayers called with %1 entries.", count _newList];
 
     KPR_players = _newList;
     profileNamespace setVariable ["KPR_players", KPR_players];
