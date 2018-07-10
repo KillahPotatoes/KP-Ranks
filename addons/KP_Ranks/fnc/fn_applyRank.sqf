@@ -4,7 +4,7 @@
     File: fn_applyRank.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-09
+    Last Update: 2018-07-10
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -37,25 +37,10 @@ private _material = "\a3\data_f\default.rvmat";
 private _texture = "#(rgb,8,8,3)color(0,0,0,0)";
 private _displayname = "NONE";
 
-// Apply insignia, if player wears a supported uniform
+// Get configClass of the insignia, if player wears a supported uniform
 if (_uniformIndex != -1) then {
     _validUniform = true;
-    if (KPR_uniforms select _uniformIndex select 1 == 0) exitWith {
-        _insigniaClass = [["CfgUnitInsignia", "KPR_BWF_" + str _rank], configNull] call BIS_fnc_loadClass;
-    };
-    if (KPR_uniforms select _uniformIndex select 1 == 1) exitWith {
-        _insigniaClass = [["CfgUnitInsignia", "KPR_BWT_" + str _rank], configNull] call BIS_fnc_loadClass;
-    };
-    if (KPR_uniforms select _uniformIndex select 1 == 2) exitWith {
-        if (_rank != 0) then {
-            _insigniaClass = [["CfgUnitInsignia", "KPR_USA_" + str _rank], configNull] call BIS_fnc_loadClass;
-        };
-    };
-    if (KPR_uniforms select _uniformIndex select 1 == 3) exitWith {
-        if (_rank != 0) then {
-            _insigniaClass = [["CfgUnitInsignia", "KPR_CRO_" + str _rank], configNull] call BIS_fnc_loadClass;
-        };
-    };
+    _insigniaClass = [["CfgUnitInsignia", format ["KPR_%1_%2", KPR_uniforms select _uniformIndex select 1, str _rank]], configNull] call BIS_fnc_loadClass;
 };
 
 // If it's a valid uniform, get specific values for material and texture of the insignia
@@ -69,7 +54,7 @@ if (!isNull _insigniaClass) then {
 if (_showHint) then {
     private _text = format ["[KP RANKS] [%1 (%2)] Uniform not supported: %3", name player, getPlayerUID player, uniform player];
     if (_validUniform) then {
-        [_texture, true] spawn KPR_fnc_showHint;
+        [_displayname, _texture] spawn KPR_fnc_showHint;
         _text = format ["[KP RANKS] [%1 (%2)] Apply Rank %3 on uniform %4", name player, getPlayerUID player, _displayname, uniform player];
     } else {
         ["Uniform not supported"] spawn KPR_fnc_showHint;

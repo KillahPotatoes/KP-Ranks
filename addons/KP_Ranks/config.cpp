@@ -220,213 +220,257 @@ class CfgUnitInsignia {
     };
 
     // Bundeswehr Tropentarn
-    class KPR_BWT_0: KPR_BWF_0 {
+    class KPR_BWT_0 {
+        author = "Nils";
         displayName = "BWT00 Schuetze";
+        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
         texture = "\KP_Ranks\ranks\brown\kpd0_ca.paa";
+        textureVehicle = "";
     };
-    class KPR_BWT_1: KPR_BWF_0 {
+    class KPR_BWT_1: KPR_BWT_0 {
         displayName = "BWT01 Gefreiter";
         texture = "\KP_Ranks\ranks\brown\kpd1_ca.paa";
     };
-    class KPR_BWT_2: KPR_BWF_0{
+    class KPR_BWT_2: KPR_BWT_0{
         displayName = "BWT02 Obergefreiter";
         texture = "\KP_Ranks\ranks\brown\kpd2_ca.paa";
     };
-    class KPR_BWT_3: KPR_BWF_0 {
+    class KPR_BWT_3: KPR_BWT_0 {
         displayName = "BWT03 Hauptgefreiter";
         texture = "\KP_Ranks\ranks\brown\kpd3_ca.paa";
     };
-    class KPR_BWT_4: KPR_BWF_0 {
+    class KPR_BWT_4: KPR_BWT_0 {
         displayName = "BWT04 Stabsgefreiter";
         texture = "\KP_Ranks\ranks\brown\kpd4_ca.paa";
     };
-    class KPR_BWT_5: KPR_BWF_0 {
+    class KPR_BWT_5: KPR_BWT_0 {
         displayName = "BWT05 Oberstabsgefreiter";
         texture = "\KP_Ranks\ranks\brown\kpd5_ca.paa";
     };
-    class KPR_BWT_6: KPR_BWF_0 {
+    class KPR_BWT_6: KPR_BWT_0 {
         displayName = "BWT06 Unteroffizier";
         texture = "\KP_Ranks\ranks\brown\kpd6_ca.paa";
     };
-    class KPR_BWT_7: KPR_BWF_0 {
+    class KPR_BWT_7: KPR_BWT_0 {
         displayName = "BWT07 Stabsunteroffizier";
         texture = "\KP_Ranks\ranks\brown\kpd7_ca.paa";
     };
-    class KPR_BWT_8: KPR_BWF_0 {
+    class KPR_BWT_8: KPR_BWT_0 {
         displayName = "BWT08 Feldwebel";
         texture = "\KP_Ranks\ranks\brown\kpd8_ca.paa";
     };
-    class KPR_BWT_9: KPR_BWF_0 {
+    class KPR_BWT_9: KPR_BWT_0 {
         displayName = "BWT09 Oberfeldwebel";
         texture = "\KP_Ranks\ranks\brown\kpd9_ca.paa";
     };
-    class KPR_BWT_10: KPR_BWF_0 {
+    class KPR_BWT_10: KPR_BWT_0 {
         displayName = "BWT10 Hauptfeldwebel";
         texture = "\KP_Ranks\ranks\brown\kpd10_ca.paa";
     };
-    class KPR_BWT_11: KPR_BWF_0 {
+    class KPR_BWT_11: KPR_BWT_0 {
         displayName = "BWT11 Stabsfeldwebel";
         texture = "\KP_Ranks\ranks\brown\kpd11_ca.paa";
     };
-    class KPR_BWT_12: KPR_BWF_0 {
+    class KPR_BWT_12: KPR_BWT_0 {
         displayName = "BWT12 Oberstabsfeldwebel";
         texture = "\KP_Ranks\ranks\brown\kpd12_ca.paa";
     };
-    class KPR_BWT_13: KPR_BWF_0 {
+    class KPR_BWT_13: KPR_BWT_0 {
         displayName = "BWT13 Leutenant";
         texture = "\KP_Ranks\ranks\brown\kpd13_ca.paa";
     };
-    class KPR_BWT_14: KPR_BWF_0 {
+    class KPR_BWT_14: KPR_BWT_0 {
         displayName = "BWT14 Oberleutnant";
         texture = "\KP_Ranks\ranks\brown\kpd14_ca.paa";
     };
-    class KPR_BWT_15: KPR_BWF_0 {
+    class KPR_BWT_15: KPR_BWT_0 {
         displayName = "BWT15 Hauptmann";
         texture = "\KP_Ranks\ranks\brown\kpd15_ca.paa";
     };
-    class KPR_BWT_16: KPR_BWF_0 {
+    class KPR_BWT_16: KPR_BWT_0 {
         displayName = "BWT16 Stabshauptmann";
         texture = "\KP_Ranks\ranks\brown\kpd16_ca.paa";
     };
-    class KPR_BWT_17: KPR_BWF_0 {
+    class KPR_BWT_17: KPR_BWT_0 {
         displayName = "BWT17 Major";
         texture = "\KP_Ranks\ranks\brown\kpd17_ca.paa";
     };
-    class KPR_BWT_18: KPR_BWF_0 {
+    class KPR_BWT_18: KPR_BWT_0 {
         displayName = "BWT18 Oberstleutnant";
         texture = "\KP_Ranks\ranks\brown\kpd18_ca.paa";
     };
-    class KPR_BWT_19: KPR_BWF_0 {
+    class KPR_BWT_19: KPR_BWT_0 {
         displayName = "BWT19 Oberst";
         texture = "\KP_Ranks\ranks\brown\kpd19_ca.paa";
     };
 
     // US Army
-    class KPR_USA_1: KPR_BWF_0 {
-        displayName = "USA00 Private E2";
+    class KPR_USA_0 {
+        author = "Nils";
+        displayName = "USA00 Private E1";
+        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+        texture = "#(rgb,8,8,3)color(0,0,0,0)";
+        textureVehicle = "";
+    };
+    class KPR_USA_1: KPR_USA_0 {
+        displayName = "USA01 Private E2";
         texture = "\KP_Ranks\ranks\us\kpd1_ca.paa";
     };
-    class KPR_USA_2: KPR_BWF_0 {
-        displayName = "USA01 Private First Class";
+    class KPR_USA_2: KPR_USA_0 {
+        displayName = "USA02 Private First Class";
         texture = "\KP_Ranks\ranks\us\kpd2_ca.paa";
     };
-    class KPR_USA_3: KPR_USA_2 {};
-    class KPR_USA_4: KPR_BWF_0 {
-        displayName = "USA02 Corporal";
+    class KPR_USA_3: KPR_USA_0 {
+        displayName = "USA03 Private First Class";
+        texture = "\KP_Ranks\ranks\us\kpd2_ca.paa";
+    };
+    class KPR_USA_4: KPR_USA_0 {
+        displayName = "USA04 Corporal";
         texture = "\KP_Ranks\ranks\us\kpd4_ca.paa";
     };
-    class KPR_USA_5: KPR_USA_4 {};
-    class KPR_USA_6: KPR_BWF_0 {
-        displayName = "USA03 Sergeant";
+    class KPR_USA_5: KPR_USA_0 {
+        displayName = "USA05 Corporal";
+        texture = "\KP_Ranks\ranks\us\kpd4_ca.paa";
+    };
+    class KPR_USA_6: KPR_USA_0 {
+        displayName = "USA06 Sergeant";
         texture = "\KP_Ranks\ranks\us\kpd6_ca.paa";
     };
-    class KPR_USA_7: KPR_USA_6 {};
-    class KPR_USA_8: KPR_BWF_0 {
-        displayName = "USA04 Staff Sergeant";
+    class KPR_USA_7: KPR_USA_0 {
+        displayName = "USA07 Sergeant";
+        texture = "\KP_Ranks\ranks\us\kpd6_ca.paa";
+    };
+    class KPR_USA_8: KPR_USA_0 {
+        displayName = "USA08 Staff Sergeant";
         texture = "\KP_Ranks\ranks\us\kpd8_ca.paa";
     };
-    class KPR_USA_9: KPR_USA_8 {};
-    class KPR_USA_10: KPR_BWF_0 {
-        displayName = "USA05 Sergeant First Class";
+    class KPR_USA_9: KPR_USA_0 {
+        displayName = "USA09 Staff Sergeant";
+        texture = "\KP_Ranks\ranks\us\kpd8_ca.paa";
+    };
+    class KPR_USA_10: KPR_USA_0 {
+        displayName = "USA10 Sergeant First Class";
         texture = "\KP_Ranks\ranks\us\kpd10_ca.paa";
     };
-    class KPR_USA_11: KPR_BWF_0 {
-        displayName = "USA06 Master Sergeant";
+    class KPR_USA_11: KPR_USA_0 {
+        displayName = "USA11 Master Sergeant";
         texture = "\KP_Ranks\ranks\us\kpd11_ca.paa";
     };
-    class KPR_USA_12: KPR_BWF_0 {
-        displayName = "USA07 Sergeant Major";
+    class KPR_USA_12: KPR_USA_0 {
+        displayName = "USA12 Sergeant Major";
         texture = "\KP_Ranks\ranks\us\kpd12_ca.paa";
     };
-    class KPR_USA_13: KPR_BWF_0 {
-        displayName = "USA08 Second Lieutenant";
+    class KPR_USA_13: KPR_USA_0 {
+        displayName = "USA13 Second Lieutenant";
         texture = "\KP_Ranks\ranks\us\kpd13_ca.paa";
     };
-    class KPR_USA_14: KPR_BWF_0 {
-        displayName = "USA09 First Lieutenant";
+    class KPR_USA_14: KPR_USA_0 {
+        displayName = "USA14 First Lieutenant";
         texture = "\KP_Ranks\ranks\us\kpd14_ca.paa";
     };
-    class KPR_USA_15: KPR_BWF_0 {
-        displayName = "USA10 Captain";
+    class KPR_USA_15: KPR_USA_0 {
+        displayName = "USA15 Captain";
         texture = "\KP_Ranks\ranks\us\kpd15_ca.paa";
     };
-    class KPR_USA_16: KPR_USA_15 {};
-    class KPR_USA_17: KPR_BWF_0 {
-        displayName = "USA11 Major";
+    class KPR_USA_16: KPR_USA_0 {
+        displayName = "USA16 Captain";
+        texture = "\KP_Ranks\ranks\us\kpd15_ca.paa";
+    };
+    class KPR_USA_17: KPR_USA_0 {
+        displayName = "USA17 Major";
         texture = "\KP_Ranks\ranks\us\kpd17_ca.paa";
     };
-    class KPR_USA_18: KPR_BWF_0 {
-        displayName = "USA12 Lieutenant Colonel";
+    class KPR_USA_18: KPR_USA_0 {
+        displayName = "USA18 Lieutenant Colonel";
         texture = "\KP_Ranks\ranks\us\kpd18_ca.paa";
     };
-    class KPR_USA_19: KPR_BWF_0 {
-        displayName = "USA13 Colonel";
+    class KPR_USA_19: KPR_USA_0 {
+        displayName = "USA19 Colonel";
         texture = "\KP_Ranks\ranks\us\kpd19_ca.paa";
     };
 
     // Croatian Army
-    class KPR_CRO_1 {
+    class KPR_CRO_0 {
         author = "Degman";
-        displayName = "CRO00 Pozornik";
+        displayName = "CRO00 Nothing";
         material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-        texture = "\KP_Ranks\ranks\cro\kpd1_ca.paa";
+        texture = "#(rgb,8,8,3)color(0,0,0,0)";
         textureVehicle = "";
+    }
+    class KPR_CRO_1: KPR_CRO_0 {
+        displayName = "CRO01 Pozornik";
+        texture = "\KP_Ranks\ranks\cro\kpd1_ca.paa";
     };
-    class KPR_CRO_2: KPR_CRO_1 {};
-    class KPR_CRO_3: KPR_CRO_1 {
-        displayName = "CRO01 Razvodnik";
+    class KPR_CRO_2: KPR_CRO_0 {
+        displayName = "CRO02 Pozornik";
+        texture = "\KP_Ranks\ranks\cro\kpd1_ca.paa";
+    };
+    class KPR_CRO_3: KPR_CRO_0 {
+        displayName = "CRO03 Razvodnik";
         texture = "\KP_Ranks\ranks\cro\kpd3_ca.paa";
     };
-    class KPR_CRO_4: KPR_CRO_3 {};
-    class KPR_CRO_5: KPR_CRO_3 {};
-    class KPR_CRO_6: KPR_CRO_1 {
-        displayName = "CRO02 Skupnik";
+    class KPR_CRO_4: KPR_CRO_0 {
+        displayName = "CRO04 Razvodnik";
+        texture = "\KP_Ranks\ranks\cro\kpd3_ca.paa";
+    };
+    class KPR_CRO_5: KPR_CRO_0 {
+        displayName = "CRO05 Razvodnik";
+        texture = "\KP_Ranks\ranks\cro\kpd3_ca.paa";
+    };
+    class KPR_CRO_6: KPR_CRO_0 {
+        displayName = "CRO06 Skupnik";
         texture = "\KP_Ranks\ranks\cro\kpd6_ca.paa";
     };
-    class KPR_CRO_7: KPR_CRO_1 {
-        displayName = "CRO03 Desetnik";
+    class KPR_CRO_7: KPR_CRO_0 {
+        displayName = "CRO07 Desetnik";
         texture = "\KP_Ranks\ranks\cro\kpd7_ca.paa";
     };
-    class KPR_CRO_8: KPR_CRO_1 {
-        displayName = "CRO04 Narednik";
+    class KPR_CRO_8: KPR_CRO_0 {
+        displayName = "CRO08 Narednik";
         texture = "\KP_Ranks\ranks\cro\kpd8_ca.paa";
     };
-    class KPR_CRO_9: KPR_CRO_1 {
-        displayName = "CRO05 Nadnarednik";
+    class KPR_CRO_9: KPR_CRO_0 {
+        displayName = "CRO09 Nadnarednik";
         texture = "\KP_Ranks\ranks\cro\kpd9_ca.paa";
     };
-    class KPR_CRO_10: KPR_CRO_1 {
-        displayName = "CRO06 Stozerni Narednik";
+    class KPR_CRO_10: KPR_CRO_0 {
+        displayName = "CRO10 Stozerni Narednik";
         texture = "\KP_Ranks\ranks\cro\kpd10_ca.paa";
     };
-    class KPR_CRO_11: KPR_CRO_1 {
-        displayName = "CRO07 Casnicki Namjesnik";
+    class KPR_CRO_11: KPR_CRO_0 {
+        displayName = "CRO11 Casnicki Namjesnik";
         texture = "\KP_Ranks\ranks\cro\kpd11_ca.paa";
     };
-    class KPR_CRO_12: KPR_CRO_11 {};
-    class KPR_CRO_13: KPR_CRO_1 {
-        displayName = "CRO08 Porucnik";
+    class KPR_CRO_12: KPR_CRO_0 {
+        displayName = "CRO12 Casnicki Namjesnik";
+        texture = "\KP_Ranks\ranks\cro\kpd11_ca.paa";
+    };
+    class KPR_CRO_13: KPR_CRO_0 {
+        displayName = "CRO13 Porucnik";
         texture = "\KP_Ranks\ranks\cro\kpd13_ca.paa";
     };
-    class KPR_CRO_14: KPR_CRO_1 {
-        displayName = "CRO09 Natporucnik";
+    class KPR_CRO_14: KPR_CRO_0 {
+        displayName = "CRO14 Natporucnik";
         texture = "\KP_Ranks\ranks\cro\kpd14_ca.paa";
     };
-    class KPR_CRO_15: KPR_CRO_1 {
-        displayName = "CRO10 Satnik";
+    class KPR_CRO_15: KPR_CRO_0 {
+        displayName = "CRO15 Satnik";
         texture = "\KP_Ranks\ranks\cro\kpd15_ca.paa";
     };
-    class KPR_CRO_16: KPR_CRO_15 {};
-    class KPR_CRO_17: KPR_CRO_1 {
-        displayName = "CRO11 Bojnik";
+    class KPR_CRO_16: KPR_CRO_0 {
+        displayName = "CRO16 Satnik";
+        texture = "\KP_Ranks\ranks\cro\kpd15_ca.paa";
+    };
+    class KPR_CRO_17: KPR_CRO_0 {
+        displayName = "CRO17 Bojnik";
         texture = "\KP_Ranks\ranks\cro\kpd17_ca.paa";
     };
-    class KPR_CRO_18: KPR_CRO_1 {
-        displayName = "CRO12 Pukovnik";
+    class KPR_CRO_18: KPR_CRO_0 {
+        displayName = "CRO18 Pukovnik";
         texture = "\KP_Ranks\ranks\cro\kpd18_ca.paa";
     };
-    class KPR_CRO_19: KPR_CRO_1 {
-        displayName = "CRO013 Brigadir";
+    class KPR_CRO_19: KPR_CRO_0 {
+        displayName = "CRO19 Brigadir";
         texture = "\KP_Ranks\ranks\cro\kpd19_ca.paa";
     };
 };
