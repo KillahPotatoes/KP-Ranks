@@ -62,8 +62,10 @@ if (hasInterface) then {
         _text remoteExec ["diag_log", 2];
     } else {
         player setVariable ["KPR_rank", 0];
-        _text = format ["[KP RANKS] [%1 (%2)] Not in server list, setting rank to 0", name player, getPlayerUID player];
+        _text = format ["[KP RANKS] [%1 (%2)] Not in server list, adding player to server list.", name player, getPlayerUID player];
         _text remoteExec ["diag_log", 2];
+        private _newPlayer = [getPlayerUID player, name player, 0];
+        [_newPlayer] remoteExecCall ["KPR_fnc_addPlayer", 2];
     };
 
     // Check for ACE

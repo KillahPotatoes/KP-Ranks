@@ -100,6 +100,9 @@ class CfgFunctions {
             // Add vanilla actions
             class addActions {};
 
+            // Adds a new player to the player list
+            class addPlayer {};
+
             // Applies rank insignia to player
             class applyRank {};
 
@@ -117,6 +120,9 @@ class CfgFunctions {
 
             // Initialize KP Ranks
             class initRanks {};
+
+            // Updates and saves player ranks list
+            class savePlayers{};
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};
