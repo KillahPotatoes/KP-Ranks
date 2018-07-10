@@ -22,7 +22,7 @@ params [["_text", ""], ["_insignia", false]];
 
 if (_text != "") then {
     if (_insignia) then {
-        _text = format [" <br/><img size='4' image='%1' /><br/> ", getText (configfile >> "CfgUnitInsignia" >> _text >> "texture")];
+        _text = format [" <br/><img size='4' image='%1' /><br/> ", _text];
         hint parseText _text;
     } else {
         hint _text;

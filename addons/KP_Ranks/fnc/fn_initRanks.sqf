@@ -47,7 +47,7 @@ if (isServer) then {
     publicVariable "KPR_players";
     diag_log "[KP RANKS] Sending player list to clients...";
 
-    diag_log format ["[KP RANKS] Server initialized - Listed Players: %1 - Listed Uniforms: %2", count KPR_players, count KPR_uniforms];
+    diag_log format ["[KP RANKS] Server initialized - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3", count KPR_players, count KPR_uniforms, KPR_autoMode];
 };
 
 if (hasInterface) then {
@@ -70,6 +70,7 @@ if (hasInterface) then {
     if (isClass (configfile >> "CfgPatches" >> "ace_interact_menu")) then {
         _text = format ["[KP RANKS] [%1 (%2)] ACE detected", name player, getPlayerUID player];
         _text remoteExec ["diag_log", 2];
+
         // Add self interaction menu entries
         call KPR_fnc_initACE;
     } else {
