@@ -20,7 +20,7 @@
 [
     "KPR_autoMode",
     "CHECKBOX",
-    ["Automatic Mode", "Enabling this will apply the insignia automatically on the players uniform."],
+    [localize "STR_KPR_CBA_AUTOENABLE", localize "STR_KPR_CBA_AUTOENABLEDESC"],
     "KP Ranks",
     false,
     true,
@@ -34,16 +34,16 @@
 [
     "KPR_autoModeInterval",
     "SLIDER",
-    ["Automatic Mode Interval", "Interval between each insignia auto assignment in seconds."],
+    [localize "STR_KPR_CBA_AUTOINTERVAL", localize "STR_KPR_CBA_AUTOINTERVALDESC"],
     "KP Ranks",
-    [1, 60, 5, 0],
+    [1, 60, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 
 [
     "KPR_admins",
     "EDITBOX",
-    ["Manager", "Add Steam UIDs of players who should be able to access the managing dialog. Format: 13456,456789,123789"],
+    [localize "STR_KPR_CBA_MANAGERS", localize "STR_KPR_CBA_MANAGERSDESC"],
     "KP Ranks",
     "",
     true,
@@ -52,5 +52,9 @@
         KPR_admins = _value splitString ",";
     }
 ] call CBA_Settings_fnc_init;
+
+if (isServer) then {
+    diag_log "[KP RANKS] CBA Settings loaded";
+};
 
 true

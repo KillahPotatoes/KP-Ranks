@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
     <!-- English and German localization by Wyqer: https://github.com/Wyqer -->
-    <Package name="Config">
+    <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
             <English>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</English>
@@ -11,6 +11,36 @@
             <Original>This way it can be ensured that every player loads the mod.</Original>
             <English>This way it can be ensured that every player loads the mod.</English>
             <German>Hierdurch kann sichergestellt werden, dass jeder Spieler die Mod lädt.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AUTOENABLE">
+            <Original>Automatic Mode</Original>
+            <English>Automatic Mode</English>
+            <German>Automatik Modus</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AUTOENABLEDESC">
+            <Original>Enabling this will apply the insignia automatically on the players uniform.</Original>
+            <English>Enabling this will apply the insignia automatically on the players uniform.</English>
+            <German>Bei Aktivierung wird das Dienstgradabzeichen automatisch auf der Uniform gesetzt und aktualisiert.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AUTOINTERVAL">
+            <Original>Automatic Mode Interval</Original>
+            <English>Automatic Mode Interval</English>
+            <German>Automatik Modus Intervall</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AUTOINTERVALDESC">
+            <Original>Interval between each insignia auto assignment in seconds.</Original>
+            <English>Interval between each insignia auto assignment in seconds.</English>
+            <German>Intervall in Sekunden zwischen den automatischen Aktualierungen des Dienstgradabzeichens.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_MANAGERS">
+            <Original>Manager UIDs</Original>
+            <English>Manager UIDs</English>
+            <German>Verwalter UIDs</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_MANAGERSDESC">
+            <Original>Add Steam UIDs of players who should be able to access the managing dialog. Format: 13456,456789,123789</Original>
+            <English>Add Steam UIDs of players who should be able to access the managing dialog. Format: 13456,456789,123789</English>
+            <German>Füge hier die Steam UIDs der Spieler ein, welche den Verwaltungsdialog aufrufen können sollen. Format: 13456,456789,123789</German>
         </Key>
     </Package>
     <Package name="General">
