@@ -31,6 +31,18 @@ class CfgSettings {
     };
 };
 
+class Extended_PreInit_EventHandlers {
+    class KPR_preInit {
+        init = "call KPR_fnc_initCBA";
+    };
+};
+
+class Extended_PostInit_EventHandlers {
+    class KPR_postInit {
+        init = "call KPR_fnc_initRanks";
+    };
+};
+
 class CfgFactionClasses {
     class NO_CATEGORY;
     class KPR_Category: NO_CATEGORY {
@@ -101,14 +113,10 @@ class CfgFunctions {
             class initACE {};
 
             // Initialize the CBA Settings
-            class initCBA {
-                preInit = 1;
-            };
+            class initCBA {};
 
             // Initialize KP Ranks
-            class initRanks {
-                postInit = 1;
-            };
+            class initRanks {};
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};
@@ -122,8 +130,9 @@ class CfgFunctions {
 class CfgUnitInsignia {
     // Bundeswehr Flecktarn
     class KPR_BWF_0 {
-        displayName = "BWF00 Schuetze";
         author = "Nils";
+        displayName = "BWF00 Schuetze";
+        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
         texture = "\KP_Ranks\ranks\green\kpd0_ca.paa";
         textureVehicle = "";
     };
@@ -351,8 +360,9 @@ class CfgUnitInsignia {
 
     // Croatian Army
     class KPR_CRO_1 {
-        displayName = "CRO00 Pozornik";
         author = "Degman";
+        displayName = "CRO00 Pozornik";
+        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
         texture = "\KP_Ranks\ranks\cro\kpd1_ca.paa";
         textureVehicle = "";
     };
