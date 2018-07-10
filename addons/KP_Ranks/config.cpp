@@ -69,8 +69,8 @@ class CfgVehicles {
 
         class ModuleDescription: ModuleDescription {
             description[] = {
-                "If this module is placed in the mission it'll create a dependency to this mod inside the mission.",
-                "This way it can be ensured that every player loads the mod."
+                "$STR_KPR_CONFIG_MODULEDESC1",
+                "$STR_KPR_CONFIG_MODULEDESC2"
             };
             position = 0;
             direction = 0;
@@ -122,7 +122,7 @@ class CfgFunctions {
 class CfgUnitInsignia {
     // Bundeswehr Flecktarn
     class KPR_BWF_0 {
-        displayName = "BWF00 Schütze";
+        displayName = "BWF00 Schuetze";
         author = "Nils";
         texture = "\KP_Ranks\ranks\green\kpd0_ca.paa";
         textureVehicle = "";
@@ -206,7 +206,7 @@ class CfgUnitInsignia {
 
     // Bundeswehr Tropentarn
     class KPR_BWT_0: KPR_BWF_0 {
-        displayName = "BWT00 Schütze";
+        displayName = "BWT00 Schuetze";
         texture = "\KP_Ranks\ranks\brown\kpd0_ca.paa";
     };
     class KPR_BWT_1: KPR_BWF_0 {

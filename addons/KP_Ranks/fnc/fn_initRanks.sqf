@@ -74,7 +74,10 @@ if (hasInterface) then {
         call KPR_fnc_initACE;
     } else {
         // Add vanilla actions and respawn EH
-        player addEventHandler ["Respawn", {call KPR_fnc_addActions}];
+        player addEventHandler ["Respawn", {
+            params ["_unit", "_corpse"];
+            [_corpse] call KPR_fnc_addActions;
+        }];
         call KPR_fnc_addActions;
     };
 

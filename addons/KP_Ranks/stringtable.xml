@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="KP Ranks">
+    <!-- English and German localization by Wyqer: https://github.com/Wyqer -->
+    <Package name="Config">
+        <Key ID="STR_KPR_CONFIG_MODULEDESC1">
+            <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
+            <English>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</English>
+            <German>Wenn dieses Modul gesetzt wird, wird eine Abhängigkeit zur Mod erzeugt.</German>
+        </Key>
+        <Key ID="STR_KPR_CONFIG_MODULEDESC2">
+            <Original>This way it can be ensured that every player loads the mod.</Original>
+            <English>This way it can be ensured that every player loads the mod.</English>
+            <German>Hierdurch kann sichergestellt werden, dass jeder Spieler die Mod lädt.</German>
+        </Key>
+    </Package>
+    <Package name="General">
+        <Key ID="STR_KPR_ACTION_CHECKRANK">
+            <Original>Check Rank</Original>
+            <English>Check Rank</English>
+            <German>Dienstgrad prüfen</German>
+        </Key>
+    </Package>
+    <Package name="Dialog">
+    </Package>
+</Project>
