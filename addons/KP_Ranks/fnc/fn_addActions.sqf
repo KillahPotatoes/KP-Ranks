@@ -17,4 +17,10 @@
     BOOL
 */
 
+if (isNil "KPR_actionIdCheck") then {KPR_actionIdCheck = -1};
+
+if (KPR_actionIdCheck != -1) then {player removeAction KPR_actionIdCheck;};
+
+KPR_actionIdCheck = player addAction ["Check Rank", {[true] call KPR_fnc_applyRank;}, nil, -1200, false, true, "", "!KPR_autoMode"];
+
 true

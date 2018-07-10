@@ -17,7 +17,7 @@
     BOOL
 */
 
-private _action = ["KPR_Check", "Check Rank", "\KP_Ranks\kplogo_ca.paa", {[true] call KPR_fnc_applyRank;}, {true}] call ace_interact_menu_fnc_createAction;
+private _action = ["KPR_Check", "Check Rank", "\KP_Ranks\kplogo_ca.paa", {[true] call KPR_fnc_applyRank;}, {!KPR_autoMode}] call ace_interact_menu_fnc_createAction;
 [(typeOf player), 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToClass;
 
 true

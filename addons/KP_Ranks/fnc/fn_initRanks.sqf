@@ -73,7 +73,8 @@ if (hasInterface) then {
         // Add self interaction menu entries
         call KPR_fnc_initACE;
     } else {
-        // Add vanilla actions
+        // Add vanilla actions and respawn EH
+        player addEventHandler ["Respawn", {call KPR_fnc_addActions}];
         call KPR_fnc_addActions;
     };
 
