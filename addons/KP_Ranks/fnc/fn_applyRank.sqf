@@ -4,7 +4,7 @@
     File: fn_applyRank.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-10
+    Last Update: 2018-07-12
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -30,7 +30,7 @@ private _validUniform = false;
 private _insigniaClass = configNull;
 
 // Get index of the current player uniform
-private _uniformIndex = KPR_uniforms findIf {_x select 0 == uniform player};
+private _index = KPR_uniforms findIf {_x select 0 == uniform player};
 
 // Placeholder with default values
 private _material = "\a3\data_f\default.rvmat";
@@ -38,9 +38,9 @@ private _texture = "#(rgb,8,8,3)color(0,0,0,0)";
 private _displayname = "NONE";
 
 // Get configClass of the insignia, if player wears a supported uniform
-if (_uniformIndex != -1) then {
+if (_index != -1) then {
     _validUniform = true;
-    _insigniaClass = [["CfgUnitInsignia", format ["KPR_%1_%2", KPR_uniforms select _uniformIndex select 1, str _rank]], configNull] call BIS_fnc_loadClass;
+    _insigniaClass = [["CfgUnitInsignia", format ["KPR_%1_%2", KPR_uniforms select _index select 1, str _rank]], configNull] call BIS_fnc_loadClass;
 };
 
 // If it's a valid uniform, get specific values for material and texture of the insignia
@@ -53,13 +53,17 @@ if (!isNull _insigniaClass) then {
 // Show hint with the picture of the insignia or that the uniform isn't supported
 if (_showHint) then {
     private _text = format ["[KP RANKS] [%1 (%2)] Uniform not supported: %3", name player, getPlayerUID player, uniform player];
+
     if (_validUniform) then {
         [_displayname, _texture] spawn KPR_fnc_showHint;
         _text = format ["[KP RANKS] [%1 (%2)] Apply Rank %3 on uniform %4", name player, getPlayerUID player, _displayname, uniform player];
     } else {
         ["Uniform not supported"] spawn KPR_fnc_showHint;
     };
-    _text remoteExec ["diag_log", 2];
+
+    if (KPR_extendedLog) then {
+        _text remoteExec ["diag_log", 2];
+    };
 };
 
 // Apply insignia

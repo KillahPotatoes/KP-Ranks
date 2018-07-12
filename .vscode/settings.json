@@ -11,10 +11,12 @@
         "CBA_Settings_fnc_init",
         "KPR_autoMode",
         "KPR_autoModeInterval",
+        "KPR_extendedLog",
         "KPR_fnc_addActions",
         "KPR_fnc_applyRank",
         "KPR_fnc_autoLoop",
         "KPR_fnc_initACE",
+        "KPR_fnc_openDialogPlayers",
         "KPR_fnc_savePlayers",
         "KPR_fnc_setDefaultUniforms",
         "KPR_fnc_showHint"

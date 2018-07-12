@@ -1,3 +1,20 @@
+/*
+    KP Ranks config file
+
+    File: config.cpp
+    Author: Wyqer - https://github.com/KillahPotatoes
+    Date: 2018-07-09
+    Last Update: 2018-07-12
+    License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
+
+    Description:
+    Mod config file.
+*/
+
+/*
+    --- General Mod Info ---
+*/
+
 class CfgPatches {
     class KP_Ranks {
         author = "Wyqer";
@@ -18,6 +35,10 @@ class CfgPatches {
     };
 };
 
+/*
+    --- CBA Version Info ---
+*/
+
 class CfgSettings {
     class CBA {
         class Versioning {
@@ -31,11 +52,19 @@ class CfgSettings {
     };
 };
 
+/*
+    --- CBA PreInit ---
+*/
+
 class Extended_PreInit_EventHandlers {
     class KPR_preInit {
         init = "call KPR_fnc_initCBA";
     };
 };
+
+/*
+    --- CBA PostInit ---
+*/
 
 class Extended_PostInit_EventHandlers {
     class KPR_postInit {
@@ -43,12 +72,20 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+/*
+    --- Editor Category ---
+*/
+
 class CfgFactionClasses {
     class NO_CATEGORY;
     class KPR_Category: NO_CATEGORY {
         displayName = "KP Ranks";
     };
 };
+
+/*
+    --- Editor Module ---
+*/
 
 class CfgVehicles {
     class Logic;
@@ -92,6 +129,10 @@ class CfgVehicles {
     };
 };
 
+/*
+    --- Functions library ---
+*/
+
 class CfgFunctions {
     class KPR {
         class KP_Ranks {
@@ -121,17 +162,27 @@ class CfgFunctions {
             // Initialize KP Ranks
             class initRanks {};
 
+            // Opens the player management dialog
+            class openDialogPlayers {};
+
             // Updates and saves player ranks list
-            class savePlayers{};
+            class savePlayers {};
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};
 
             // Shows a hint for 3 seconds
-            class showHint{};
+            class showHint {};
+
+            // Updates a player name in the player list
+            class updatePlayer {};
         };
     };
 };
+
+/*
+    --- Insignia config classes ---
+*/
 
 class CfgUnitInsignia {
     // Bundeswehr Flecktarn
@@ -474,3 +525,9 @@ class CfgUnitInsignia {
         texture = "\KP_Ranks\ranks\cro\kpd19_ca.paa";
     };
 };
+
+/*
+    --- UI Defines ---
+*/
+#include "\KP_Ranks\KP_uiDefines.hpp"
+#include "\KP_Ranks\KPR_dialogs.hpp"

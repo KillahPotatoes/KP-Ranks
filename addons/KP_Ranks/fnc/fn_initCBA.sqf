@@ -4,7 +4,7 @@
     File: fn_initCBA.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-10
+    Last Update: 2018-07-12
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -41,16 +41,12 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "KPR_admins",
-    "EDITBOX",
-    [localize "STR_KPR_CBA_MANAGERS", localize "STR_KPR_CBA_MANAGERSDESC"],
+    "KPR_extendedLog",
+    "CHECKBOX",
+    [localize "STR_KPR_CBA_EXTLOG", localize "STR_KPR_CBA_EXTLOGDESC"],
     "KP Ranks",
-    "",
     true,
-    {
-        params ["_value"];
-        KPR_admins = _value splitString ",";
-    }
+    true
 ] call CBA_Settings_fnc_init;
 
 if (isServer) then {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
-    <!-- English and German localization by Wyqer: https://github.com/Wyqer -->
+    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-12 -->
     <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
@@ -32,15 +32,15 @@
             <English>Interval between each insignia auto assignment in seconds.</English>
             <German>Intervall in Sekunden zwischen den automatischen Aktualierungen des Dienstgradabzeichens.</German>
         </Key>
-        <Key ID="STR_KPR_CBA_MANAGERS">
-            <Original>Manager UIDs</Original>
-            <English>Manager UIDs</English>
-            <German>Verwalter UIDs</German>
+        <Key ID="STR_KPR_CBA_EXTLOG">
+            <Original>Extended logging</Original>
+            <English>Extended logging</English>
+            <German>Erweiterte Logausgabe</German>
         </Key>
-        <Key ID="STR_KPR_CBA_MANAGERSDESC">
-            <Original>Add Steam UIDs of players who should be able to access the managing dialog. Format: 13456,456789,123789</Original>
-            <English>Add Steam UIDs of players who should be able to access the managing dialog. Format: 13456,456789,123789</English>
-            <German>Füge hier die Steam UIDs der Spieler ein, welche den Verwaltungsdialog aufrufen können sollen. Format: 13456,456789,123789</German>
+        <Key ID="STR_KPR_CBA_EXTLOGDESC">
+            <Original>If enabled, the serverlog will display additional information from the clients.</Original>
+            <English>If enabled, the serverlog will display additional information from the clients.</English>
+            <German>Wenn aktiviert, werden zusätzliche Informationen von den Clients im Serverlog ausgegeben.</German>
         </Key>
     </Package>
     <Package name="General">
@@ -51,5 +51,10 @@
         </Key>
     </Package>
     <Package name="Dialog">
+        <Key ID="STR_KPR_DIALOG_PLAYERMANAGE">
+            <Original>KP Ranks - Player Management</Original>
+            <English>KP Ranks - Player Management</English>
+            <German>KP Ranks - Spielerverwaltung</German>
+        </Key>
     </Package>
 </Project>
