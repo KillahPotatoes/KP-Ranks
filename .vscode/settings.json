@@ -12,6 +12,7 @@
         "KPR_autoMode",
         "KPR_autoModeInterval",
         "KPR_extendedLog",
+        "KPR_playerNation",
         "KPR_fnc_addActions",
         "KPR_fnc_applyRank",
         "KPR_fnc_autoLoop",

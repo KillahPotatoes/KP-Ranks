@@ -22,11 +22,29 @@ if (!isMultiplayer) exitWith {};
 if (isServer) then {
     diag_log "[KP RANKS] [SERVER] Initializing KP Ranks...";
 
+    // Get the servers player list and provide it for clients
+    KPR_players = profileNamespace getVariable ["KPR_players", []];
+    if (KPR_players isEqualTo []) then {
+        diag_log "[KP RANKS] [SERVER] No player list on server, initialize empty list...";
+    } else {
+        diag_log "[KP RANKS] [SERVER] Sending player list to clients...";
+    };
+    publicVariable "KPR_players";
+
+    // Get the list of KPR admins
+    KPR_admins = profileNamespace getVariable ["KPR_admins", []];
+    if (KPR_admins isEqualTo []) then {
+        diag_log "[KP RANKS] [SERVER] No KPR admin list on server, initialize empty list...";
+    } else {
+        diag_log "[KP RANKS] [SERVER] Sending KPR admin list to clients...";
+    };
+    publicVariable "KPR_admins";
+
     // Load saved or set default uniform list
-    KPR_uniforms = profileNamespace getVariable ["KPR_uniforms",[]];
+    KPR_uniforms = profileNamespace getVariable ["KPR_uniforms", []];
 
     if (KPR_uniforms isEqualTo []) then {
-        diag_log "[KP RANKS] [SERVER] No uniform list on server...";
+        diag_log "[KP RANKS] [SERVER] No uniform list on server, initialize default list...";
 
         // Get default list
         call KPR_fnc_setDefaultUniforms;
@@ -40,16 +58,7 @@ if (isServer) then {
     // Provide list of uniforms for clients
     publicVariable "KPR_uniforms";
 
-    // Get the servers player list and provide it for clients
-    KPR_players = profileNamespace getVariable ["KPR_players",[]];
-    if (KPR_players isEqualTo []) then {
-        diag_log "[KP RANKS] [SERVER] No player list on server...";
-    } else {
-        diag_log "[KP RANKS] [SERVER] Sending player list to clients...";
-    };
-    publicVariable "KPR_players";
-
-    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3", count KPR_players, count KPR_uniforms, KPR_autoMode];
+    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - KPR Admins: %2 - Listed Uniforms: %3 - Auto Mode: %4 - Nation by: %5", count KPR_players, count KPR_admins, count KPR_uniforms, KPR_autoMode, if (KPR_playerNation) then {"Player"} else {"Uniform"}];
 };
 
 if (hasInterface) then {

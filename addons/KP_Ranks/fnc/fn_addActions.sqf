@@ -25,5 +25,6 @@ if (isNil "KPR_actionIdCheck") then {KPR_actionIdCheck = -1};
 if (!isNull _corpse) then {_corpse removeAction KPR_actionIdCheck;};
 
 KPR_actionIdCheck = player addAction [localize "STR_KPR_ACTION_CHECKRANK", {[true] call KPR_fnc_applyRank;}, nil, -1200, false, true, "", "!KPR_autoMode"];
+KPR_actionIdPlayers = player addAction ["Player Management", {[] spawn KPR_fnc_openDialogPlayers;}, nil, -1201, false, true];
 
 true

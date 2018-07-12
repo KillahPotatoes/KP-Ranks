@@ -32,6 +32,16 @@
             <English>Interval between each insignia auto assignment in seconds.</English>
             <German>Intervall in Sekunden zwischen den automatischen Aktualierungen des Dienstgradabzeichens.</German>
         </Key>
+        <Key ID="STR_KPR_CBA_PLAYERNATION">
+            <Original>Nation connected to player</Original>
+            <English>Nation connected to player</English>
+            <German>Nation an Spieler gebunden</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_PLAYERNATIONDESC">
+            <Original>If enabled, the nationality is connected to the player, otherwise it's set by the uniform.</Original>
+            <English>If enabled, the nationality is connected to the player, otherwise it's set by the uniform.</English>
+            <German>Wenn aktiviert, wird die Nationalität auf den Spieler bezogen, ansonsten durch die Uniform festgelegt.</German>
+        </Key>
         <Key ID="STR_KPR_CBA_EXTLOG">
             <Original>Extended logging</Original>
             <English>Extended logging</English>
@@ -55,6 +65,76 @@
             <Original>KP Ranks - Player Management</Original>
             <English>KP Ranks - Player Management</English>
             <German>KP Ranks - Spielerverwaltung</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_YES">
+            <Original>Yes</Original>
+            <English>Yes</English>
+            <German>Ja</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_NO">
+            <Original>No</Original>
+            <English>No</English>
+            <German>Nein</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_PLAYER">
+            <Original>Player</Original>
+            <English>Player</English>
+            <German>Spieler</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_ADMIN">
+            <Original>KPR Admin</Original>
+            <English>KPR Admin</English>
+            <German>KPR Admin</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_RANK">
+            <Original>Rank</Original>
+            <English>Rank</English>
+            <German>Dienstgrad</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_NATION">
+            <Original>Nation</Original>
+            <English>Nation</English>
+            <German>Nation</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_WIPE">
+            <Original>Wipe all</Original>
+            <English>Wipe all</English>
+            <German>Alles löschen</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_WIPEDESC">
+            <Original>Deletes all player data from the server. NO CONFIRMATION PROMPT!</Original>
+            <English>Deletes all player data from the server. NO CONFIRMATION PROMPT!</English>
+            <German>Löscht alle Spielerdaten vom Server. KEINE SICHERHEITSABFRAGE!</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_IMPORT">
+            <Original>Import</Original>
+            <English>Import</English>
+            <German>Importieren</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_IMPORTDESC">
+            <Original>Import data from another server from the clipboard.</Original>
+            <English>Import data from another server from the clipboard.</English>
+            <German>Datenimport von einem anderen Server aus der Zwischenablage.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_EXPORT">
+            <Original>Export</Original>
+            <English>Export</English>
+            <German>Exportieren</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_EXPORTDESC">
+            <Original>Exports data to the clipboard.</Original>
+            <English>Exports data to the clipboard.</English>
+            <German>Datenexport in die Zwischenablage.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_SAVE">
+            <Original>Save</Original>
+            <English>Save</English>
+            <German>Speichern</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_SAVEDESC">
+            <Original>Saves current state of the list.</Original>
+            <English>Saves current state of the list.</English>
+            <German>Speichert den aktuellen Stand der Liste.</German>
         </Key>
     </Package>
 </Project>

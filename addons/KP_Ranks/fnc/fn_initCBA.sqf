@@ -41,6 +41,15 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    "KPR_playerNation",
+    "CHECKBOX",
+    [localize "STR_KPR_CBA_PLAYERNATION", localize "STR_KPR_CBA_PLAYERNATIONDESC"],
+    "KP Ranks",
+    false,
+    true
+] call CBA_Settings_fnc_init;
+
+[
     "KPR_extendedLog",
     "CHECKBOX",
     [localize "STR_KPR_CBA_EXTLOG", localize "STR_KPR_CBA_EXTLOGDESC"],
