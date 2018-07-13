@@ -11,7 +11,7 @@
     Updates and saves the list of player ranks in the servers profile namespace.
 
     Parameter(s):
-        0: ARRAY - Array of player data arrays, e.g [[Name, Steam UID, Rank, Nation], [Name, Steam UID, Rank, Nation]]
+        0: ARRAY - Array of player data arrays, e.g [[Name, Steam UID, Rank, Nation, isAdmin, Rating], [Name, Steam UID, Rank, Nation, isAdmin, Rating]]
 
     Returns:
     BOOL

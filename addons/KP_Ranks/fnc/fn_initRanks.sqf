@@ -31,15 +31,6 @@ if (isServer) then {
     };
     publicVariable "KPR_players";
 
-    // Get the list of KPR admins
-    KPR_admins = profileNamespace getVariable ["KPR_admins", []];
-    if (KPR_admins isEqualTo []) then {
-        diag_log "[KP RANKS] [SERVER] No KPR admin list on server, initialize empty list...";
-    } else {
-        diag_log "[KP RANKS] [SERVER] Sending KPR admin list to clients...";
-    };
-    publicVariable "KPR_admins";
-
     // Load saved or set default uniform list
     KPR_uniforms = profileNamespace getVariable ["KPR_uniforms", []];
 
@@ -58,7 +49,7 @@ if (isServer) then {
     // Provide list of uniforms for clients
     publicVariable "KPR_uniforms";
 
-    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - KPR Admins: %2 - Listed Uniforms: %3 - Auto Mode: %4 - Nation by: %5", count KPR_players, count KPR_admins, count KPR_uniforms, KPR_autoMode, if (KPR_playerNation) then {"Player"} else {"Uniform"}];
+    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3 - Nation by: %4", count KPR_players, count KPR_uniforms, KPR_autoMode, if (KPR_playerNation) then {"Player"} else {"Uniform"}];
 };
 
 if (hasInterface) then {
@@ -98,7 +89,7 @@ if (hasInterface) then {
             _text remoteExec ["diag_log", 2];
         };
 
-        [[_displayname, getPlayerUID player, 0, 3]] remoteExecCall ["KPR_fnc_addPlayer", 2];
+        [[_displayname, getPlayerUID player, 0, 3, 0, 0]] remoteExecCall ["KPR_fnc_addPlayer", 2];
     };
 
     // Check for ACE

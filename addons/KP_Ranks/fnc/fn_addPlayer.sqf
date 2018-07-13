@@ -11,7 +11,7 @@
     Adds a player to the player list.
 
     Parameter(s):
-        0: ARRAY - Array of player data, e.g [Name, Steam UID, Rank, Nation]
+        0: ARRAY - Array of player data, e.g [Name, Steam UID, Rank, Nation, isAdmin, Rating]
 
     Returns:
     BOOL
