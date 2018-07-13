@@ -6,51 +6,61 @@
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
             <English>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</English>
             <German>Wenn dieses Modul gesetzt wird, wird eine Abhängigkeit zur Mod erzeugt.</German>
+            <Polish>Po postawieniu tego modułu w misji, misja będzie zależna od tego moda.</Polish>
         </Key>
         <Key ID="STR_KPR_CONFIG_MODULEDESC2">
             <Original>This way it can be ensured that every player loads the mod.</Original>
             <English>This way it can be ensured that every player loads the mod.</English>
             <German>Hierdurch kann sichergestellt werden, dass jeder Spieler die Mod lädt.</German>
+            <Polish>W ten sposób można wymusić aby każdy gracz załadował tego moda.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOENABLE">
             <Original>Automatic Mode</Original>
             <English>Automatic Mode</English>
             <German>Automatik Modus</German>
+            <Polish>Tryb automatyczny</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOENABLEDESC">
             <Original>Enabling this will apply the insignia automatically on the players uniform.</Original>
             <English>Enabling this will apply the insignia automatically on the players uniform.</English>
             <German>Bei Aktivierung wird das Dienstgradabzeichen automatisch auf der Uniform gesetzt und aktualisiert.</German>
+            <Polish>Właczenie tego spowoduje że insygnia bedą automatycznie dodawane do munduru gracza.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOINTERVAL">
             <Original>Automatic Mode Interval</Original>
             <English>Automatic Mode Interval</English>
             <German>Automatik Modus Intervall</German>
+            <Polish>Cykl trybu automatycznego</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOINTERVALDESC">
             <Original>Interval between each insignia auto assignment in seconds.</Original>
             <English>Interval between each insignia auto assignment in seconds.</English>
             <German>Intervall in Sekunden zwischen den automatischen Aktualierungen des Dienstgradabzeichens.</German>
+            <Polish>Okres czasu w sekundach między cyklami automatycznego przypisywania insygniów.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYERNATION">
             <Original>Nation connected to player</Original>
             <English>Nation connected to player</English>
             <German>Nation an Spieler gebunden</German>
+            <Polish>Nacja powiązana z graczem</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYERNATIONDESC">
             <Original>If enabled, the nationality is connected to the player, otherwise it's set by the uniform.</Original>
             <English>If enabled, the nationality is connected to the player, otherwise it's set by the uniform.</English>
             <German>Wenn aktiviert, wird die Nationalität auf den Spieler bezogen, ansonsten durch die Uniform festgelegt.</German>
+            <Polish>Jeżeli włączone gracz będzie otrzymywał insygnia z wybranej nacji, w przeciwnym wypadku insygnia zależą od munduru.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_EXTLOG">
             <Original>Extended logging</Original>
             <English>Extended logging</English>
             <German>Erweiterte Logausgabe</German>
+            <Polish>Rozszerzone logowanie</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_EXTLOGDESC">
             <Original>If enabled, the serverlog will display additional information from the clients.</Original>
             <English>If enabled, the serverlog will display additional information from the clients.</English>
             <German>Wenn aktiviert, werden zusätzliche Informationen von den Clients im Serverlog ausgegeben.</German>
+            <Polish>Włączenie spowoduje że log serwera będzie zawierał dodatkowe informacje o działaniu moda po stronie klientów.</Polish>
         </Key>
     </Package>
     <Package name="General">
@@ -58,6 +68,7 @@
             <Original>Check Rank</Original>
             <English>Check Rank</English>
             <German>Dienstgrad prüfen</German>
+            <Polish>Sprawdź rangę</Polish>
         </Key>
     </Package>
     <Package name="Dialog">
@@ -65,116 +76,139 @@
             <Original>KP Ranks - Player Management</Original>
             <English>KP Ranks - Player Management</English>
             <German>KP Ranks - Spielerverwaltung</German>
+            <Polish>KP Ranks - Zarządzanie graczami</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_YES">
             <Original>Yes</Original>
             <English>Yes</English>
             <German>Ja</German>
+            <Polish>Tak</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_NO">
             <Original>No</Original>
             <English>No</English>
             <German>Nein</German>
+            <Polish>Nie</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_PLAYER">
             <Original>Player</Original>
             <English>Player</English>
             <German>Spieler</German>
+            <Polish>Gracz</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADMIN">
             <Original>KPR Admin</Original>
             <English>KPR Admin</English>
             <German>KPR Admin</German>
+            <Polish>KPR Admin</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RANK">
             <Original>Rank</Original>
             <English>Rank</English>
             <German>Dienstgrad</German>
+            <Polish>Ranga</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_NATION">
             <Original>Nation</Original>
             <English>Nation</English>
             <German>Nation</German>
+            <Polish>Nacja</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DEL">
             <Original>Delete</Original>
             <English>Delete</English>
             <German>Löschen</German>
+            <Polish>Usuń</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADMINDESC">
             <Original>Should the player have access to this dialog?</Original>
             <English>Should the player have access to this dialog?</English>
             <German>Soll der Spieler Zugang zu diesem Dialog haben?</German>
+            <Polish>Czy gracz powinien mieć dostęp do tego dialogu?</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DELDESC">
             <Original>Marks this player for deletion upon save.</Original>
             <English>Marks this player for deletion upon save.</English>
             <German>Markiert den Spieler zur Löschung.</German>
+            <Polish>Oznacz gracza do usunięcia przy następnym zapisie.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_BWF">
             <Original>Bundeswehr Wood</Original>
             <English>Bundeswehr Wood</English>
             <German>BW Flecktarn</German>
+            <Polish>Bundeswehr Leśny</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_BWT">
             <Original>Bundeswehr Desert</Original>
             <English>Bundeswehr Desert</English>
             <German>BW Tropentarn</German>
+            <Polish>Bundeswehr Pustynny</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_CRO">
             <Original>Croatian Army</Original>
             <English>Croatian Army</English>
             <German>Kroatische Armee</German>
+            <Polish>Chorwacka Armia</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_USA">
             <Original>US Army</Original>
             <English>US Army</English>
             <German>US Army</German>
+            <Polish>US Army</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RESET">
             <Original>Reset</Original>
             <English>Reset</English>
             <German>Zurücksetzen</German>
+            <Polish>Reset</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RESETDESC">
             <Original>Discard all current changes.</Original>
             <English>Discard all current changes.</English>
             <German>Alle momentanen Änderungen verwerfen.</German>
+            <Polish>Usuń obecne zmiany.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORT">
             <Original>Import</Original>
             <English>Import</English>
             <German>Importieren</German>
+            <Polish>Importuj</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORTDESC">
             <Original>Imports data from another server via the stored data in your profile.</Original>
             <English>Imports data from another server via the stored data in your profile.</English>
             <German>Datenimport von einem anderen Server über die gespeicherten Daten in deinem Profil.</German>
+            <Polish>Importuje dane z innego serwera poprzez dane zapisane w twoim profilu użytkownika.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORT">
             <Original>Export</Original>
             <English>Export</English>
             <German>Exportieren</German>
+            <Polish>Eksportuj</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORTDESC">
             <Original>Exports data to a transport variable in your profile.</Original>
             <English>Exports data to a transport variable in your profile.</English>
             <German>Datenexport der Daten über eine Transportvariable in deinem Profil.</German>
+            <Polish>Eksportuje dane do zmiennej w twoim profilu użytkownika.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORTDONE">
             <Original>Export successful.</Original>
             <English>Exports successful.</English>
             <German>Datenexport erfolgreich.</German>
+            <Polish>Eksport zakończony powodzeniem.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVE">
             <Original>Save</Original>
             <English>Save</English>
             <German>Speichern</German>
+            <Polish>Zapisz</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVEDESC">
             <Original>Saves current state of the list.</Original>
             <English>Saves current state of the list.</English>
             <German>Speichert den aktuellen Stand der Liste.</German>
+            <Polish>Zapisuje obecny stan listy.</Polish>
         </Key>
     </Package>
 </Project>
