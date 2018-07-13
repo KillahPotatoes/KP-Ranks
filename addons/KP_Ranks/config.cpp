@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-12
+    Last Update: 2018-07-13
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -164,6 +164,18 @@ class CfgFunctions {
 
             // Opens the player management dialog
             class openDialogPlayers {};
+
+            // Adds edits to a temporary variable until it gets saved
+            class playerAddEdit {};
+
+            // Exports player data
+            class playerExport {};
+
+            // Imports player data
+            class playerImport {};
+
+            // Saves edits from the player management dialog
+            class playerSave {};
 
             // Updates and saves player ranks list
             class savePlayers {};

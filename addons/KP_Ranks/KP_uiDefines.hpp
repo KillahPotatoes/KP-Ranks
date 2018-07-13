@@ -4,7 +4,7 @@
     File: KP_uiDefines.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-12
+    Last Update: 2018-07-13
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -12,6 +12,7 @@
 */
 
 // BI class includes
+// Details via: "Default" call BIS_fnc_exportGUIBaseClasses;
 class ScrollBar;
 class RscActiveText;
 class RscButton;
@@ -20,6 +21,7 @@ class RscCombo;
 class RscControlsGroup;
 class RscShortcutButton;
 class RscText;
+class RscXListBox;
 
 
 /*
@@ -97,6 +99,7 @@ class KP_ShortcutButton: RscShortcutButton {
     colorBackground[] = {0.2, 0.2, 0.2, 1};
     colorBackgroundFocused[] = {0.25, 0.25, 0.25, 1};
     colorBackground2[] = {0.25, 0.25, 0.25, 1};
+    style = 2;
     sizeEx = KP_GUI_TEXT_M;
 }
 
@@ -113,6 +116,11 @@ class KP_CheckBox: RscCheckBox {
     style = 2;
     w = safeZoneW * 0.014;
     h = safeZoneH * 0.025;
+};
+
+// XListBox
+class KP_XListBox: RscXListBox {
+    sizeEx = KP_GUI_TEXT_M;
 };
 
 /*
