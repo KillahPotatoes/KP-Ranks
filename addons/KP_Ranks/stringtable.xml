@@ -96,15 +96,50 @@
             <English>Nation</English>
             <German>Nation</German>
         </Key>
-        <Key ID="STR_KPR_DIALOG_WIPE">
-            <Original>Wipe all</Original>
-            <English>Wipe all</English>
-            <German>Alles löschen</German>
+        <Key ID="STR_KPR_DIALOG_DEL">
+            <Original>Delete</Original>
+            <English>Delete</English>
+            <German>Löschen</German>
         </Key>
-        <Key ID="STR_KPR_DIALOG_WIPEDESC">
-            <Original>Deletes all player data from the server. NO CONFIRMATION PROMPT!</Original>
-            <English>Deletes all player data from the server. NO CONFIRMATION PROMPT!</English>
-            <German>Löscht alle Spielerdaten vom Server. KEINE SICHERHEITSABFRAGE!</German>
+        <Key ID="STR_KPR_DIALOG_ADMINDESC">
+            <Original>Should the player have access to this dialog?</Original>
+            <English>Should the player have access to this dialog?</English>
+            <German>Soll der Spieler Zugang zu diesem Dialog haben?</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_DELDESC">
+            <Original>Marks this player for deletion upon save.</Original>
+            <English>Marks this player for deletion upon save.</English>
+            <German>Markiert den Spieler zur Löschung.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_BWF">
+            <Original>Bundeswehr Wood</Original>
+            <English>Bundeswehr Wood</English>
+            <German>BW Flecktarn</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_BWT">
+            <Original>Bundeswehr Desert</Original>
+            <English>Bundeswehr Desert</English>
+            <German>BW Tropentarn</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_CRO">
+            <Original>Croatian Army</Original>
+            <English>Croatian Army</English>
+            <German>Kroatische Armee</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_USA">
+            <Original>US Army</Original>
+            <English>US Army</English>
+            <German>US Army</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_RESET">
+            <Original>Reset</Original>
+            <English>Reset</English>
+            <German>Zurücksetzen</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_RESETDESC">
+            <Original>Discard all current changes.</Original>
+            <English>Discard all current changes.</English>
+            <German>Alle momentanen Änderungen verwerfen.</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORT">
             <Original>Import</Original>
@@ -112,9 +147,9 @@
             <German>Importieren</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORTDESC">
-            <Original>Import data from another server from the clipboard.</Original>
-            <English>Import data from another server from the clipboard.</English>
-            <German>Datenimport von einem anderen Server aus der Zwischenablage.</German>
+            <Original>Imports data from another server via the stored data in your profile.</Original>
+            <English>Imports data from another server via the stored data in your profile.</English>
+            <German>Datenimport von einem anderen Server über die gespeicherten Daten in deinem Profil.</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORT">
             <Original>Export</Original>
@@ -122,9 +157,14 @@
             <German>Exportieren</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORTDESC">
-            <Original>Exports data to the clipboard.</Original>
-            <English>Exports data to the clipboard.</English>
-            <German>Datenexport in die Zwischenablage.</German>
+            <Original>Exports data to a transport variable in your profile.</Original>
+            <English>Exports data to a transport variable in your profile.</English>
+            <German>Datenexport der Daten über eine Transportvariable in deinem Profil.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_EXPORTDONE">
+            <Original>Export successful.</Original>
+            <English>Exports successful.</English>
+            <German>Datenexport erfolgreich.</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVE">
             <Original>Save</Original>

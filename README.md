@@ -66,6 +66,8 @@ You should have received a copy of the GNU General Public License along with thi
 * Added: CBA config entries.
 * Added: CBA Settings.
 * Added: ACE Interaction and Vanilla action to check the current rank.
+* Added: Multi language support via stringtable.
+* Added: Dialog for player management without the need to edit files and restart the server.
 * Tweaked: Editor module is now just available to create a dependency in a mission.
 * Removed: Unnecessary loops.
 * Removed: Manual function compiling.

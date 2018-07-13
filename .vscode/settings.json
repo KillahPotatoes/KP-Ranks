@@ -11,6 +11,7 @@
         "CBA_Settings_fnc_init",
         "KPR_autoMode",
         "KPR_autoModeInterval",
+        "KPR_editPlayers",
         "KPR_extendedLog",
         "KPR_playerNation",
         "KPR_fnc_addActions",
