@@ -20,8 +20,11 @@
 
 params [["_showHint", false]];
 
+// Get current player list index
+private _index = KPR_players findIf {_x select 1 == getPlayerUID player};
+
 // Get current player rank
-private _rank = player getVariable ["KPR_rank", 0];
+private _rank = KPR_players select _index select 2;
 
 // Bool for kind of hint
 private _validUniform = false;
@@ -40,7 +43,19 @@ private _displayname = "NONE";
 // Get configClass of the insignia, if player wears a supported uniform
 if (_index != -1) then {
     _validUniform = true;
-    _insigniaClass = [["CfgUnitInsignia", format ["KPR_%1_%2", KPR_uniforms select _index select 1, str _rank]], configNull] call BIS_fnc_loadClass;
+
+    private _nation = KPR_uniforms select _index select 1;
+    if (KPR_playerNation) then {_nation = KPR_players select _index select 3;};
+
+    switch (_nation) do {
+        case 0: {_nation = "BWF";};
+        case 1: {_nation = "BWT";};
+        case 2: {_nation = "CRO";};
+        case 3: {_nation = "USA";};
+        default {_nation = "USA";};
+    };
+
+    _insigniaClass = [["CfgUnitInsignia", format ["KPR_%1_%2", _nation, str _rank]], configNull] call BIS_fnc_loadClass;
 };
 
 // If it's a valid uniform, get specific values for material and texture of the insignia

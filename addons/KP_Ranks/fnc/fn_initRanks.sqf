@@ -4,7 +4,7 @@
     File: fn_initRanks.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-12
+    Last Update: 2018-07-13
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -75,33 +75,30 @@ if (hasInterface) then {
     _displayname = _displayname + name player;
 
     // Get and set player rank
-    private _index = KPR_players findIf {_x select 0 == getPlayerUID player};
+    private _index = KPR_players findIf {_x select 1 == getPlayerUID player};
     if (_index != -1) then {
-        // Bind rank number to player
-        player setVariable ["KPR_rank", KPR_players select _index select 2];
-
         if (KPR_extendedLog) then {
-            _text = format ["[KP RANKS] [%1 (%2)] Found in server list with rank: %3", name player, getPlayerUID player, player getVariable ["KPR_rank", 0]];
+            _text = format ["[KP RANKS] [%1 (%2)] Found in server list with rank: %3", name player, getPlayerUID player, KPR_players select _index select 2];
             _text remoteExec ["diag_log", 2];
         };
 
         // Update player name, if it has changed
-        if (KPR_players select _index select 1 != _displayname) then {
+        if (KPR_players select _index select 0 != _displayname) then {
             if (KPR_extendedLog) then {
-                _text = format ["[KP RANKS] [%1 (%2)] Renamed from %3 to %4", name player, getPlayerUID player, KPR_players select _index select 1, _displayname];
+                _text = format ["[KP RANKS] [%1 (%2)] Renamed from %3 to %4", name player, getPlayerUID player, KPR_players select _index select 0, _displayname];
                 _text remoteExec ["diag_log", 2];
             };
 
-            [[getPlayerUID player, _displayname]] remoteExecCall ["KPR_fnc_updatePlayer", 2];
+            [[_displayname, getPlayerUID player]] remoteExecCall ["KPR_fnc_updatePlayer", 2];
         };
     } else {
+        // Add player if not in server list
         if (KPR_extendedLog) then {
             _text = format ["[KP RANKS] [%1 (%2)] Not in server list, adding player to server list.", name player, getPlayerUID player];
             _text remoteExec ["diag_log", 2];
         };
 
-        player setVariable ["KPR_rank", 0];
-        [[getPlayerUID player, _displayname, 0]] remoteExecCall ["KPR_fnc_addPlayer", 2];
+        [[_displayname, getPlayerUID player, 0, 3]] remoteExecCall ["KPR_fnc_addPlayer", 2];
     };
 
     // Check for ACE
