@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
-    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-12 -->
+    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-14 -->
+    <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-13 -->
     <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
@@ -209,6 +210,16 @@
             <English>Saves current state of the list.</English>
             <German>Speichert den aktuellen Stand der Liste.</German>
             <Polish>Zapisuje obecny stan listy.</Polish>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_SAVING">
+            <Original>Saving changes...</Original>
+            <English>Saving changes...</English>
+            <German>Änderungen werden gespeichert...</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_SAVINGDONE">
+            <Original>Save finished.</Original>
+            <English>Save finished.</English>
+            <German>Speichern abgeschlossen.</German>
         </Key>
     </Package>
 </Project>
