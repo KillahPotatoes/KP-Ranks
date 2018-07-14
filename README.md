@@ -49,8 +49,7 @@ Supported Uniforms:
 * [BW Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
 * [D-Man's Croatian Military mod](https://steamcommunity.com/sharedfiles/filedetails/?id=662483132)
 * [KSK 2035](https://steamcommunity.com/sharedfiles/filedetails/?id=705947357)
-
-**RHS USAF Mod has been checked, but the RHS uniforms have a different format for the insignia area on their uniforms. Therefore it's not compatible with the KP Ranks insignias.**
+* [RHS USAF](https://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
 
 ## Licence
 Copyright (C) 2016
@@ -74,6 +73,7 @@ You should have received a copy of the GNU General Public License along with thi
 * Added: ACE Interaction and Vanilla action to check the current rank.
 * Added: Multi language support via stringtable.
 * Added: Dialog for player management without the need to edit files and restart the server.
+* Added: RHS USAF uniforms support.
 * Tweaked: Editor module is now just available to create a dependency in a mission.
 * Removed: Unnecessary loops.
 * Removed: Manual function compiling.

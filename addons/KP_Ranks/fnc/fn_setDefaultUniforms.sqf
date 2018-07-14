@@ -26,7 +26,7 @@ KPR_uniforms = [
     // 0 = Bundeswehr Flecktarn
     // 1 = Bundeswehr Tropentarn
     // 2 = Croatian Army
-    // 3 = Vanilla NATO (US Army)
+    // 3 = US Army
 
     // Bundeswehr Wood
     ["BWA3_Uniform_Fleck", 0],
@@ -81,7 +81,16 @@ KPR_uniforms = [
     ["U_I_CombatUniform", 3],
     ["U_I_CombatUniform_shortsleeve", 3],
     ["U_I_HeliPilotCoveralls", 3],
-    ["U_I_pilotCoveralls", 3]
+    ["rhs_uniform_acu_ucp", 3],
+    ["rhs_uniform_cu_ocp", 3],
+    ["rhs_uniform_cu_ucp", 3],
+    ["rhs_uniform_FROG01_d", 3],
+    ["rhs_uniform_FROG01_wd", 3],
+    ["rhs_uniform_g3_blk", 3],
+    ["rhs_uniform_g3_m81", 3],
+    ["rhs_uniform_g3_mc", 3],
+    ["rhs_uniform_g3_rgr", 3],
+    ["rhs_uniform_g3_tan", 3]
 ];
 
 true

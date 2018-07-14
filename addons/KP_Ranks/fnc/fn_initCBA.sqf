@@ -36,7 +36,7 @@
     "SLIDER",
     [localize "STR_KPR_CBA_AUTOINTERVAL", localize "STR_KPR_CBA_AUTOINTERVALDESC"],
     "KP Ranks",
-    [1, 60, 10, 0],
+    [1, 60, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
 
