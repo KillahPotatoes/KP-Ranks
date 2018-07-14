@@ -71,6 +71,11 @@
             <German>Dienstgrad prüfen</German>
             <Polish>Sprawdź rangę</Polish>
         </Key>
+        <Key ID="STR_KPR_ACTION_PLAYERMANAGE">
+            <Original>KPR Player Management</Original>
+            <English>KPR Player Management</English>
+            <German>KPR Spielerverwaltung</German>
+        </Key>
     </Package>
     <Package name="Dialog">
         <Key ID="STR_KPR_DIALOG_PLAYERMANAGE">

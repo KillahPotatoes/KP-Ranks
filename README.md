@@ -31,6 +31,12 @@ Beside of the possibility to manage the ranks of your players you can also enabl
 * Optional automatic mode which ensures that the player has always the insignia on his uniform. (deactivates manual action)
 * Optional leveling system which handles promotion and degradation of players automatically depending on their score.
 
+## Languages
+Currently the mod is localized for:
+* English
+* German
+* Polish
+
 ## Mods
 Required:
 * [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
