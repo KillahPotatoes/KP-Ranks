@@ -21,10 +21,10 @@
 params [["_showHint", false]];
 
 // Get current player list index
-private _index = KPR_players findIf {_x select 1 == getPlayerUID player};
+private _indexP = KPR_players findIf {_x select 1 == getPlayerUID player};
 
 // Get current player rank
-private _rank = KPR_players select _index select 2;
+private _rank = KPR_players select _indexP select 2;
 
 // Bool for kind of hint
 private _validUniform = false;
@@ -33,7 +33,7 @@ private _validUniform = false;
 private _insigniaClass = configNull;
 
 // Get index of the current player uniform
-private _index = KPR_uniforms findIf {_x select 0 == uniform player};
+private _indexU = KPR_uniforms findIf {_x select 0 == uniform player};
 
 // Placeholder with default values
 private _material = "\a3\data_f\default.rvmat";
@@ -41,11 +41,11 @@ private _texture = "#(rgb,8,8,3)color(0,0,0,0)";
 private _displayname = "NONE";
 
 // Get configClass of the insignia, if player wears a supported uniform
-if (_index != -1) then {
+if (_indexU != -1) then {
     _validUniform = true;
 
-    private _nation = KPR_uniforms select _index select 1;
-    if (KPR_playerNation) then {_nation = KPR_players select _index select 3;};
+    private _nation = KPR_uniforms select _indexU select 1;
+    if (KPR_playerNation) then {_nation = KPR_players select _indexP select 3;};
 
     switch (_nation) do {
         case 0: {_nation = "BWF";};
