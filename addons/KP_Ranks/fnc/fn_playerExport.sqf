@@ -17,7 +17,7 @@
     BOOL
 */
 
-player setVariable ["KPR_pClipboard", KPR_players];
+player setVariable ["KPR_pClipboard", +KPR_players];
 findDisplay 7580821 displayCtrl 75802 ctrlEnable true;
 
 hint localize "STR_KPR_DIALOG_EXPORTDONE";
