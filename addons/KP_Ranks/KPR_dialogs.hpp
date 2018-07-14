@@ -79,7 +79,7 @@ class KPR_playerList {
         class KPR_DialogButtonS1: KP_DialogButtonS1 {
             text = "$STR_KPR_DIALOG_RESET";
             tooltip = "$STR_KPR_DIALOG_RESETDESC";
-            onButtonClick = "closeDialog 0; call KPR_fnc_openDialogPlayers";
+            onButtonClick = "closeDialog 0; [{!dialog}, {call KPR_fnc_openDialogPlayers;}] call CBA_fnc_waitUntilAndExecute";
         };
 
         class KPR_DialogButtonS2: KP_DialogButtonS2 {
