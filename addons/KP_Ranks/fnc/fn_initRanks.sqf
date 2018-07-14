@@ -4,7 +4,7 @@
     File: fn_initRanks.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-13
+    Last Update: 2018-07-14
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -55,7 +55,7 @@ if (isServer) then {
 if (hasInterface) then {
     if (KPR_extendedLog) then {
         private _text = format ["[KP RANKS] [%1 (%2)] Connected", name player, getPlayerUID player];
-        _text remoteExec ["diag_log", 2];
+        _text remoteExecCall ["diag_log", 2];
     };
 
     // Get players name with clan prefix
@@ -70,14 +70,14 @@ if (hasInterface) then {
     if (_index != -1) then {
         if (KPR_extendedLog) then {
             _text = format ["[KP RANKS] [%1 (%2)] Found in server list with rank: %3", name player, getPlayerUID player, KPR_players select _index select 2];
-            _text remoteExec ["diag_log", 2];
+            _text remoteExecCall ["diag_log", 2];
         };
 
         // Update player name, if it has changed
         if (KPR_players select _index select 0 != _displayname) then {
             if (KPR_extendedLog) then {
                 _text = format ["[KP RANKS] [%1 (%2)] Renamed from %3 to %4", name player, getPlayerUID player, KPR_players select _index select 0, _displayname];
-                _text remoteExec ["diag_log", 2];
+                _text remoteExecCall ["diag_log", 2];
             };
 
             [[_displayname, getPlayerUID player]] remoteExecCall ["KPR_fnc_updatePlayer", 2];
@@ -86,7 +86,7 @@ if (hasInterface) then {
         // Add player if not in server list
         if (KPR_extendedLog) then {
             _text = format ["[KP RANKS] [%1 (%2)] Not in server list, adding player to server list.", name player, getPlayerUID player];
-            _text remoteExec ["diag_log", 2];
+            _text remoteExecCall ["diag_log", 2];
         };
 
         [[_displayname, getPlayerUID player, 0, 3, 0, 0]] remoteExecCall ["KPR_fnc_addPlayer", 2];
@@ -96,7 +96,7 @@ if (hasInterface) then {
     if (isClass (configfile >> "CfgPatches" >> "ace_interact_menu")) then {
         if (KPR_extendedLog) then {
             _text = format ["[KP RANKS] [%1 (%2)] ACE detected", name player, getPlayerUID player];
-            _text remoteExec ["diag_log", 2];
+            _text remoteExecCall ["diag_log", 2];
         };
 
         // Add self interaction menu entries
@@ -112,7 +112,7 @@ if (hasInterface) then {
 
     if (KPR_extendedLog) then {
         _text = format ["[KP RANKS] [%1 (%2)] Initialization finished", name player, getPlayerUID player];
-        _text remoteExec ["diag_log", 2];
+        _text remoteExecCall ["diag_log", 2];
     };
 };
 

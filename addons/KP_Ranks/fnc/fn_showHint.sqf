@@ -4,7 +4,7 @@
     File: fn_showHint.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-10
+    Last Update: 2018-07-14
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -15,7 +15,7 @@
         1: STRING - OPTIONAL - Insignia texture path (default: "")
 
     Returns:
-    NOTHING
+    BOOL
 */
 
 params [["_text", ""], ["_insignia", ""]];
@@ -27,6 +27,7 @@ if (_text != "") then {
     } else {
         hint _text;
     };
-    uiSleep 5;
-    hintSilent "";
+    [{hintSilent "";}, [], 5] call CBA_fnc_waitAndExecute;
 };
+
+true
