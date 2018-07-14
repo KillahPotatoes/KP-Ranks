@@ -162,6 +162,9 @@ class CfgFunctions {
             // Initialize KP Ranks
             class initRanks {};
 
+            // Check if player is server or KPR admin
+            class isAdmin {};
+
             // Opens the player management dialog
             class openDialogPlayers {};
 

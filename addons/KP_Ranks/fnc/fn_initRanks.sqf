@@ -58,6 +58,8 @@ if (hasInterface) then {
         _text remoteExecCall ["diag_log", 2];
     };
 
+    KPR_isAdmin = false;
+
     // Get players name with clan prefix
     private _displayname = "";
     if !(squadParams player isEqualTo []) then {
@@ -109,6 +111,8 @@ if (hasInterface) then {
         }];
         call KPR_fnc_addActions;
     };
+
+    call KPR_fnc_isAdmin;
 
     if (KPR_extendedLog) then {
         _text = format ["[KP RANKS] [%1 (%2)] Initialization finished", name player, getPlayerUID player];

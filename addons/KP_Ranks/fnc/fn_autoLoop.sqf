@@ -23,7 +23,7 @@ if (!isMultiplayer) exitWith {};
 
 if (!KPR_autoMode) exitWith {};
 
-call KPR_fnc_applyRank;
+[false] call KPR_fnc_applyRank;
 
 [{call KPR_fnc_autoLoop;}, [], KPR_autoModeInterval] call CBA_fnc_waitAndExecute;
 
