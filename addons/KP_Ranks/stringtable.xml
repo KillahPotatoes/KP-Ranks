@@ -76,6 +76,11 @@
             <English>KPR Player Management</English>
             <German>KPR Spielerverwaltung</German>
         </Key>
+        <Key ID="STR_KPR_ACTION_UNIFORMMANAGE">
+            <Original>KPR Uniform Management</Original>
+            <English>KPR Uniform Management</English>
+            <German>KPR Uniformverwaltung</German>
+        </Key>
     </Package>
     <Package name="Dialog">
         <Key ID="STR_KPR_DIALOG_PLAYERMANAGE">
@@ -83,6 +88,11 @@
             <English>KP Ranks - Player Management</English>
             <German>KP Ranks - Spielerverwaltung</German>
             <Polish>KP Ranks - Zarządzanie graczami</Polish>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_UNIFORMMANAGE">
+            <Original>KP Ranks - Uniform Management</Original>
+            <English>KP Ranks - Uniform Management</English>
+            <German>KP Ranks - Uniformverwaltung</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_YES">
             <Original>Yes</Original>

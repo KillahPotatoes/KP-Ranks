@@ -168,6 +168,9 @@ class CfgFunctions {
             // Opens the player management dialog
             class openDialogPlayers {};
 
+            // Opens the uniform management dialog
+            class openDialogUniforms {};
+
             // Adds edits to a temporary variable until it gets saved
             class playerAddEdit {};
 

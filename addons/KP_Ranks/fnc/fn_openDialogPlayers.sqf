@@ -21,9 +21,6 @@
 createDialog "KPR_playerList";
 disableSerialization;
 
-KPR_toAdmin = [];
-KPR_toDelete = [];
-
 private _contentWidth = safeZoneW * (0.5 - 2 * 0.002);
 private _colorGood = [0, 0.8, 0, 1];
 private _colorBad = [0.8, 0, 0, 1];

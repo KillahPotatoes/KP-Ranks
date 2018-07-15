@@ -74,6 +74,7 @@ You should have received a copy of the GNU General Public License along with thi
 * Added: Multi language support via stringtable.
 * Added: Dialog for player management without the need to edit files and restart the server.
 * Added: RHS USAF uniforms support.
+* Tweaked: Insignia material in config changed from general default to BIs insignia material.
 * Tweaked: Editor module is now just available to create a dependency in a mission.
 * Removed: Unnecessary loops.
 * Removed: Manual function compiling.
