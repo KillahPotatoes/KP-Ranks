@@ -95,7 +95,7 @@ if (hasInterface) then {
     };
 
     // Check for ACE
-    if (isClass (configfile >> "CfgPatches" >> "ace_interact_menu")) then {
+    if (isClass (configFile >> "CfgPatches" >> "ace_interact_menu")) then {
         if (KPR_extendedLog) then {
             _text = format ["[KP RANKS] [%1 (%2)] ACE detected", name player, getPlayerUID player];
             _text remoteExecCall ["diag_log", 2];
