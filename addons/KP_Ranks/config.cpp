@@ -195,6 +195,9 @@ class CfgFunctions {
             // Shows a hint for 3 seconds
             class showHint {};
 
+            // Handels a new selection in the uniform list
+            class uniformLBChange {};
+
             // Updates a player name in the player list
             class updatePlayer {};
         };
