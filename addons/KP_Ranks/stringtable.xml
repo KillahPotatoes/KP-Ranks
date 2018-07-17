@@ -89,11 +89,6 @@
             <German>KP Ranks - Spielerverwaltung</German>
             <Polish>KP Ranks - Zarządzanie graczami</Polish>
         </Key>
-        <Key ID="STR_KPR_DIALOG_UNIFORMMANAGE">
-            <Original>KP Ranks - Uniform Management</Original>
-            <English>KP Ranks - Uniform Management</English>
-            <German>KP Ranks - Uniformverwaltung</German>
-        </Key>
         <Key ID="STR_KPR_DIALOG_YES">
             <Original>Yes</Original>
             <English>Yes</English>
@@ -235,6 +230,46 @@
             <Original>Save finished.</Original>
             <English>Save finished.</English>
             <German>Speichern abgeschlossen.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_UNIFORMMANAGE">
+            <Original>KP Ranks - Uniform Management</Original>
+            <English>KP Ranks - Uniform Management</English>
+            <German>KP Ranks - Uniformverwaltung</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_UNIFORMACTIVE">
+            <Original>Active Uniforms</Original>
+            <English>Active Uniforms</English>
+            <German>Aktive Uniformen</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_UNIFORMDETAILS">
+            <Original>Uniform Details</Original>
+            <English>Uniform Details</English>
+            <German>Uniformdetails</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_UNIFORMINACTIVE">
+            <Original>Inactive Uniforms</Original>
+            <English>Inactive Uniforms</English>
+            <German>Inaktive Uniformen</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_ADDUNIFORM">
+            <Original>Add</Original>
+            <English>Add</English>
+            <German>Hinzfg</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_ADDUNIFORMDESC">
+            <Original>Add selected uniform to the active list.</Original>
+            <English>Add selected uniform to the active list.</English>
+            <German>Ausgewählte Uniform den aktiven Uniformen hinzufügen.</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_DELUNIFORM">
+            <Original>Del</Original>
+            <English>Del</English>
+            <German>Entf</German>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_DELUNIFORMDESC">
+            <Original>Remove selected uniform from the active list.</Original>
+            <English>Remove selected uniform from the active list.</English>
+            <German>Ausgewählte Uniform von den aktiven Uniformen entfernen.</German>
         </Key>
     </Package>
 </Project>
