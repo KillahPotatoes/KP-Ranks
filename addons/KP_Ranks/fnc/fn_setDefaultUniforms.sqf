@@ -38,6 +38,13 @@ KPR_uniforms = [
     ["IP_U_B_CombatUniform_light_KSK_Tropic_shortsleeve", 0],
     ["IP_U_B_ReconUniform_KSK_Tropic", 0],
     ["IP_U_B_ReconUniform_Rolled_KSK_Tropic", 0],
+    ["PBW_Uniform1_fleck", 0],
+    ["PBW_Uniform1H_fleck", 0],
+    ["PBW_Uniform2_fleck", 0],
+    ["PBW_Uniform3_fleck", 0],
+    ["PBW_Uniform3K_fleck", 0],
+    ["PBW_Uniform4_fleck", 0],
+    ["PBW_Uniform4K_fleck", 0],
 
     // Bundeswehr Desert
     ["BWA3_Uniform_Tropen", 1],
@@ -45,6 +52,13 @@ KPR_uniforms = [
     ["BWA3_Uniform2_Tropen", 1],
     ["BWA3_Uniform2_idz_Tropen", 1],
     ["BWA3_Uniform3_idz_Tropen", 1],
+    ["PBW_Uniform1_tropen", 0],
+    ["PBW_Uniform1H_tropen", 0],
+    ["PBW_Uniform2_tropen", 0],
+    ["PBW_Uniform3_tropen", 0],
+    ["PBW_Uniform3K_tropen", 0],
+    ["PBW_Uniform4_tropen", 0],
+    ["PBW_Uniform4K_tropen", 0],
 
     // Croatian Army
     ["U_DMan_CA_CombatUniform_Des", 2],

@@ -46,6 +46,7 @@ Supported:
 
 Supported Uniforms:
 * Vanilla NATO Uniforms
+* [Bundeswehr Kleiderkammer (PBW)](https://steamcommunity.com/sharedfiles/filedetails/?id=835394852)
 * [BW Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
 * [D-Man's Croatian Military mod](https://steamcommunity.com/sharedfiles/filedetails/?id=662483132)
 * [KSK 2035](https://steamcommunity.com/sharedfiles/filedetails/?id=705947357)
