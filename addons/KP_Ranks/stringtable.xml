@@ -251,20 +251,10 @@
             <English>Inactive Uniforms</English>
             <German>Inaktive Uniformen</German>
         </Key>
-        <Key ID="STR_KPR_DIALOG_ADDUNIFORM">
-            <Original>Add</Original>
-            <English>Add</English>
-            <German>Hinzfg</German>
-        </Key>
         <Key ID="STR_KPR_DIALOG_ADDUNIFORMDESC">
             <Original>Add selected uniform to the active list.</Original>
             <English>Add selected uniform to the active list.</English>
             <German>Ausgewählte Uniform den aktiven Uniformen hinzufügen.</German>
-        </Key>
-        <Key ID="STR_KPR_DIALOG_DELUNIFORM">
-            <Original>Del</Original>
-            <English>Del</English>
-            <German>Entf</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_DELUNIFORMDESC">
             <Original>Remove selected uniform from the active list.</Original>
