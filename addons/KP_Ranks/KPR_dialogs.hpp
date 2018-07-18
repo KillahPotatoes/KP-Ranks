@@ -4,7 +4,7 @@
     File: KPR_dialogs.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-17
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -109,8 +109,8 @@ class KPR_playerList {
 class KPR_uniformList {
     idd = 7580822;
     movingEnable = 0;
-    onLoad = "KPR_editUniforms = []; KPR_activeUniforms = []; KPR_inactiveUniforms = []";
-    onUnload = "KPR_editUniforms = nil; KPR_activeUniforms = nil; KPR_inactiveUniforms = nil;";
+    onLoad = "KPR_activeUniforms = []; KPR_inactiveUniforms = []";
+    onUnload = "KPR_activeUniforms = nil; KPR_inactiveUniforms = nil;";
 
     class controlsBackground {
         class KPR_DialogTitle: KP_DialogTitle {
@@ -218,7 +218,7 @@ class KPR_uniformList {
             w = KP_GETWPLAIN(KP_WIDTH_VAL,16);
             text = "<<";
             tooltip = "$STR_KPR_DIALOG_ADDUNIFORMDESC";
-            onButtonClick = "hint 'To Active'";
+            onButtonClick = "['add'] call KPR_fnc_uniformMove";
         };
 
         class KPR_saveUniform: KPR_addActive {
@@ -226,7 +226,7 @@ class KPR_uniformList {
             x = KP_GETCX(KP_X_VAL,KP_WIDTH_VAL,7,16);
             w = KP_GETWPLAIN(KP_WIDTH_VAL,8);
             text = "$STR_KPR_DIALOG_SAVE";
-            onButtonClick = "hint 'Save'";
+            onButtonClick = "call KPR_fnc_uniformSave";
         };
 
         class KPR_delActive: KPR_addActive {
@@ -234,7 +234,7 @@ class KPR_uniformList {
             x = KP_GETX(KP_X_VAL,KP_WIDTH_VAL,9,16);
             text = ">>";
             tooltip = "$STR_KPR_DIALOG_DELUNIFORMDESC";
-            onButtonClick = "hint 'To Inactive'";
+            onButtonClick = "['del'] call KPR_fnc_uniformMove";
         };
 
         class KPR_DialogButtonS2: KP_DialogButton {

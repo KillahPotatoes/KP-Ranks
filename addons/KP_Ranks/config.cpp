@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-14
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -189,14 +189,26 @@ class CfgFunctions {
             // Updates and saves player ranks list
             class savePlayers {};
 
+            // Updates and saves active uniforms list
+            class saveUniforms {};
+
             // Apply the default values for the uniform list
             class setDefaultUniforms {};
 
             // Shows a hint for 3 seconds
             class showHint {};
 
-            // Handels a new selection in the uniform list
+            // Fills/Updates the active and inactive uniform list
+            class uniformFill {};
+
+            // Handles a new selection in the uniform list
             class uniformLBChange {};
+
+            // Switch a uniform from active to inactive list or vice versa
+            class uniformMove {};
+
+            // Saves changes at the currently selected uniform
+            class uniformSave {};
 
             // Updates a player name in the player list
             class updatePlayer {};

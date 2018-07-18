@@ -26,6 +26,7 @@
         "KPR_fnc_openDialogUniforms",
         "KPR_fnc_savePlayers",
         "KPR_fnc_setDefaultUniforms",
-        "KPR_fnc_showHint"
+        "KPR_fnc_showHint",
+        "KPR_fnc_uniformFill"
     ]
 }

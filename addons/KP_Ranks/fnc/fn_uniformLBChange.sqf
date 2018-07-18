@@ -4,7 +4,7 @@
     File: fn_uniformLBChange.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-17
-    Last Update: 2018-07-17
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -22,24 +22,15 @@ params ["_kind", "_index"];
 
 // Dialog IDCs and controls
 private _dialog = findDisplay 7580822;
-private _ctrlsLbActIdc = 75801;
-private _ctrlsLbInactIdc = 75802;
-private _ctrlsPictureIdc = 75803;
-private _ctrlsClassIdc = 75804;
-private _ctrlsAuthorIdc = 75805;
-private _ctrlsLbDropdownIdc = 75806;
-private _ctrlsToActiveIdc = 75807;
-private _ctrlsSaveUniformIdc = 75808;
-private _ctrlsToInactiveIdc = 75809;
-private _ctrlsLbAct = _dialog displayCtrl _ctrlsLbActIdc;
-private _ctrlsLbInact = _dialog displayCtrl _ctrlsLbInactIdc;
-private _ctrlsPicture = _dialog displayCtrl _ctrlsPictureIdc;
-private _ctrlsClass = _dialog displayCtrl _ctrlsClassIdc;
-private _ctrlsAuthor = _dialog displayCtrl _ctrlsAuthorIdc;
-private _ctrlsLbDropdown = _dialog displayCtrl _ctrlsLbDropdownIdc;
-private _ctrlsToActive = _dialog displayCtrl _ctrlsToActiveIdc;
-private _ctrlsSaveUniform = _dialog displayCtrl _ctrlsSaveUniformIdc;
-private _ctrlsToInactive = _dialog displayCtrl _ctrlsToInactiveIdc;
+private _ctrlsLbAct = _dialog displayCtrl 75801;
+private _ctrlsLbInact = _dialog displayCtrl 75802;
+private _ctrlsPicture = _dialog displayCtrl 75803;
+private _ctrlsClass = _dialog displayCtrl 75804;
+private _ctrlsAuthor = _dialog displayCtrl 75805;
+private _ctrlsLbDropdown = _dialog displayCtrl 75806;
+private _ctrlsToActive = _dialog displayCtrl 75807;
+private _ctrlsSaveUniform = _dialog displayCtrl 75808;
+private _ctrlsToInactive = _dialog displayCtrl 75809;
 
 // Config variable
 private _config = configFile >> "CfgWeapons";
