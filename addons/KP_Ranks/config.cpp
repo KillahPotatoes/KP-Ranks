@@ -198,8 +198,14 @@ class CfgFunctions {
             // Shows a hint for 3 seconds
             class showHint {};
 
+            // Exports uniform data
+            class uniformExport {};
+
             // Fills/Updates the active and inactive uniform list
             class uniformFill {};
+
+            // Imports uniform data
+            class uniformImport {};
 
             // Handles a new selection in the uniform list
             class uniformLBChange {};

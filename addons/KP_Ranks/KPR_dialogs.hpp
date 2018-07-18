@@ -241,14 +241,14 @@ class KPR_uniformList {
             idc = 758010;
             text = "$STR_KPR_DIALOG_IMPORT";
             tooltip = "$STR_KPR_DIALOG_IMPORTDESC";
-            onButtonClick = "hint 'Import'";
+            onButtonClick = "call KPR_fnc_uniformImport";
         };
 
         class KPR_DialogButtonS3: KP_DialogButton {
             x = KP_GETX(KP_X_VAL,KP_WIDTH_VAL,3,4);
             text = "$STR_KPR_DIALOG_EXPORT";
             tooltip = "$STR_KPR_DIALOG_EXPORTDESC";
-            onButtonClick = "hint 'Export'";
+            onButtonClick = "call KPR_fnc_uniformExport";
         };
     };
 };
