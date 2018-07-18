@@ -4,7 +4,7 @@
     File: fn_playerAddEdit.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-13
-    Last Update: 2018-07-14
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -18,7 +18,7 @@
     BOOL
 */
 
-params ["_kind","_values"];
+params ["_kind", "_values"];
 
 // Colors for ActiveText change
 private _colorGood = [0, 0.8, 0, 1];
