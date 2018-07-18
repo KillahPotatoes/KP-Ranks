@@ -4,7 +4,7 @@
     File: KP_uiDefines.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-17
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -240,8 +240,8 @@ class KP_DialogButton: KP_Button {
     (X from 0.15 - 0.85, Y from 0.15 - 0.85)
 */
 
-#define KP_X_VAL_L                      0.25
-#define KP_Y_VAL_L                      0.2
+#define KP_X_VAL_L                      0.15
+#define KP_Y_VAL_L                      0.15
 
 #define KP_WIDTH_VAL_L                  (1 - 2 * KP_X_VAL_L)
 #define KP_HEIGHT_VAL_L                 (1 - 2 * KP_Y_VAL_L - KP_HEIGTH_TITLE - KP_HEIGTH_BUTTON - 2 * KP_SPACING_Y)
@@ -275,17 +275,40 @@ class KP_DialogButtonL: KP_Button {
 };
 
 /*
-// Upper left corner
-#define KP_GUI_POS_X_CORNER             safeZoneX + safeZoneW * 0.035
-#define KP_GUI_POS_Y_CORNER             safeZoneY + safeZoneH * 0.05
-#define KP_GUI_WIDTH_CORNER             safeZoneW * 0.25
-#define KP_GUI_POS_X_CROSS_CORNER       safeZoneX + safeZoneW * 0.265
-#define KP_GUI_POS_Y_CROSS_CORNER       safeZoneY + safeZoneH * 0.055
-#define KP_GUI_POS_X_AREA_CORNER        safeZoneX + safeZoneW * 0.035
-#define KP_GUI_POS_Y_AREA_CORNER        safeZoneY + safeZoneH * (0.05 + KP_GUI_HEIGTH_TITLE + KP_GUI_SPACING_Y)
-#define KP_GUI_WIDTH_AREA_CORNER        safeZoneW * 0.25
-#define KP_GUI_HEIGHT_AREA_CORNER       safeZoneH * (0.75 - KP_GUI_HEIGTH_TITLE - KP_GUI_SPACING_Y)
-#define KP_GUI_POS_X_CONTENT_CORNER     safeZoneX + safeZoneW * (0.035 + KP_GUI_SPACING_X)
-#define KP_GUI_POS_Y_CONTENT_CORNER     safeZoneY + safeZoneH * (0.05 + KP_GUI_HEIGTH_TITLE + 2 * KP_GUI_SPACING_Y)
-#define KP_GUI_WIDTH_CONTENT_CORNER     safeZoneW * (0.25 - 2 * KP_GUI_SPACING_X)
+    --- Corner dialog components ---
+    (X from 0.035 - 0.285, Y from 0.05 - 0.8)
 */
+
+#define KP_X_VAL_C                      0.035
+#define KP_Y_VAL_C                      0.05
+
+#define KP_WIDTH_VAL_C                  0.25
+#define KP_HEIGHT_VAL_C                 (0.75 - KP_HEIGTH_TITLE - KP_HEIGTH_BUTTON - 2 * KP_SPACING_Y)
+
+// Title bar
+class KP_DialogTitleC: KP_Title {
+    x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,1);
+    y = safeZoneY + safeZoneH * KP_Y_VAL_C;
+    w = KP_GETWPLAIN(KP_WIDTH_VAL_C,1);
+};
+
+// Cross symbol
+class KP_DialogCrossL: KP_CloseCross {
+    x = KP_GETX_CROSS(KP_X_VAL_C);
+    y = KP_GETY_CROSS(KP_Y_VAL_C);
+};
+
+// Background
+class KP_DialogBackgroundL: KP_Background {
+    x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,1);
+    y = KP_GETY_AREA(KP_Y_VAL_C);
+    w = KP_GETWPLAIN(KP_WIDTH_VAL_C,1);
+    h = safeZoneH * KP_HEIGHT_VAL_C;
+};
+
+// Button pos 1 in 2 button row
+class KP_DialogButtonL: KP_Button {
+    x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,2);
+    y = KP_GETY_BELOW(KP_Y_VAL_C,KP_HEIGHT_VAL_C);
+    w = KP_GETWPLAIN(KP_WIDTH_VAL_C,2);
+};
