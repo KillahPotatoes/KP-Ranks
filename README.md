@@ -67,7 +67,7 @@ You should have received a copy of the GNU General Public License along with thi
 ## Changelog
 ### v2.0.0
 * Added: New codebase.
-* Added: CfgFunctions.
+* Added: Usage of CfgFunctions.
 * Added: Uniforms and player ranks stored in the servers profile namespace.
 * Added: CBA config entries.
 * Added: CBA Settings.
