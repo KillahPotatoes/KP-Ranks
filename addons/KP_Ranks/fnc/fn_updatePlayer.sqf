@@ -4,7 +4,7 @@
     File: fn_updatePlayer.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-12
-    Last Update: 2018-07-14
+    Last Update: 2018-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -19,7 +19,7 @@
 
 if (!isServer) exitWith {};
 
-params [["_update",[]]];
+params [["_update", []]];
 
 if (_update isEqualTo []) exitWith {diag_log "[KP RANKS] [SERVER] KPR_fnc_updatePlayer called with no data provided.";};
 
