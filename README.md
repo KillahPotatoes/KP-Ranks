@@ -44,7 +44,7 @@ Required:
 Supported:
 * [ACE 3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
 
-Supported Uniforms:
+Supported Uniforms by default:
 * Vanilla NATO Uniforms
 * [Bundeswehr Kleiderkammer (PBW)](https://steamcommunity.com/sharedfiles/filedetails/?id=835394852)
 * [BW Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
@@ -65,7 +65,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 ## Changelog
-### v2.0
+### v2.0.0
 * Added: New codebase.
 * Added: CfgFunctions.
 * Added: Uniforms and player ranks stored in the servers profile namespace.
@@ -75,6 +75,8 @@ You should have received a copy of the GNU General Public License along with thi
 * Added: Multi language support via stringtable.
 * Added: Dialog for player management without the need to edit files and restart the server.
 * Added: RHS USAF uniforms support.
+* Added: BW Kleiderkammer uniforms support.
+* Added: Dialog for uniform management, so admins can choose supported uniforms on the fly during the game.
 * Tweaked: Insignia material in config changed from general default to BIs insignia material.
 * Tweaked: Editor module is now just available to create a dependency in a mission.
 * Removed: Unnecessary loops.

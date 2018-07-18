@@ -218,6 +218,7 @@ class KPR_uniformList {
             w = KP_GETWPLAIN(KP_WIDTH_VAL,16);
             text = "<<";
             tooltip = "$STR_KPR_DIALOG_ADDUNIFORMDESC";
+            onButtonClick = "hint 'To Active'";
         };
 
         class KPR_saveUniform: KPR_addActive {
@@ -225,6 +226,7 @@ class KPR_uniformList {
             x = KP_GETCX(KP_X_VAL,KP_WIDTH_VAL,7,16);
             w = KP_GETWPLAIN(KP_WIDTH_VAL,8);
             text = "$STR_KPR_DIALOG_SAVE";
+            onButtonClick = "hint 'Save'";
         };
 
         class KPR_delActive: KPR_addActive {
@@ -232,6 +234,7 @@ class KPR_uniformList {
             x = KP_GETX(KP_X_VAL,KP_WIDTH_VAL,9,16);
             text = ">>";
             tooltip = "$STR_KPR_DIALOG_DELUNIFORMDESC";
+            onButtonClick = "hint 'To Inactive'";
         };
 
         class KPR_DialogButtonS2: KP_DialogButton {

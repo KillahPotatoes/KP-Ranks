@@ -79,8 +79,9 @@ _ctrlsLbDropdown lbSetCurSel 3;
 // Hide faction dropdown and buttons, as in initial state there is no uniform selected
 {
     _x ctrlEnable false;
-    _x ctrlShow false;
 } forEach [_ctrlsLbDropdown, _ctrlsToActive, _ctrlsSaveUniform, _ctrlsToInactive];
+
+_ctrlsLbDropdown ctrlShow false;
 
 // Add active uniforms to listbox
 {

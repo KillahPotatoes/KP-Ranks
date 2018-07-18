@@ -54,15 +54,15 @@ class RscXListBox;
     Example: KP_GETCX(KP_X_VAL,KP_WIDTH_VAL,2,4)
     KP_X_VAL -> Left offset of the left dialog side from the edge of the screen
     KP_WIDTH_VAL -> Width of the whole dialog (KP_X_VAL spacing to the left and to the right)
-    2 -> Coordinate of the 3rd element (0,1,2,3,etc.)
+    2 -> Coordinate of the 3rd element position (0,1,2,3,etc.)
     4 -> In relation to a 4 element X grid
 
     GETX is for a coordinate in relation to the whole dialog width
     GETCX is for a coordinate in relation to the content area (which has an equal spacing to all sides)
 */
 
-#define KP_GETX(XVAL,WVAL,ELE,PART)     safeZoneX + safeZoneW * (XVAL + ELE * (WVAL + KP_SPACING_X) / PART)
-#define KP_GETCX(XVAL,WVAL,ELE,PART)    safeZoneX + safeZoneW * (XVAL + (ELE * WVAL + (PART - ELE) * KP_SPACING_X) / PART)
+#define KP_GETX(XVAL,WVAL,POS,GRID)     safeZoneX + safeZoneW * (XVAL + POS * (WVAL + KP_SPACING_X) / GRID)
+#define KP_GETCX(XVAL,WVAL,POS,GRID)    safeZoneX + safeZoneW * (XVAL + (POS * WVAL + (GRID - POS) * KP_SPACING_X) / GRID)
 #define KP_GETX_CROSS(XVAL)             safeZoneX + safeZoneW * (1 - XVAL - 0.02)
 
 /*
@@ -70,13 +70,13 @@ class RscXListBox;
     Example: KP_GETCY(KP_Y_VAL,KP_HEIGHT_VAL,3,8)
     KP_Y_VAL -> Top offset of the dialog top from the edge of the screen
     KP_HEIGHT_VAL -> Height of the area between title bar and bottom buttons in the dialog
-    3 -> Coordinate of the 4th element (0,1,2,3,etc.)
+    3 -> Coordinate of the 4th element position (0,1,2,3,etc.)
     8 -> In relation to a 8 element Y grid
 
     GETY_AREA is for the Y coordinate of the beginning of the background (which frames the content area)
     GETY_BELOW is for the Y coordinate of the buttons below the background
 */
-#define KP_GETCY(YVAL,HVAL,ELE,PART)    safeZoneY + safeZoneH * ((YVAL + KP_HEIGTH_TITLE + KP_SPACING_Y) + (ELE * HVAL + (PART - ELE) * KP_SPACING_Y) / PART)
+#define KP_GETCY(YVAL,HVAL,POS,GRID)    safeZoneY + safeZoneH * ((YVAL + KP_HEIGTH_TITLE + KP_SPACING_Y) + (POS * HVAL + (GRID - POS) * KP_SPACING_Y) / GRID)
 #define KP_GETY_CROSS(YVAL)             safeZoneY + safeZoneH * (YVAL + 0.005)
 #define KP_GETY_AREA(YVAL)              safeZoneY + safeZoneH * (YVAL + KP_HEIGTH_TITLE + KP_SPACING_Y)
 #define KP_GETY_BELOW(YVAL,HVAL)        safeZoneY + safeZoneH * (YVAL + KP_HEIGTH_TITLE + 2 * KP_SPACING_Y + HVAL)
@@ -90,8 +90,8 @@ class RscXListBox;
     GETW is in relation to the content area
     GETWPLAIN is in relation to the whole dialog width (for the buttons below for example)
 */
-#define KP_GETW(WVAL,PARTS)             safeZoneW * ((WVAL - (PARTS + 1) * KP_SPACING_X) / PARTS)
-#define KP_GETWPLAIN(WVAL,PARTS)        safeZoneW * ((WVAL - (PARTS - 1) * KP_SPACING_X) / PARTS)
+#define KP_GETW(WVAL,GRID)             safeZoneW * ((WVAL - (GRID + 1) * KP_SPACING_X) / GRID)
+#define KP_GETWPLAIN(WVAL,GRID)        safeZoneW * ((WVAL - (GRID - 1) * KP_SPACING_X) / GRID)
 
 /*
     Get height for an element
@@ -99,7 +99,7 @@ class RscXListBox;
     KP_HEIGHT_VAL -> Height of the area between title bar and bottom buttons in the dialog
     10 -> Height for an element which fits 10 times in the content area from top to bottom (substracted by spacings to other elements above and below)
 */
-#define KP_GETH(HVAL,PARTS)             safeZoneH * ((HVAL - (PARTS + 1) * KP_SPACING_Y) / PARTS)
+#define KP_GETH(HVAL,GRID)             safeZoneH * ((HVAL - (GRID + 1) * KP_SPACING_Y) / GRID)
 
 /*
     --- General Classes ---
