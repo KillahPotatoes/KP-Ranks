@@ -70,7 +70,7 @@ if (_showHint) then {
     private _text = format ["[KP RANKS] [%1 (%2)] Uniform not supported: %3", name player, getPlayerUID player, uniform player];
 
     if (_validUniform) then {
-        [_displayname, _texture] call KPR_fnc_showHint;
+        [_displayname select [6], _texture] call KPR_fnc_showHint;
         _text = format ["[KP RANKS] [%1 (%2)] Apply Rank %3 on uniform %4", name player, getPlayerUID player, _displayname, uniform player];
     } else {
         ["Uniform not supported"] call KPR_fnc_showHint;
