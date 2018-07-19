@@ -73,10 +73,20 @@
             <English>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</English>
             <German>Aktiviert das KP Ranks Levelsystem. Es kümmert sich um die Beförderungen/Degradierungen abhängig zu Kills, Toden und Spielzeit.</German>
         </Key>
+        <Key ID="STR_KPR_CBA_LEVELDEBUG">
+            <Original>Leveling System Debug</Original>
+            <English>Leveling System Debug</English>
+            <German>Levelsystem Debug</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_LEVELDEBUGDESC">
+            <Original>If enabled, the serverlog will display additional information of the leveling system events.</Original>
+            <English>If enabled, the serverlog will display additional information of the leveling system events.</English>
+            <German>Wenn aktiviert, werden zusätzliche Informationen vom Levelsystem im Serverlog ausgegeben.</German>
+        </Key>
         <Key ID="STR_KPR_CBA_SCORING">
-            <Original>Scoring</Original>
-            <English>Scoring</English>
-            <German>Punktevergabe</German>
+            <Original>Scoring (changes are not retroactive)</Original>
+            <English>Scoring (changes are not retroactive)</English>
+            <German>Punktevergabe (Änderungen sind nicht rückwirkend)</German>
         </Key>
         <Key ID="STR_KPR_CBA_REQUIREMENTS">
             <Original>Requirements</Original>
@@ -89,8 +99,8 @@
             <German>Infanterie</German>
         </Key>
         <Key ID="STR_KPR_CBA_INFDESC">
-            <Original>Earned points for an infantry kill.</Original>
-            <English>Earned points for an infantry kill.</English>
+            <Original>Earned score for an infantry kill.</Original>
+            <English>Earned score for an infantry kill.</English>
             <German>Punkte für das Töten eines feindlichen Infanteristen.</German>
         </Key>
         <Key ID="STR_KPR_CBA_LVH">
@@ -99,8 +109,8 @@
             <German>Leichtes Fahrzeug</German>
         </Key>
         <Key ID="STR_KPR_CBA_LVHDESC">
-            <Original>Earned points for destroying a light vehicle.</Original>
-            <English>Earned points for destroying a light vehicle.</English>
+            <Original>Earned score for destroying a light vehicle.</Original>
+            <English>Earned score for destroying a light vehicle.</English>
             <German>Punkte für die Zerstörung eines leichten Fahrzeugs.</German>
         </Key>
         <Key ID="STR_KPR_CBA_AVH">
@@ -109,8 +119,8 @@
             <German>Gepanzertes Fahrzeug</German>
         </Key>
         <Key ID="STR_KPR_CBA_AVHDESC">
-            <Original>Earned points for destroying an armored vehicle.</Original>
-            <English>Earned points for destroying an armored vehicle.</English>
+            <Original>Earned score for destroying an armored vehicle.</Original>
+            <English>Earned score for destroying an armored vehicle.</English>
             <German>Punkte für die Zerstörung eines gepanzerten Fahrzeugs.</German>
         </Key>
         <Key ID="STR_KPR_CBA_AIR">
@@ -119,19 +129,29 @@
             <German>Luftfahrzeug</German>
         </Key>
         <Key ID="STR_KPR_CBA_AIRDESC">
-            <Original>Earned points for destroying an air vehicle.</Original>
-            <English>Earned points for destroying an air vehicle.</English>
+            <Original>Earned score for destroying an air vehicle.</Original>
+            <English>Earned score for destroying an air vehicle.</English>
             <German>Punkte für die Zerstörung eines Luftfahrzeugs.</German>
         </Key>
-        <Key ID="STR_KPR_CBA_PLAY">
-            <Original>Playtime</Original>
-            <English>Playtime</English>
-            <German>Spielzeit</German>
+        <Key ID="STR_KPR_CBA_PLAYTIME">
+            <Original>Playtime Interval</Original>
+            <English>Playtime Interval</English>
+            <German>Spielzeitintervall</German>
         </Key>
-        <Key ID="STR_KPR_CBA_PLAYDESC">
-            <Original>Earned points for a full hour of playtime on the server.</Original>
-            <English>Earned points for a full hour of playtime on the server.</English>
-            <German>Punkte für eine volle Stunde Spielzeit auf dem Server.</German>
+        <Key ID="STR_KPR_CBA_PLAYTIMEDESC">
+            <Original>Interval in minutes to trigger the playtime points reward.</Original>
+            <English>Interval in minutes to trigger the playtime points reward.</English>
+            <German>Intervall in Minuten, um den Erhalt der Spielzeitbelohnungspunkte auszulösen.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_PLAYPOINTS">
+            <Original>Playtime Points</Original>
+            <English>Playtime Points</English>
+            <German>Spielzeitpunkte</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_PLAYPOINTSDESC">
+            <Original>Earned score for playing the above playtime on the server.</Original>
+            <English>Earned score for playing the above playtime on the server.</English>
+            <German>Punkte für die oben angegebene Spielzeit auf dem Server.</German>
         </Key>
         <Key ID="STR_KPR_CBA_TEAMKILL">
             <Original>Teamkill Penalty</Original>
@@ -159,12 +179,17 @@
             <German>Dienstgradebene</German>
         </Key>
         <Key ID="STR_KPR_CBA_RANKREQDESC">
-            <Original>Required points for a player to reach this rank level.</Original>
-            <English>Required points for a player to reach this rank level.</English>
+            <Original>Required score for a player to reach this rank level.</Original>
+            <English>Required score for a player to reach this rank level.</English>
             <German>Benötigte Punkte, damit ein Spieler diese Dienstgradebene erreicht.</German>
         </Key>
     </Package>
     <Package name="General">
+        <Key ID="STR_KPR_SCORE">
+            <Original>Score</Original>
+            <English>Score</English>
+            <German>Punkte</German>
+        </Key>
         <Key ID="STR_KPR_ACTION_CHECKRANK">
             <Original>Check Rank</Original>
             <English>Check Rank</English>

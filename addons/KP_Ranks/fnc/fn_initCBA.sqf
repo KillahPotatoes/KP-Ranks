@@ -58,7 +58,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_EXTLOG", localize "STR_KPR_CBA_EXTLOGDESC"],
     "KP Ranks",
-    true,
+    false,
     true
 ] call CBA_Settings_fnc_init;
 
@@ -75,6 +75,16 @@
             call KPR_fnc_autoLoop;
         };
     }
+] call CBA_Settings_fnc_init;
+
+// Debug server log output for the leveling system checkbox
+[
+    "KPR_levelDebug",
+    "CHECKBOX",
+    [localize "STR_KPR_CBA_LEVELDEBUG", localize "STR_KPR_CBA_LEVELDEBUGDESC"],
+    "KP Ranks Leveling System",
+    false,
+    true
 ] call CBA_Settings_fnc_init;
 
 // Points for infantry kill
@@ -117,11 +127,21 @@
     true
 ] call CBA_Settings_fnc_init;
 
+// Playtime in minutes needed to trigger points reward
+[
+    "KPR_playtime",
+    "SLIDER",
+    [localize "STR_KPR_CBA_PLAYTIME", localize "STR_KPR_CBA_PLAYTIMEDESC"],
+    ["KP Ranks Leveling System", localize "STR_KPR_CBA_SCORING"],
+    [1, 60, 10080, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Points for playtime
 [
     "KPR_playPoints",
     "SLIDER",
-    [localize "STR_KPR_CBA_PLAY", localize "STR_KPR_CBA_PLAYDESC"],
+    [localize "STR_KPR_CBA_PLAYPOINTS", localize "STR_KPR_CBA_PLAYPOINTSDESC"],
     ["KP Ranks Leveling System", localize "STR_KPR_CBA_SCORING"],
     [1, 100000, 24, 0],
     true

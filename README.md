@@ -29,7 +29,7 @@ Beside of the possibility to manage the ranks of your players you can also enabl
 * Automatically assigns the appropriate insignia depending on the uniform. (e.g. German uniform will get the German insignia)
 * Automatically detects ACE and moves the action to the ACE self-interactions.
 * Optional automatic mode which ensures that the player has always the insignia on his uniform. (deactivates manual action)
-* Optional leveling system which handles promotion and degradation of players automatically depending on their score.
+* Optional leveling system which handles promotion and degradation of players automatically depending on their score and playtime.
 
 ## Languages
 Currently the mod is localized for:
@@ -77,6 +77,7 @@ You should have received a copy of the GNU General Public License along with thi
 * Added: RHS USAF uniforms support.
 * Added: BW Kleiderkammer uniforms support.
 * Added: Dialog for uniform management, so admins can choose supported uniforms on the fly during the game.
+* Added: Optional automatic leveling system.
 * Tweaked: Insignia material in config changed from general default to BIs insignia material.
 * Tweaked: Editor module is now just available to create a dependency in a mission.
 * Removed: Unnecessary loops.
