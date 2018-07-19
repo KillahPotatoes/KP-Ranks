@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
-    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-14 -->
+    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-19 -->
     <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-13 -->
     <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
@@ -62,6 +62,106 @@
             <English>If enabled, the serverlog will display additional information from the clients.</English>
             <German>Wenn aktiviert, werden zusätzliche Informationen von den Clients im Serverlog ausgegeben.</German>
             <Polish>Włączenie spowoduje że log serwera będzie zawierał dodatkowe informacje o działaniu moda po stronie klientów.</Polish>
+        </Key>
+        <Key ID="STR_KPR_CBA_LEVELENB">
+            <Original>Activate Leveling System</Original>
+            <English>Activate Leveling System</English>
+            <German>Aktiviere Levelsystem</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_LEVELENBDESC">
+            <Original>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</Original>
+            <English>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</English>
+            <German>Aktiviert das KP Ranks Levelsystem. Es kümmert sich um die Beförderungen/Degradierungen abhängig zu Kills, Toden und Spielzeit.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_SCORING">
+            <Original>Scoring</Original>
+            <English>Scoring</English>
+            <German>Punktevergabe</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_REQUIREMENTS">
+            <Original>Requirements</Original>
+            <English>Requirements</English>
+            <German>Voraussetzungen</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_INF">
+            <Original>Infantry</Original>
+            <English>Infantry</English>
+            <German>Infanterie</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_INFDESC">
+            <Original>Earned points for an infantry kill.</Original>
+            <English>Earned points for an infantry kill.</English>
+            <German>Punkte für das Töten eines feindlichen Infanteristen.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_LVH">
+            <Original>Light Vehicle</Original>
+            <English>Light Vehicle</English>
+            <German>Leichtes Fahrzeug</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_LVHDESC">
+            <Original>Earned points for destroying a light vehicle.</Original>
+            <English>Earned points for destroying a light vehicle.</English>
+            <German>Punkte für die Zerstörung eines leichten Fahrzeugs.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AVH">
+            <Original>Armored Vehicle</Original>
+            <English>Armored Vehicle</English>
+            <German>Gepanzertes Fahrzeug</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AVHDESC">
+            <Original>Earned points for destroying an armored vehicle.</Original>
+            <English>Earned points for destroying an armored vehicle.</English>
+            <German>Punkte für die Zerstörung eines gepanzerten Fahrzeugs.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AIR">
+            <Original>Air Vehicle</Original>
+            <English>Air Vehicle</English>
+            <German>Luftfahrzeug</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_AIRDESC">
+            <Original>Earned points for destroying an air vehicle.</Original>
+            <English>Earned points for destroying an air vehicle.</English>
+            <German>Punkte für die Zerstörung eines Luftfahrzeugs.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_PLAY">
+            <Original>Playtime</Original>
+            <English>Playtime</English>
+            <German>Spielzeit</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_PLAYDESC">
+            <Original>Earned points for a full hour of playtime on the server.</Original>
+            <English>Earned points for a full hour of playtime on the server.</English>
+            <German>Punkte für eine volle Stunde Spielzeit auf dem Server.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_TEAMKILL">
+            <Original>Teamkill Penalty</Original>
+            <English>Teamkill Penalty</English>
+            <German>Eigenbeschuss Strafe</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_TEAMKILLDESC">
+            <Original>Penalty for killing friendly units.</Original>
+            <English>Penalty for killing friendly units.</English>
+            <German>Strafe für das Töten von befreundeten Einheiten.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_DEATH">
+            <Original>Death Penalty</Original>
+            <English>Death Penalty</English>
+            <German>Ausfallstrafe</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_DEATHDESC">
+            <Original>Penalty for being killed.</Original>
+            <English>Penalty for being killed.</English>
+            <German>Strafe für den Spieler, wenn er getötet wird.</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_RANKREQ">
+            <Original>Rank Level</Original>
+            <English>Rank Level</English>
+            <German>Dienstgradebene</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_RANKREQDESC">
+            <Original>Required points for a player to reach this rank level.</Original>
+            <English>Required points for a player to reach this rank level.</English>
+            <German>Benötigte Punkte, damit ein Spieler diese Dienstgradebene erreicht.</German>
         </Key>
     </Package>
     <Package name="General">

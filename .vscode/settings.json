@@ -16,6 +16,7 @@
         "KPR_editUniforms",
         "KPR_extendedLog",
         "KPR_inactiveUniforms",
+        "KPR_levelSystem",
         "KPR_playerNation",
         "KPR_fnc_addActions",
         "KPR_fnc_applyRank",
