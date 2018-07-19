@@ -93,6 +93,16 @@
             <English>If enabled, the serverlog will display additional information of the leveling system events.</English>
             <German>Wenn aktiviert, werden zusätzliche Informationen vom Levelsystem im Serverlog ausgegeben.</German>
         </Key>
+        <Key ID="STR_KPR_CBA_LEVELANNOUNCE">
+            <Original>Announce Levelchange</Original>
+            <English>Announce Levelchange</English>
+            <German>Level Änderungen mitteilen</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_LEVELANNOUNCEDESC">
+            <Original>If enabled, other players get a notification via system chat if a player was promoted/degraded.</Original>
+            <English>If enabled, other players get a notification via system chat if a player was promoted/degraded.</English>
+            <German>Wenn aktiviert, bekommen andere Spieler per Systemchat einen Hinweis über die Beförderung/Degradierung eines Spielers.</German>
+        </Key>
         <Key ID="STR_KPR_CBA_SCORING">
             <Original>Scoring (changes are not retroactive)</Original>
             <English>Scoring (changes are not retroactive)</English>
@@ -215,6 +225,16 @@
             <Original>KPR Uniform Management</Original>
             <English>KPR Uniform Management</English>
             <German>KPR Uniformverwaltung</German>
+        </Key>
+        <Key ID="STR_KPR_PLAYER_PROMOTED">
+            <Original>%1 was promoted.</Original>
+            <English>%1 was promoted.</English>
+            <German>%1 wurde befördert.</German>
+        </Key>
+        <Key ID="STR_KPR_PLAYER_DEGRADED">
+            <Original>%1 was degraded.</Original>
+            <English>%1 was degraded.</English>
+            <German>%1 wurde degradiert.</German>
         </Key>
     </Package>
     <Package name="Dialog">

@@ -9,7 +9,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/pulls)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/KillahPotatoes/KP-Ranks.svg)](https://github.com/KillahPotatoes/KP-Ranks/pulls?q=is%3Apr+is%3Aclosed)
 
-[BI Forum Thread](https://forums.bistudio.com/topic/195034-kp-ranks/) - [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641) - [Discord](https://discord.gg/bpPUU48)
+[BI Forum Thread](https://forums.bistudio.com/topic/195034-kp-ranks/) - [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641) - [Discord](https://discord.gg/fjSPn8t)
 
 If you like the work and think it's worth a small donation, feel free to use the following link:
 
@@ -17,19 +17,19 @@ If you like the work and think it's worth a small donation, feel free to use the
 
 ## Description
 This mod provides a complete management system for the ranks/levels of the players of a server/community/group. It's configurable completely ingame on the server without the need to edit/maintain scripts or other files. The included insignias are based on the original ones of the corresponding nations and can also be applied to units in the Eden Editor. This way mission makers can give their AI troops an immersive addition.
-Beside of the possibility to manage the ranks of your players you can also enable an optional leveling system. This system will automatically save the score of the players (based on the Vanilla MP scoring), which is earned during their game sessions, and takes care of the promotion and degradation. You can, of course, individually set the needed score to get/keep a rank via the ingame settings.
+Beside of the possibility to manage the ranks of your players you can also enable an optional leveling system. This system will automatically save the score of the players, which is earned during their game sessions, and takes care of the promotion and degradation. You can, of course, individually set the needed score to get/keep a rank, the amount of points a player gets as reward for killing infantry, destroying light, armored or air vehicles and the playtime interval, after which the player gets additional points.
 
 ## Features
 * Currently provides Eden compatible insignias of German Bundeswehr in *Flecktarn* and *Tropentarn* camo pattern, US Army and Croatian Army.
 * Ingame management system for player specific ranks and valid uniforms on servers.
 * Mod settings integrated in the CBA settings system.
-* A manual action for the player to check and apply his current insignia to the uniform.
+* A manual action for the player to check and apply his current insignia to the uniform. (Deactivated when auto mode enabled and level system disabled)
 * An editor module which can be placed by mission makers, to ensure all players will load the mod when playing the mission.
 * Import/Export your KP Ranks player list to exchange them between servers.
 * Automatically assigns the appropriate insignia depending on the uniform. (e.g. German uniform will get the German insignia)
 * Automatically detects ACE and moves the action to the ACE self-interactions.
 * Optional automatic mode which ensures that the player has always the insignia on his uniform. (deactivates manual action)
-* Optional leveling system which handles promotion and degradation of players automatically depending on their score and playtime.
+* Optional leveling system which handles promotion and degradation of players automatically depending on their score and playtime (fully configurable by the server admin).
 
 ## Languages
 Currently the mod is localized for:
