@@ -48,7 +48,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_PLAYERNATION", localize "STR_KPR_CBA_PLAYERNATIONDESC"],
     "KP Ranks",
-    false,
+    true,
     true
 ] call CBA_Settings_fnc_init;
 
@@ -83,7 +83,17 @@
     "SLIDER",
     [localize "STR_KPR_CBA_UPDATEINT", localize "STR_KPR_CBA_UPDATEINTDESC"],
     ["KP Ranks Leveling System"],
-    [1, 60, 5, 0],
+    [1, 60, 1, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Should other players get a notification via system chat if a player was promoted/degraded
+[
+    "KPR_levelAnnounce",
+    "CHECKBOX",
+    [localize "STR_KPR_CBA_LEVELANNOUNCE", localize "STR_KPR_CBA_LEVELANNOUNCEDESC"],
+    "KP Ranks Leveling System",
+    true,
     true
 ] call CBA_Settings_fnc_init;
 
@@ -93,7 +103,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_LEVELDEBUG", localize "STR_KPR_CBA_LEVELDEBUGDESC"],
     "KP Ranks Leveling System",
-    false,
+    true,
     true
 ] call CBA_Settings_fnc_init;
 
@@ -169,7 +179,7 @@
 
 // Death penalty
 [
-    "KPR_deadPenalty",
+    "KPR_killedPenalty",
     "SLIDER",
     [localize "STR_KPR_CBA_DEATH", localize "STR_KPR_CBA_DEATHDESC"],
     ["KP Ranks Leveling System", localize "STR_KPR_CBA_SCORING"],
