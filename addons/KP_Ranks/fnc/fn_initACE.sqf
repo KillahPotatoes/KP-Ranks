@@ -18,7 +18,7 @@
 */
 
 // Action to check rank and update insignia on the current uniform
-private _action = ["KPR_Check", localize "STR_KPR_ACTION_CHECKRANK", "\KP_Ranks\kplogo_ca.paa", {[true] call KPR_fnc_applyRank;}, {!KPR_autoMode}] call ace_interact_menu_fnc_createAction;
+private _action = ["KPR_Check", localize "STR_KPR_ACTION_CHECKRANK", "\KP_Ranks\kplogo_ca.paa", {[true] call KPR_fnc_applyRank;}, {!KPR_autoMode || KPR_levelSystem}] call ace_interact_menu_fnc_createAction;
 [(typeOf player), 1, ["ACE_SelfActions", "ACE_Equipment"], _action] call ace_interact_menu_fnc_addActionToClass;
 
 // KP Ranks administration category for self interactions
