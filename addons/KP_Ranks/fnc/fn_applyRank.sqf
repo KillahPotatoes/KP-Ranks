@@ -4,7 +4,7 @@
     File: fn_applyRank.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-14
+    Last Update: 2018-07-19
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -67,17 +67,14 @@ if (!isNull _insigniaClass) then {
 
 // Show hint with the picture of the insignia or that the uniform isn't supported
 if (_showHint) then {
-    private _text = format ["[KP RANKS] [%1 (%2)] Uniform not supported: %3", name player, getPlayerUID player, uniform player];
-
-    if (_validUniform) then {
+    if (_validUniform || KPR_playerNation) then {
         [_displayname select [6], _texture] call KPR_fnc_showHint;
-        _text = format ["[KP RANKS] [%1 (%2)] Apply Rank %3 on uniform %4", name player, getPlayerUID player, _displayname, uniform player];
     } else {
         ["Uniform not supported"] call KPR_fnc_showHint;
-    };
-
-    if (KPR_extendedLog) then {
-        _text remoteExecCall ["diag_log", 2];
+        if (KPR_extendedLog) then {
+            private _text = format ["[KP RANKS] [%1 (%2)] Uniform not supported: %3", name player, getPlayerUID player, uniform player];
+            _text remoteExecCall ["diag_log", 2];
+        };
     };
 };
 
