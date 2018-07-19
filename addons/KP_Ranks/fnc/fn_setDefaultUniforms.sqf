@@ -78,13 +78,6 @@ KPR_uniforms = [
     ["U_DMan_SFC_CombatUniform_Urb_vest", 2],
 
     // US Army
-    ["U_B_CTRG_1", 3],
-    ["U_B_CTRG_2", 3],
-    ["U_B_CTRG_3", 3],
-    ["U_B_CTRG_Soldier_F", 3],
-    ["U_B_CTRG_Soldier_3_F", 3],
-    ["U_B_CTRG_Soldier_urb_1_F", 3],
-    ["U_B_CTRG_Soldier_urb_3_F", 3],
     ["U_B_CombatUniform_mcam", 3],
     ["U_B_CombatUniform_mcam_tshirt", 3],
     ["U_B_CombatUniform_mcam_vest", 3],
@@ -108,7 +101,16 @@ KPR_uniforms = [
     ["rhs_uniform_g3_m81", 3],
     ["rhs_uniform_g3_mc", 3],
     ["rhs_uniform_g3_rgr", 3],
-    ["rhs_uniform_g3_tan", 3]
+    ["rhs_uniform_g3_tan", 3],
+
+    // British Armed Forces (currently under development by Nils. Until it's finished, it'll be US by default)
+    ["U_B_CTRG_1", 3],
+    ["U_B_CTRG_2", 3],
+    ["U_B_CTRG_3", 3],
+    ["U_B_CTRG_Soldier_F", 3],
+    ["U_B_CTRG_Soldier_3_F", 3],
+    ["U_B_CTRG_Soldier_urb_1_F", 3],
+    ["U_B_CTRG_Soldier_urb_3_F", 3]
 ];
 
 true
