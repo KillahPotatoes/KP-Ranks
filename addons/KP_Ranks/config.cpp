@@ -168,6 +168,9 @@ class CfgFunctions {
             // Check if player is server or KPR admin
             class isAdmin {};
 
+            // Systemchat ouput of promotion/degradation
+            class levelAnnounce {};
+
             // Opens the player management dialog
             class openDialogPlayers {};
 
@@ -176,6 +179,9 @@ class CfgFunctions {
 
             // Adds edits to a temporary variable until it gets saved
             class playerAddEdit {};
+
+            // Handles respawn penalty
+            class playerDeath {};
 
             // Exports player data
             class playerExport {};

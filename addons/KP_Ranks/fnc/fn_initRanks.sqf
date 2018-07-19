@@ -52,13 +52,15 @@ if (isServer) then {
     // Provide list of uniforms for clients
     publicVariable "KPR_uniforms";
 
-    // Add mission eventhandler for killed entities for the auto leveling system
+    // Add mission eventhandler for killed entities and player deaths for the auto leveling system
     addMissionEventHandler ["EntityKilled", {[_this select 0, _this select 1, _this select 2] call KPR_fnc_entityKilled}];
+    addMissionEventHandler ["EntityRespawned", {[_this select 0, _this select 1] call KPR_fnc_playerDeath;
+}];
 
     // Start score updater
     call KPR_fnc_scoreUpdate;
 
-    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3 - Nation by: %4", count KPR_players, count KPR_uniforms, KPR_autoMode, if (KPR_playerNation) then {"Player"} else {"Uniform"}];
+    diag_log format ["[KP RANKS] [SERVER] Finished initialization - Listed Players: %1 - Listed Uniforms: %2 - Auto Mode: %3 - Level System: %4 - Nation by: %5", count KPR_players, count KPR_uniforms, KPR_autoMode, KPR_levelSystem, if (KPR_playerNation) then {"Player"} else {"Uniform"}];
 };
 
 if (hasInterface) then {
