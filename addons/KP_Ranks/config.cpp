@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-18
+    Last Update: 2018-07-19
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -150,6 +150,9 @@ class CfgFunctions {
             // Loop for automatic mode
             class autoLoop {};
 
+            // Eventhandler for a killed entity
+            class entityKilled {};
+
             // Dummy function of the editor module to force a dependency to KP Ranks
             class forceRanks {};
 
@@ -191,6 +194,9 @@ class CfgFunctions {
 
             // Updates and saves active uniforms list
             class saveUniforms {};
+
+            // Updates playtime and updates rank
+            class scoreUpdate {};
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};

@@ -73,6 +73,16 @@
             <English>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</English>
             <German>Aktiviert das KP Ranks Levelsystem. Es kümmert sich um die Beförderungen/Degradierungen abhängig zu Kills, Toden und Spielzeit.</German>
         </Key>
+        <Key ID="STR_KPR_CBA_UPDATEINT">
+            <Original>Update Interval</Original>
+            <English>Update Interval</English>
+            <German>Aktualisierungsintervall</German>
+        </Key>
+        <Key ID="STR_KPR_CBA_UPDATEINTDESC">
+            <Original>Interval in minutes to trigger the level and score updater.</Original>
+            <English>Interval in minutes to trigger the level and score updater.</English>
+            <German>Intervall in Minuten, bis zum Aktualisierungsdurchlauf des Levels und der Punkte.</German>
+        </Key>
         <Key ID="STR_KPR_CBA_LEVELDEBUG">
             <Original>Leveling System Debug</Original>
             <English>Leveling System Debug</English>
@@ -139,9 +149,9 @@
             <German>Spielzeitintervall</German>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYTIMEDESC">
-            <Original>Interval in minutes to trigger the playtime points reward.</Original>
-            <English>Interval in minutes to trigger the playtime points reward.</English>
-            <German>Intervall in Minuten, um den Erhalt der Spielzeitbelohnungspunkte auszulösen.</German>
+            <Original>Interval in minutes to trigger the playtime points reward. Has to be larger than the update interval.</Original>
+            <English>Interval in minutes to trigger the playtime points reward. Has to be larger than the update interval.</English>
+            <German>Intervall in Minuten, um den Erhalt der Spielzeitbelohnungspunkte auszulösen. Muss größer sein als der Aktualisierungsintervall.</German>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYPOINTS">
             <Original>Playtime Points</Original>

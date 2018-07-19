@@ -45,6 +45,10 @@ private _ctrl = controlNull;
     _ctrl = _dialog ctrlCreate ["KP_Text", 10 + 10 * _forEachIndex, _ctrlsGrp];
     _ctrl ctrlSetPosition [safeZoneW * 0.01, safeZoneH * (0.0075 + 0.04 * (_forEachIndex + 1)), safeZoneW * 0.08, safeZoneH * 0.02];
     _ctrl ctrlSetText (_x select 0);
+    if (KPR_levelSystem) then {
+        // Tooltip with current points if level system is enabled
+        _ctrl ctrlSetTooltip format [(localize "STR_KPR_SCORE") + ": %1", _x select 5];
+    };
     _ctrl ctrlCommit 0;
 
     // KPR Admin
@@ -68,7 +72,12 @@ private _ctrl = controlNull;
         _ctrl lbAdd (str _i);
     };
     _ctrl lbSetCurSel (_x select 2);
-    _ctrl ctrlAddEventHandler ["LBSelChanged", format ["['rank', ['%1', _this select 1]] call KPR_fnc_playerAddEdit", _x select 1]];
+    if (KPR_levelSystem) then {
+        // Disable control, when level system is enabled
+        _ctrl ctrlEnable false;
+    } else {
+        _ctrl ctrlAddEventHandler ["LBSelChanged", format ["['rank', ['%1', _this select 1]] call KPR_fnc_playerAddEdit", _x select 1]];
+    };
     _ctrl ctrlCommit 0;
 
     // Rank nation
@@ -83,6 +92,7 @@ private _ctrl = controlNull;
     _ctrl ctrlCommit 0;
 
     if (!KPR_playerNation) then {
+        // Disable control, when nation is set by uniform
         _ctrl ctrlEnable false;
     };
 

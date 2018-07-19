@@ -77,6 +77,16 @@
     }
 ] call CBA_Settings_fnc_init;
 
+// Interval for the score update check
+[
+    "KPR_updateInterval",
+    "SLIDER",
+    [localize "STR_KPR_CBA_UPDATEINT", localize "STR_KPR_CBA_UPDATEINTDESC"],
+    ["KP Ranks Leveling System"],
+    [1, 60, 5, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Debug server log output for the leveling system checkbox
 [
     "KPR_levelDebug",
@@ -133,7 +143,7 @@
     "SLIDER",
     [localize "STR_KPR_CBA_PLAYTIME", localize "STR_KPR_CBA_PLAYTIMEDESC"],
     ["KP Ranks Leveling System", localize "STR_KPR_CBA_SCORING"],
-    [1, 60, 10080, 0],
+    [KPR_updateInterval + 1, 10080, 60, 0],
     true
 ] call CBA_Settings_fnc_init;
 
