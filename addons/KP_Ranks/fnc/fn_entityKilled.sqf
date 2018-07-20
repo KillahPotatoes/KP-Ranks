@@ -28,6 +28,9 @@ if (isNull _instigator) then {_instigator = _killer};
 // Don't do something for AI
 if !(isPlayer _instigator) exitWith {};
 
+// Exit when killed and instigator are identical (otherwise players get additional teamkill penalty for respawn/death)
+if (_killed isEqualTo _instigator) exitWith {};
+
 // Exit when unknown, enemy side or ambient life
 if (side group _killed == sideUnknown || side group _killed == sideEnemy || side group _killed == sideAmbientLife) exitWith {};
 

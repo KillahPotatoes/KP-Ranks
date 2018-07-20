@@ -24,7 +24,7 @@ params ["_entity", "_corpse"];
 if !(isPlayer _entity) exitWith {};
 
 // Exit, if there is no corpse (e.g. a joining player)
-if !(isNull _corpse) exitWith {};
+if (isNull _corpse) exitWith {};
 
 // Get some player date
 private _playerId = getPlayerUID _entity;
