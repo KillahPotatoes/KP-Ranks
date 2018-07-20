@@ -4,7 +4,7 @@
     File: fn_entityKilled.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-19
-    Last Update: 2018-07-19
+    Last Update: 2018-07-20
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -19,17 +19,11 @@
     BOOL
 */
 
-// Leave if the leveling system isn't enabled
-if (!KPR_levelSystem) exitWith {};
-
 params ["_killed", "_killer", "_instigator"];
 
-// Get the correct killer
-if !(KPR_ace) then {
-    // Catch UAV operator or driver from roadkills
-    if (isNull _instigator) then {_instigator = UAVControl vehicle _killer select 0};
-    if (isNull _instigator) then {_instigator = _killer};
-};
+// Catch UAV operator or driver from roadkills
+if (isNull _instigator) then {_instigator = UAVControl vehicle _killer select 0};
+if (isNull _instigator) then {_instigator = _killer};
 
 // Don't do something for AI
 if !(isPlayer _instigator) exitWith {};
@@ -37,20 +31,13 @@ if !(isPlayer _instigator) exitWith {};
 // Exit when unknown, enemy side or ambient life
 if (side group _killed == sideUnknown || side group _killed == sideEnemy || side group _killed == sideAmbientLife) exitWith {};
 
-// Exit, if the player is a renegade
-if (side _instigator == sideEnemy) exitWith {
-    if (KPR_levelDebug) then {
-        diag_log format ["[KP RANKS] [LEVEL] Skipping kill of %1 (%2), due to renegade status", name _instigator, getPlayerUID _instigator];
-    };
-};
-
 // Evaluate kind of reward and corresponding points
 private _kind = "Infantry";
 private _points = KPR_infPoints;
 
 call {
     if (side group _killed == side group _instigator) exitWith {_kind = "Teamkill"; _points = KPR_tkPenalty * -1;};
-    if ([side group _instigator, side group _killed] call BIS_fnc_sideIsFriendly) exitWith {_kind = "Teamkill"; _points = KPR_tkPenalty * -1;};
+    if ([side group _instigator, side group _killed] call BIS_fnc_sideIsFriendly) exitWith {_kind = "Friendkill"; _points = KPR_tkPenalty * -1;};
     if (_killed isKindOf "Car") exitWith {_kind = "Light"; _points = KPR_lvhPoints;};
     if (_killed isKindOf "Tank") exitWith {_kind = "Armored"; _points = KPR_avhPoints;};
     if (_killed isKindOf "Air") exitWith {_kind = "Air"; _points = KPR_airPoints;};
