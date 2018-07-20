@@ -156,6 +156,9 @@ class CfgFunctions {
             // Dummy function of the editor module to force a dependency to KP Ranks
             class forceRanks {};
 
+            // Request ACE ace_medical_lastDamageSource variable from unit owner
+            class getAceKiller {};
+
             // Inizialize ACE self interaction entries
             class initACE {};
 
@@ -203,6 +206,9 @@ class CfgFunctions {
 
             // Updates playtime and updates rank
             class scoreUpdate {};
+
+            // Sends ACE ace_medical_lastDamageSource variable of a unit to the server
+            class sendAceKiller {};
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};

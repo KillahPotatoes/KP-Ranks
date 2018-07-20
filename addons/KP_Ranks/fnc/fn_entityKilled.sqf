@@ -24,10 +24,8 @@ if (!KPR_levelSystem) exitWith {};
 
 params ["_killed", "_killer", "_instigator"];
 
-if (KPR_ace) then {
-    // TODO: get this variable value from the machine, where the object is local
-    _instigator = _killed getVariable ["ace_medical_lastDamageSource", _killer];
-} else {
+// Get the correct killer
+if !(KPR_ace) then {
     // Catch UAV operator or driver from roadkills
     if (isNull _instigator) then {_instigator = UAVControl vehicle _killer select 0};
     if (isNull _instigator) then {_instigator = _killer};
@@ -36,11 +34,13 @@ if (KPR_ace) then {
 // Don't do something for AI
 if !(isPlayer _instigator) exitWith {};
 
+// Exit when unknown, enemy side or ambient life
+if (side group _killed == sideUnknown || side group _killed == sideEnemy || side group _killed == sideAmbientLife) exitWith {};
+
 // Exit, if the player is a renegade
 if (side _instigator == sideEnemy) exitWith {
     if (KPR_levelDebug) then {
-        private _text = format ["[KP RANKS] [LEVEL] Skipping kill of %1 (%2), due to renegade status", name _instigator, getPlayerUID _instigator];
-        diag_log _text;
+        diag_log format ["[KP RANKS] [LEVEL] Skipping kill of %1 (%2), due to renegade status", name _instigator, getPlayerUID _instigator];
     };
 };
 
@@ -70,8 +70,8 @@ if (_score < 0) then {
 KPR_players select _index set [5, _score];
 
 if (KPR_levelDebug) then {
-    private _text = format [
-        "[KP RANKS] [LEVEL] Player: %1 (%2) - Kind: %2 (%3) - Reward: %4 - Updated Points: %5 - Same Side: %6 - Friendly: %7",
+    diag_log format [
+        "[KP RANKS] [LEVEL] Player: %1 (%2) - Kind: %3 (%4) - Reward: %5 - Updated Points: %6 - Same Side: %7 - Friendly: %8",
         name _instigator,
         _playerId,
         _kind,
@@ -81,7 +81,6 @@ if (KPR_levelDebug) then {
         side group _killed == side group _instigator,
         [side group _instigator, side group _killed] call BIS_fnc_sideIsFriendly
     ];
-    diag_log _text;
 };
 
 // Save updated data

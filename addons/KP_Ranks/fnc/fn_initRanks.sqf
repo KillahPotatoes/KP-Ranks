@@ -53,9 +53,14 @@ if (isServer) then {
     publicVariable "KPR_uniforms";
 
     // Add mission eventhandler for killed entities and player deaths for the auto leveling system
-    addMissionEventHandler ["EntityKilled", {[_this select 0, _this select 1, _this select 2] call KPR_fnc_entityKilled}];
-    addMissionEventHandler ["EntityRespawned", {[_this select 0, _this select 1] call KPR_fnc_playerDeath;
-}];
+    addMissionEventHandler ["EntityKilled", {
+        if (KPR_ace) then {
+            [_this select 0, _this select 1, _this select 2] call KPR_fnc_getAceKiller;
+        } else {
+            [_this select 0, _this select 1, _this select 2] call KPR_fnc_entityKilled;
+        };
+    }];
+    addMissionEventHandler ["EntityRespawned", {[_this select 0, _this select 1] call KPR_fnc_playerDeath;}];
 
     // Start score updater
     call KPR_fnc_scoreUpdate;
