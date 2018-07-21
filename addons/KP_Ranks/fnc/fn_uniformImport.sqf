@@ -18,8 +18,9 @@
     BOOL
 */
 
-KPR_uniforms = player getVariable ["KPR_uClipboard", []];
-player setVariable ["KPR_uClipboard", nil];
+KPR_uniforms = profileNamespace getVariable ["KPR_uClipboard", []];
+profileNamespace setVariable ["KPR_uClipboard", nil];
+saveProfileNamespace;
 [KPR_uniforms] remoteExecCall ["KPR_fnc_saveUniforms", 2];
 closeDialog 0;
 [{!dialog}, {call KPR_fnc_openDialogUniforms;}] call CBA_fnc_waitUntilAndExecute;
