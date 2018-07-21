@@ -1,11 +1,12 @@
-name = "KP Ranks 1.5";
-description = "Killah Potatoes Gaming Community ArmA 3 Ranks";
+name = "KP Ranks 2.0.0";
 picture = "kplogo_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/KillahPotatoes/KP-Ranks";
+description = "KP Ranks - Version 2.0.0";
 logo = "kplogo_ca.paa";
 logoOver = "kplogo_ca.paa";
-actionName = "Website";
-action = "https://www.killahpotatoes.de";
 tooltip = "KP Ranks";
-overview = "KP Ranks adds ranks to each player based on a server side player list.";
+tooltipOwned = "KP Ranks Owned";
+overview = "KP Ranks provides a serverside management system for player ranks for communities and/or groups. Configurable directly in the game with an optional automatic leveling system.";
 author = "Wyqer";
 overviewPicture = "kplogo_ca.paa";
