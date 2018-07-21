@@ -18,8 +18,9 @@
     BOOL
 */
 
-KPR_players = player getVariable ["KPR_pClipboard", []];
-player setVariable ["KPR_pClipboard", nil];
+KPR_players = profileNamespace getVariable ["KPR_pClipboard", []];
+profileNamespace setVariable ["KPR_pClipboard", nil];
+saveProfileNamespace;
 [KPR_players] remoteExecCall ["KPR_fnc_savePlayers", 2];
 closeDialog 0;
 [{!dialog}, {call KPR_fnc_openDialogPlayers;}] call CBA_fnc_waitUntilAndExecute;

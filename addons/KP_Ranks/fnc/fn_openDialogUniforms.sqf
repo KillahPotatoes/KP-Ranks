@@ -44,7 +44,7 @@ _ctrlsLbDropdown lbSetCurSel 3;
 _ctrlsLbDropdown ctrlShow false;
 
 // Deactivate import button, if no exported data is saved in the players profile
-if (player getVariable ["KPR_uClipboard", []] isEqualTo []) then {
+if (profileNamespace getVariable ["KPR_uClipboard", []] isEqualTo []) then {
     _ctrlsImport ctrlEnable false;
 } else {
     _ctrlsImport ctrlEnable true;

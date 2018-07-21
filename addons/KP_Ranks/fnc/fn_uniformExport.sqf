@@ -17,7 +17,9 @@
     BOOL
 */
 
-player setVariable ["KPR_uClipboard", +KPR_uniforms];
+profileNamespace setVariable ["KPR_uClipboard", +KPR_uniforms];
+saveProfileNamespace;
+
 findDisplay 7580822 displayCtrl 758010 ctrlEnable true;
 
 hint localize "STR_KPR_DIALOG_EXPORTDONE";

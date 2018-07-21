@@ -106,7 +106,7 @@ private _ctrl = controlNull;
     _ctrl ctrlCommit 0;
 
     // Deactivate import button, if no exported data is saved in the players profile
-    if (player getVariable ["KPR_pClipboard", []] isEqualTo []) then {
+    if (profileNamespace getVariable ["KPR_pClipboard", []] isEqualTo []) then {
         _dialog displayCtrl 75802 ctrlEnable false;
     } else {
         _dialog displayCtrl 75802 ctrlEnable true;
