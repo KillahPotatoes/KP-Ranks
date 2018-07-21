@@ -58,7 +58,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_EXTLOG", localize "STR_KPR_CBA_EXTLOGDESC"],
     "KP Ranks",
-    true,
+    false,
     true
 ] call CBA_Settings_fnc_init;
 
@@ -68,7 +68,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_LEVELENB", localize "STR_KPR_CBA_LEVELENBDESC"],
     "KP Ranks Leveling System",
-    true,
+    false,
     true,
     {
         if (KPR_levelSystem) then {
@@ -103,7 +103,7 @@
     "CHECKBOX",
     [localize "STR_KPR_CBA_LEVELDEBUG", localize "STR_KPR_CBA_LEVELDEBUGDESC"],
     "KP Ranks Leveling System",
-    true,
+    false,
     true
 ] call CBA_Settings_fnc_init;
 

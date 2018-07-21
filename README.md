@@ -55,8 +55,8 @@ Supported Uniforms by default:
 ## Licence
 Copyright (C) 2016
 * [Wyqer](https://github.com/Wyqer) (Code)
-* [Nils](https://www.killahpotatoes.de/index.php?user/9-nils/) (Insignias)
-* [Degman](http://steamcommunity.com/id/degman) (Croatian Insignias)
+* [Nils](https://steamcommunity.com/id/butmumsaysimspecial) (Insignias)
+* [Degman](https://steamcommunity.com/id/degman) (Croatian Insignias)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
