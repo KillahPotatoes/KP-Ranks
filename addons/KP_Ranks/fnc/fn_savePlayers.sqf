@@ -4,7 +4,7 @@
     File: fn_savePlayers.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-19
+    Last Update: 2018-07-22
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -21,12 +21,10 @@ if (!isServer) exitWith {};
 
 params [["_newList", []]];
 
-if !(_newList isEqualTo []) then {
-    KPR_players = +_newList;
-    KPR_players sort true;
-    profileNamespace setVariable ["KPR_players", KPR_players];
-    saveProfileNamespace;
-    publicVariable "KPR_players";
-};
+KPR_players = +_newList;
+KPR_players sort true;
+profileNamespace setVariable ["KPR_players", KPR_players];
+saveProfileNamespace;
+publicVariable "KPR_players";
 
 true
