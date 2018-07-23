@@ -67,141 +67,169 @@
             <Original>Activate Leveling System</Original>
             <English>Activate Leveling System</English>
             <German>Aktiviere Levelsystem</German>
+            <Polish>Włącz System Poziomów</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELENBDESC">
             <Original>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</Original>
             <English>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</English>
             <German>Aktiviert das KP Ranks Levelsystem. Es kümmert sich um die Beförderungen/Degradierungen abhängig zu Kills, Toden und Spielzeit.</German>
+            <Polish>Włącza funkcjonalność zdobywania poziomów w KP Ranks. Gracz otrzymuje/traci rangi zależnie od ilości zabitych przeciwników oraz czasu spędzonego na serwerze.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_UPDATEINT">
             <Original>Update Interval</Original>
             <English>Update Interval</English>
             <German>Aktualisierungsintervall</German>
+            <Polish>Interwał Aktualizacji</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_UPDATEINTDESC">
             <Original>Interval in minutes to trigger the level and score updater.</Original>
             <English>Interval in minutes to trigger the level and score updater.</English>
             <German>Intervall in Minuten, bis zum Aktualisierungsdurchlauf des Levels und der Punkte.</German>
+            <Polish>Interwał aktualizacji rang oraz punktów w minutach.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELDEBUG">
             <Original>Leveling System Debug</Original>
             <English>Leveling System Debug</English>
             <German>Levelsystem Debug</German>
+            <Polish>Debugowanie Systemu Poziomów</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELDEBUGDESC">
             <Original>If enabled, the serverlog will display additional information of the leveling system events.</Original>
             <English>If enabled, the serverlog will display additional information of the leveling system events.</English>
             <German>Wenn aktiviert, werden zusätzliche Informationen vom Levelsystem im Serverlog ausgegeben.</German>
+            <Polish>Po włączeniu log serwera będzie zawierał dodatkowe informacje o zdarzeniach w systemie poziomów.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELANNOUNCE">
             <Original>Announce Levelchange</Original>
             <English>Announce Levelchange</English>
             <German>Level Änderungen mitteilen</German>
+            <Polish>Ogłaszaj Zmianę Poziomu</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELANNOUNCEDESC">
             <Original>If enabled, other players get a notification via system chat if a player was promoted/degraded.</Original>
             <English>If enabled, other players get a notification via system chat if a player was promoted/degraded.</English>
             <German>Wenn aktiviert, bekommen andere Spieler per Systemchat einen Hinweis über die Beförderung/Degradierung eines Spielers.</German>
+            <Polish>Jeżeli włączone wszyscy gracze zostaną powiadomieni gdy któś zdobędzie/straci poziom.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_SCORING">
             <Original>Scoring (changes are not retroactive)</Original>
             <English>Scoring (changes are not retroactive)</English>
             <German>Punktevergabe (Änderungen sind nicht rückwirkend)</German>
+            <Polish>Przydzielanie punktów (nie działa retroaktywnie)</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_REQUIREMENTS">
             <Original>Requirements</Original>
             <English>Requirements</English>
             <German>Voraussetzungen</German>
+            <Polish>Wymagania</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_INF">
             <Original>Infantry</Original>
             <English>Infantry</English>
             <German>Infanterie</German>
+            <Polish>Piechota</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_INFDESC">
             <Original>Earned score for an infantry kill.</Original>
             <English>Earned score for an infantry kill.</English>
             <German>Punkte für das Töten eines feindlichen Infanteristen.</German>
+            <Polish>Ilość punktów za zabicie piechoty.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LVH">
             <Original>Light Vehicle</Original>
             <English>Light Vehicle</English>
             <German>Leichtes Fahrzeug</German>
+            <Polish>Lekki pojazd</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_LVHDESC">
             <Original>Earned score for destroying a light vehicle.</Original>
             <English>Earned score for destroying a light vehicle.</English>
             <German>Punkte für die Zerstörung eines leichten Fahrzeugs.</German>
+            <Polish>Ilość punktów za zniszczenie lekkiego pojazdu.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AVH">
             <Original>Armored Vehicle</Original>
             <English>Armored Vehicle</English>
             <German>Gepanzertes Fahrzeug</German>
+            <Polish>Opancerzony pojazd.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AVHDESC">
             <Original>Earned score for destroying an armored vehicle.</Original>
             <English>Earned score for destroying an armored vehicle.</English>
             <German>Punkte für die Zerstörung eines gepanzerten Fahrzeugs.</German>
+            <Polish>Ilość punktów za zniszczenie pojazdu opancerzonego.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AIR">
             <Original>Air Vehicle</Original>
             <English>Air Vehicle</English>
             <German>Luftfahrzeug</German>
+            <Polish>Pojazd latający</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_AIRDESC">
             <Original>Earned score for destroying an air vehicle.</Original>
             <English>Earned score for destroying an air vehicle.</English>
             <German>Punkte für die Zerstörung eines Luftfahrzeugs.</German>
+            <Polish>Ilość punktów za zniszczenie pojazdu latającego.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYTIME">
             <Original>Playtime Interval</Original>
             <English>Playtime Interval</English>
             <German>Spielzeitintervall</German>
+            <Polish>Interwał punktacji za czas gry</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYTIMEDESC">
             <Original>Interval in minutes to trigger the playtime points reward. Has to be larger than the update interval.</Original>
             <English>Interval in minutes to trigger the playtime points reward. Has to be larger than the update interval.</English>
             <German>Intervall in Minuten, um den Erhalt der Spielzeitbelohnungspunkte auszulösen. Muss größer sein als der Aktualisierungsintervall.</German>
+            <Polish>Okres co jaki są przyznawane punkty za czas gry. Musi być większy niż interwał aktualizacji.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYPOINTS">
             <Original>Playtime Points</Original>
             <English>Playtime Points</English>
             <German>Spielzeitpunkte</German>
+            <Polish>Punkty za czas gry</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYPOINTSDESC">
             <Original>Earned score for playing the above playtime on the server.</Original>
             <English>Earned score for playing the above playtime on the server.</English>
             <German>Punkte für die oben angegebene Spielzeit auf dem Server.</German>
+            <Polish>Ilość punktów przyznawana za czas gry</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_TEAMKILL">
             <Original>Teamkill Penalty</Original>
             <English>Teamkill Penalty</English>
             <German>Eigenbeschuss Strafe</German>
+            <Polish>Kara za zabicie przyjaznych jednostek</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_TEAMKILLDESC">
             <Original>Penalty for killing friendly units.</Original>
             <English>Penalty for killing friendly units.</English>
             <German>Strafe für das Töten von befreundeten Einheiten.</German>
+            <Polish>Ilość punktów odejmowana za zabicie przyjaznych jednostek.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_DEATH">
             <Original>Death Penalty</Original>
             <English>Death Penalty</English>
             <German>Ausfallstrafe</German>
+            <Polish>Kara za śmierć</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_DEATHDESC">
             <Original>Penalty for being killed.</Original>
             <English>Penalty for being killed.</English>
             <German>Strafe für den Spieler, wenn er getötet wird.</German>
+            <Polish>Odejmowana ilość punktów za śmierć.</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_RANKREQ">
             <Original>Rank Level</Original>
             <English>Rank Level</English>
             <German>Dienstgradebene</German>
+            <Polish>Poziomy rang</Polish>
         </Key>
         <Key ID="STR_KPR_CBA_RANKREQDESC">
             <Original>Required score for a player to reach this rank level.</Original>
             <English>Required score for a player to reach this rank level.</English>
             <German>Benötigte Punkte, damit ein Spieler diese Dienstgradebene erreicht.</German>
+            <Polish>Wymagana ilość punktów do osiągnięcia tego poziomu.</Polish>
         </Key>
     </Package>
     <Package name="General">
@@ -209,6 +237,7 @@
             <Original>Score</Original>
             <English>Score</English>
             <German>Punkte</German>
+            <Polish>Punkty</Polish>
         </Key>
         <Key ID="STR_KPR_ACTION_CHECKRANK">
             <Original>Check Rank</Original>
@@ -220,21 +249,25 @@
             <Original>KPR Player Management</Original>
             <English>KPR Player Management</English>
             <German>KPR Spielerverwaltung</German>
+            <Polish>KPR Zarządzanie graczami</Polish>
         </Key>
         <Key ID="STR_KPR_ACTION_UNIFORMMANAGE">
             <Original>KPR Uniform Management</Original>
             <English>KPR Uniform Management</English>
             <German>KPR Uniformverwaltung</German>
+            <Polish>KPR Zarządzanie mundurami</Polish>
         </Key>
         <Key ID="STR_KPR_PLAYER_PROMOTED">
             <Original>%1 was promoted.</Original>
             <English>%1 was promoted.</English>
             <German>%1 wurde befördert.</German>
+            <Polish>%1 dostał awans.</Polish>
         </Key>
         <Key ID="STR_KPR_PLAYER_DEGRADED">
             <Original>%1 was degraded.</Original>
             <English>%1 was degraded.</English>
             <German>%1 wurde degradiert.</German>
+            <Polish>%1 został zdegradowany.</Polish>
         </Key>
     </Package>
     <Package name="Dialog">
@@ -380,41 +413,49 @@
             <Original>Saving changes...</Original>
             <English>Saving changes...</English>
             <German>Änderungen werden gespeichert...</German>
+            <Polish>Zapisywanie zmian...</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVINGDONE">
             <Original>Save finished.</Original>
             <English>Save finished.</English>
             <German>Speichern abgeschlossen.</German>
+            <Polish>Zapisywanie zakończone.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMMANAGE">
             <Original>KP Ranks - Uniform Management</Original>
             <English>KP Ranks - Uniform Management</English>
             <German>KP Ranks - Uniformverwaltung</German>
+            <Polish>KP Ranks - Zarządzanie mundurami</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMACTIVE">
             <Original>Active Uniforms</Original>
             <English>Active Uniforms</English>
             <German>Aktive Uniformen</German>
+            <Polish>Aktywne mundury</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMDETAILS">
             <Original>Uniform Details</Original>
             <English>Uniform Details</English>
             <German>Uniformdetails</German>
+            <Polish>Szczegóły mundurów</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMINACTIVE">
             <Original>Inactive Uniforms</Original>
             <English>Inactive Uniforms</English>
             <German>Inaktive Uniformen</German>
+            <Polish>Nieaktywne mundury</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADDUNIFORMDESC">
             <Original>Add selected uniform to the active list.</Original>
             <English>Add selected uniform to the active list.</English>
             <German>Ausgewählte Uniform den aktiven Uniformen hinzufügen.</German>
+            <Polish>Dodaj wybrane mundury do aktywnych.</Polish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DELUNIFORMDESC">
             <Original>Remove selected uniform from the active list.</Original>
             <English>Remove selected uniform from the active list.</English>
             <German>Ausgewählte Uniform von den aktiven Uniformen entfernen.</German>
+            <Polish>Usuń wybrane mundury z listy aktywnych.</Polish>
         </Key>
     </Package>
 </Project>
