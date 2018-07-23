@@ -4,7 +4,7 @@
     File: fn_savePlayers.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-22
+    Last Update: 2018-07-23
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -20,6 +20,13 @@
 if (!isServer) exitWith {};
 
 params [["_newList", []]];
+
+// Reinitialize with all current players, if list gets fully deleted
+if (_newList isEqualTo []) then {
+    {
+        _newList pushBack [name _x, getPlayerUID _x, 0, 3, 0, 0, 0];
+    } forEach (allPlayers - entities "HeadlessClient_F");
+};
 
 KPR_players = +_newList;
 KPR_players sort true;
