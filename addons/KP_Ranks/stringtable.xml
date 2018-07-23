@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
     <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-19 -->
-    <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-13 -->
+    <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-23 -->
     <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
