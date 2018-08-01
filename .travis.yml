@@ -3,7 +3,7 @@ python:
   - "3.6"
 
 install:
-  - sudo pip3 install sqflint
+  - sudo pip install sqflint
 
 script:
   - sqflint -d addons/KP_Ranks
