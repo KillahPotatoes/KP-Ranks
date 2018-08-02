@@ -4,7 +4,7 @@
     File: KP_uiDefines.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2018-07-18
+    Last Update: 2018-07-27
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -282,7 +282,7 @@ class KP_DialogButtonL: KP_Button {
 #define KP_X_VAL_C                      0.035
 #define KP_Y_VAL_C                      0.05
 
-#define KP_WIDTH_VAL_C                  0.25
+#define KP_WIDTH_VAL_C                  0.2
 #define KP_HEIGHT_VAL_C                 (0.75 - KP_HEIGTH_TITLE - KP_HEIGTH_BUTTON - 2 * KP_SPACING_Y)
 
 // Title bar
@@ -293,22 +293,22 @@ class KP_DialogTitleC: KP_Title {
 };
 
 // Cross symbol
-class KP_DialogCrossL: KP_CloseCross {
-    x = KP_GETX_CROSS(KP_X_VAL_C);
+class KP_DialogCrossC: KP_CloseCross {
+    x = safeZoneX + safeZoneW * (KP_X_VAL_C + KP_WIDTH_VAL_C - 0.02)
     y = KP_GETY_CROSS(KP_Y_VAL_C);
 };
 
 // Background
-class KP_DialogBackgroundL: KP_Background {
+class KP_DialogBackgroundC: KP_Background {
     x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,1);
     y = KP_GETY_AREA(KP_Y_VAL_C);
     w = KP_GETWPLAIN(KP_WIDTH_VAL_C,1);
     h = safeZoneH * KP_HEIGHT_VAL_C;
 };
 
-// Button pos 1 in 2 button row
-class KP_DialogButtonL: KP_Button {
-    x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,2);
+// Button
+class KP_DialogButtonC: KP_Button {
+    x = KP_GETX(KP_X_VAL_C,KP_WIDTH_VAL_C,0,1);
     y = KP_GETY_BELOW(KP_Y_VAL_C,KP_HEIGHT_VAL_C);
-    w = KP_GETWPLAIN(KP_WIDTH_VAL_C,2);
+    w = KP_GETWPLAIN(KP_WIDTH_VAL_C,1);
 };

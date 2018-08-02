@@ -4,7 +4,7 @@
     File: fn_applyRank.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-19
+    Last Update: 2018-07-22
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -19,6 +19,9 @@
 */
 
 params [["_showHint", false]];
+
+// Exit, if KPR_players list is empty.
+if (KPR_players isEqualTo []) exitWith {};
 
 // Get current player list index
 private _indexP = KPR_players findIf {_x select 1 == getPlayerUID player};

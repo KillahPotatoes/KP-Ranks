@@ -65,6 +65,19 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 ## Changelog
+### v2.0.1
+* Added: Getter/Setter and helpful functions, so content/mission creators can easily access the KP Ranks data.
+    * [KPR_fnc_getRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRank.sqf)
+    * [KPR_fnc_setRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_setRank.sqf)
+    * [KPR_fnc_hasRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_hasRank.sqf)
+    * [KPR_fnc_getScore](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getScore.sqf)
+    * [KPR_fnc_setScore](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_setScore.sqf)
+    * [KPR_fnc_addScore](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_addScore.sqf)
+* Added: If all players are deleted from the player list, the server will reinitialize the list with all connected players.
+* Updated: Polish localization. Thanks to [veteran29](https://github.com/veteran29)
+* Fixed: Small uncritical script error on map screen, when there is no player registered on the server.
+* Fixed: Needed restart of the server/mission, if all players were deleted via the player management dialog.
+
 ### v2.0.0
 * Added: New codebase.
 * Added: Usage of CfgFunctions.

@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-19
+    Last Update: 2018-07-23
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -19,7 +19,7 @@ class CfgPatches {
     class KP_Ranks {
         author = "Wyqer";
         name = "KP Ranks";
-        url = "https://www.killahpotatoes.de";
+        url = "https://github.com/KillahPotatoes/KP-Ranks";
         units[] = {"KPR_force"};
         weapons[] = {};
         requiredVersion = 1.82;
@@ -28,9 +28,9 @@ class CfgPatches {
             "cba_main"
         };
         versionDesc = "KP Ranks";
-        version = 2.0.0;
-        versionStr = "2.0.0";
-        versionAr[] = {2,0,0};
+        version = 2.0.1;
+        versionStr = "2.0.1";
+        versionAr[] = {2,0,1};
         authors[] = {"Wyqer"};
     };
 };
@@ -113,7 +113,7 @@ class CfgVehicles {
         is3DEN = 0;
 
         class Attributes: AttributesBase {
-            class ModuleDescription: ModuleDescription{};
+            class ModuleDescription: ModuleDescription {};
         };
 
         class ModuleDescription: ModuleDescription {
@@ -144,6 +144,9 @@ class CfgFunctions {
             // Adds a new player to the player list
             class addPlayer {};
 
+            // Adds value (positive or negative) to a player score
+            class addScore {};
+
             // Applies rank insignia to player
             class applyRank {};
 
@@ -158,6 +161,15 @@ class CfgFunctions {
 
             // Request ACE ace_medical_lastDamageSource variable from unit owner
             class getAceKiller {};
+
+            // Get the rank of a player
+            class getRank {};
+
+            // Get the score of a player
+            class getScore {};
+
+            // Check if player has at least given rank
+            class hasRank {};
 
             // Inizialize ACE self interaction entries
             class initACE {};
@@ -212,6 +224,12 @@ class CfgFunctions {
 
             // Apply the default values for the uniform list
             class setDefaultUniforms {};
+
+            // Sets the rank of a player to given value
+            class setRank {};
+
+            // Sets the score of a player to given value
+            class setScore {};
 
             // Shows a hint for 3 seconds
             class showHint {};
