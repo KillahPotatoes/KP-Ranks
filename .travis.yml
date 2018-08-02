@@ -1,0 +1,9 @@
+language: python
+python:
+    - "3.5"
+
+before_script:
+    - pip3 install sqflint
+
+script:
+    - sqflint -d addons/KP_Ranks
