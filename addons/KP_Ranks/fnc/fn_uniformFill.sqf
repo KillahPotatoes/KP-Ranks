@@ -4,7 +4,7 @@
     File: fn_uniformFill.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-18
-    Last Update: 2018-07-18
+    Last Update: 2018-08-02
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -43,7 +43,7 @@ private _classname = "";
 // Check for all available uniforms in the config and add them to the inactive list, when not already in the active list
 {
     _classname = configName _x;
-    if (KPR_activeUniforms findIf {_x select 1 == _classname} == -1) then {
+    if ((KPR_activeUniforms findIf {_x select 1 == _classname}) == -1) then {
         KPR_inactiveUniforms pushBack [getText (_x >> "displayName"), _classname];
     };
 } forEach ('((configName _x) call BIS_fnc_itemType) select 1 == "Uniform" && getText (_x >> "displayName") != ""' configClasses (configFile >> "CfgWeapons"));

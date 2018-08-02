@@ -4,7 +4,7 @@
     File: fn_scoreUpdate.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-19
-    Last Update: 2018-07-19
+    Last Update: 2018-08-02
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -31,6 +31,7 @@ private _score = 0;
 private _rank = 0;
 private _newPlaytime = 0;
 private _neededPoints = 99999;
+private _keepPoints = 0;
 
 {
     // Player UID and array index in KPR_players for current player
