@@ -15,6 +15,7 @@ about: Create a report to help us improve
 ### Short Issue Description
 <!-- Which kind of bug did you experience? -->
 
+
 ### Expected Behaviour
 <!-- If you're describing a bug, tell us what should happen -->
 
