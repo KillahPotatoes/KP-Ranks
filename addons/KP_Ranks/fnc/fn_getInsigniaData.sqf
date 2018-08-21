@@ -12,14 +12,14 @@
     Returns an array with the corresponding insignia data on success or an empty array if no data could be retrieved.
 
     Parameter(s):
-        0: Object - Player object from which the rank should be retrieved (default: player)
+        0: OBJECT - Player object from which the rank should be retrieved (default: player)
 
     Returns:
     ARRAY
-        0: String - material (rvmat) of the insignia
-        1: String - path to the texture of the insignia
-        2: String - rank name without the prefix like "USA11". It only contains the rank name like "Master Sergeant"
-        3: Number - index of the player uniform in the KPR_uniforms array, -1 if not wearing an activated uniform
+        0: STRING - material (rvmat) of the insignia
+        1: STRING - path to the texture of the insignia
+        2: STRING - rank name without the prefix like "USA11". It only contains the rank name like "Master Sergeant"
+        3: NUMBER - index of the player uniform in the KPR_uniforms array, -1 if not wearing an activated uniform
 */
 
 params [["_unit", player]];

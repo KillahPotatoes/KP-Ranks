@@ -11,7 +11,7 @@
     Returns the index from the KPR_uniforms array if activated. Otherwise -1.
 
     Parameter(s):
-        0: String - uniform classname (default: classname of current player uniform)
+        0: STRING - uniform classname (default: classname of current player uniform)
 
     Returns:
     NUMBER

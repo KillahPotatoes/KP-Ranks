@@ -11,7 +11,7 @@
     Returns the rank name without the prefix like "USA11". It only contains the rank name like "Master Sergeant"
 
     Parameter(s):
-        0: Object - Player object from which the rank name should be retrieved (default: player)
+        0: OBJECT - Player object from which the rank name should be retrieved (default: player)
 
     Returns:
     STRING
