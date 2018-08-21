@@ -4,7 +4,7 @@
     File: fn_playerSave.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-13
-    Last Update: 2018-07-14
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -27,7 +27,7 @@ hint localize "STR_KPR_DIALOG_SAVING";
         closedialog 0;
         hint localize "STR_KPR_DIALOG_SAVINGDONE";
         [{hintSilent "";}, [], 2] call CBA_fnc_waitAndExecute;
-        [{!dialog}, {call KPR_fnc_openDialogPlayers;}] call CBA_fnc_waitUntilAndExecute;
+        [{!dialog}, {[] call KPR_fnc_openDialogPlayers;}] call CBA_fnc_waitUntilAndExecute;
     }
 ] call CBA_fnc_waitUntilAndExecute;
 

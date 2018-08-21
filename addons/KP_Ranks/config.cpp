@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-23
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -58,7 +58,7 @@ class CfgSettings {
 
 class Extended_PreInit_EventHandlers {
     class KPR_preInit {
-        init = "call KPR_fnc_initCBA";
+        init = "[] call KPR_fnc_initCBA";
     };
 };
 
@@ -68,7 +68,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class KPR_postInit {
-        init = "call KPR_fnc_initRanks";
+        init = "[] call KPR_fnc_initRanks";
     };
 };
 

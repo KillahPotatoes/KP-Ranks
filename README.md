@@ -65,6 +65,9 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 ## Changelog
+### v2.0.2
+* Tweaked: Undefined arguments for calls replaced with empty arrays as arguments.
+
 ### v2.0.1
 * Added: Getter/Setter and helpful functions, so content/mission creators can easily access the KP Ranks data.
     * [KPR_fnc_getRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRank.sqf)
