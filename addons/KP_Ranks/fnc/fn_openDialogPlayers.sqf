@@ -47,7 +47,7 @@ private _ctrl = controlNull;
     _ctrl ctrlSetText (_x select 0);
     if (KPR_levelSystem) then {
         // Tooltip with current points if level system is enabled
-        _ctrl ctrlSetTooltip format [(localize "STR_KPR_SCORE") + ": %1", _x select 5];
+        _ctrl ctrlSetTooltip format [(localize "STR_KPR_SCORE") + ": %1\n%2", _x select 5, [_x select 1] call KPR_fnc_getPlaytime];
     };
     _ctrl ctrlCommit 0;
 
