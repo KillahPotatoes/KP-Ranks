@@ -162,6 +162,9 @@ class CfgFunctions {
             // Request ACE ace_medical_lastDamageSource variable from unit owner
             class getAceKiller {};
 
+            // Get a players index in the KP_players array
+            class getPlayerIndex {};
+
             // Get the rank of a player
             class getRank {};
 
