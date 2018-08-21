@@ -66,6 +66,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Changelog
 ### v2.0.2
+* Added: Portuguese localization. Thanks to [AngusDLX](https://github.com/AngusDLX)
 * Tweaked: Undefined arguments for calls replaced with empty arrays as arguments.
 * Tweaked: Usage of getter/setter functions in internal scripts.
 
