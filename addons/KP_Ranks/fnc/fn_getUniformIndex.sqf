@@ -19,4 +19,4 @@
 
 params [["_uniform", uniform player]];
 
-KPR_uniforms findIf {_x select 0 == uniform _uniform}
+KPR_uniforms findIf {_x select 0 == _uniform}
