@@ -140,7 +140,11 @@ if (hasInterface) then {
         [] call KPR_fnc_addActions;
     };
 
+    // Start isAdmin Check loop
     [] call KPR_fnc_isAdmin;
+
+    // Start rank apply loop
+    [] call KPR_fnc_autoLoop;
 
     if (KPR_extendedLog) then {
         private _text = format ["[KP RANKS] [%1 (%2)] Initialization finished", _name, _uid];
