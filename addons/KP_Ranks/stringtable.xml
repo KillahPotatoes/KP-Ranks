@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="KP Ranks">
-    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-07-19 -->
+    <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-08-21 -->
     <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-23 -->
     <!-- Portuguese localization by AngusDLX: https://github.com/AngusDLX | Updated: 2018-07-24 -->
     <Package name="Config and Settings">
@@ -357,6 +357,11 @@
             <German>Dienstgrad</German>
             <Polish>Ranga</Polish>
             <Portuguese>Rank</Portuguese>
+        </Key>
+        <Key ID="STR_KPR_DIALOG_RANKDISABLEDTT">
+            <Original>Disabled due to the enabled leveling system.</Original>
+            <English>Disabled due to the enabled leveling system.</English>
+            <German>Deaktiviert aufgrund des aktivierten Levelsystems.</German>
         </Key>
         <Key ID="STR_KPR_DIALOG_NATION">
             <Original>Nation</Original>

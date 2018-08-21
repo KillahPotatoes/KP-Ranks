@@ -75,6 +75,7 @@ private _ctrl = controlNull;
     if (KPR_levelSystem) then {
         // Disable control, when level system is enabled
         _ctrl ctrlEnable false;
+        _ctrl ctrlSetTooltip localize "STR_KPR_DIALOG_RANKDISABLEDTT";
     } else {
         _ctrl ctrlAddEventHandler ["LBSelChanged", format ["['rank', ['%1', _this select 1]] call KPR_fnc_playerAddEdit", _x select 1]];
     };
