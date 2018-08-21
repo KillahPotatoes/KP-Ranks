@@ -33,7 +33,7 @@ if (_action == "add") then {
     KPR_uniforms pushBack [_classname, lbCurSel _ctrlsLbDropdown];
 } else {
     _classname = _ctrlsLbAct lbData (lbCurSel _ctrlsLbAct);
-    KPR_uniforms deleteAt (KPR_uniforms findIf {_x select 0 == _classname});
+    KPR_uniforms deleteAt ([_classname] call KPR_fnc_getUniformIndex);
 };
 
 // Send updated list to server for saving

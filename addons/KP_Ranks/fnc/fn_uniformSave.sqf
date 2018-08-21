@@ -26,7 +26,7 @@ private _ctrlsLbDropdown = _dialog displayCtrl 75806;
 private _classname = _ctrlsLbAct lbData (lbCurSel _ctrlsLbAct);;
 
 // Update faction in KPR_uniforms list
-KPR_uniforms select (KPR_uniforms findIf {_x select 0 == _classname}) set [1, lbCurSel _ctrlsLbDropdown];
+KPR_uniforms select ([_classname] call KPR_fnc_getUniformIndex) set [1, lbCurSel _ctrlsLbDropdown];
 
 // Send updated list to server for saving
 [KPR_uniforms] remoteExecCall ["KPR_fnc_saveUniforms", 2];

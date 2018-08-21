@@ -162,7 +162,10 @@ class CfgFunctions {
             // Request ACE ace_medical_lastDamageSource variable from unit owner
             class getAceKiller {};
 
-            // Get a players index in the KP_players array
+            // Get data of the players rank insignia class
+            class getInsigniaData {};
+
+            // Get a players index in the KPR_players array
             class getPlayerIndex {};
 
             // Get the rank of a player
@@ -170,6 +173,9 @@ class CfgFunctions {
 
             // Get the score of a player
             class getScore {};
+
+            // Get the index in the KPR_uniforms array of an uniform
+            class getUniformIndex {};
 
             // Check if player has at least given rank
             class hasRank {};
