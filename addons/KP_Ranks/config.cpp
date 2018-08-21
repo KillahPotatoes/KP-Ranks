@@ -171,6 +171,9 @@ class CfgFunctions {
             // Get the rank of a player
             class getRank {};
 
+            // Get the name of the rank of a player
+            class getRankName {};
+
             // Get the score of a player
             class getScore {};
 
