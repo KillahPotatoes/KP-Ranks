@@ -24,12 +24,7 @@
     [localize "STR_KPR_CBA_AUTOENABLE", localize "STR_KPR_CBA_AUTOENABLEDESC"],
     "KP Ranks",
     false,
-    true,
-    {
-        if (KPR_autoMode) then {
-            [] call KPR_fnc_autoLoop;
-        };
-    }
+    true
 ] call CBA_Settings_fnc_init;
 
 // Auto Mode interval slider
@@ -69,12 +64,7 @@
     [localize "STR_KPR_CBA_LEVELENB", localize "STR_KPR_CBA_LEVELENBDESC"],
     "KP Ranks Leveling System",
     false,
-    true,
-    {
-        if (KPR_levelSystem) then {
-            [] call KPR_fnc_autoLoop;
-        };
-    }
+    true
 ] call CBA_Settings_fnc_init;
 
 // Interval for the score update check

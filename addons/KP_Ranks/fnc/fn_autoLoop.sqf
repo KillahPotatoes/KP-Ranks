@@ -21,9 +21,9 @@ if (!hasInterface) exitWith {};
 
 if (!isMultiplayer) exitWith {};
 
-if (!KPR_autoMode) exitWith {};
-
-[false] call KPR_fnc_applyRank;
+if (KPR_autoMode || KPR_levelSystem) then {
+    [false] call KPR_fnc_applyRank;
+};
 
 [{[] call KPR_fnc_autoLoop;}, [], KPR_autoModeInterval] call CBA_fnc_waitAndExecute;
 
