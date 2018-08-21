@@ -22,15 +22,15 @@ class CfgPatches {
         url = "https://github.com/KillahPotatoes/KP-Ranks";
         units[] = {"KPR_force"};
         weapons[] = {};
-        requiredVersion = 1.82;
+        requiredVersion = 1.84;
         requiredAddons[] = {
             "A3_Modules_F",
             "cba_main"
         };
         versionDesc = "KP Ranks";
-        version = 2.0.1;
-        versionStr = "2.0.1";
-        versionAr[] = {2,0,1};
+        version = 2.0.2;
+        versionStr = "2.0.2";
+        versionAr[] = {2,0,2};
         authors[] = {"Wyqer"};
     };
 };
