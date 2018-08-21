@@ -12,13 +12,13 @@
     Returns the current score as number. If the Steam UID wasn't found it returns -1.
 
     Parameter(s):
-        0: STRING - Steam UID of the player
+        0: STRING - Steam UID of the player (default: uid of current player)
 
     Returns:
     NUMBER
 */
 
-params ["_uid"];
+params [["_uid", getPlayerUID player]];
 
 private _index = [_uid] call KPR_fnc_getPlayerIndex;
 

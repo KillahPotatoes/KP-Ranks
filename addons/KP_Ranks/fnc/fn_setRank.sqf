@@ -11,7 +11,7 @@
     Sets the rank of a given player to a given rank. Returns true on success and false if the player wasn't found.
 
     Parameter(s):
-        0: STRING - Steam UID of the player
+        0: STRING - Steam UID of the player (default: uid of current player)
         1: NUMBER - Rank to set (default: 0)
 
     Returns:
@@ -20,7 +20,7 @@
 
 if (!isServer) exitWith {false};
 
-params ["_uid", ["_rank", 0]];
+params [["_uid", getPlayerUID player], ["_rank", 0]];
 
 private _index = [_uid] call KPR_fnc_getPlayerIndex;
 
