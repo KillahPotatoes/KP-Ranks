@@ -37,6 +37,8 @@
         "KPR_fnc_getAceKiller",
         "KPR_fnc_getInsigniaData",
         "KPR_fnc_getPlayerIndex",
+        "KPR_fnc_getPlaytime",
+        "KPR_fnc_getPlaytimePlain",
         "KPR_fnc_getUniformIndex",
         "KPR_fnc_getRank",
         "KPR_fnc_getScore",
