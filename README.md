@@ -67,6 +67,7 @@ You should have received a copy of the GNU General Public License along with thi
 ## Changelog
 ### v2.0.2
 * Tweaked: Undefined arguments for calls replaced with empty arrays as arguments.
+* Tweaked: Usage of getter/setter functions in internal scripts.
 
 ### v2.0.1
 * Added: Getter/Setter and helpful functions, so content/mission creators can easily access the KP Ranks data.

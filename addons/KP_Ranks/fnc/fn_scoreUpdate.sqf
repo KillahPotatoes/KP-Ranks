@@ -4,7 +4,7 @@
     File: fn_scoreUpdate.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-19
-    Last Update: 2018-08-02
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -25,7 +25,7 @@ if (!isMultiplayer) exitWith {};
 if (!isServer) exitWith {};
 
 // Pre-initialize private variables so they won't be always re-initialized as private during the forEach
-private _playerId = "";
+private _uid = "";
 private _index = -1;
 private _score = 0;
 private _rank = 0;
@@ -35,14 +35,14 @@ private _keepPoints = 0;
 
 {
     // Player UID and array index in KPR_players for current player
-    _playerId = getPlayerUID _x;
-    _index = KPR_players findIf {_x select 1 == _playerId};
+    _uid = getPlayerUID _x;
+    _index = [_uid] call KPR_fnc_getPlayerIndex;
 
     // Only continue, if player is in array (maybe he was just deleted by an Admin)
     if (_index > -1) then {
         // Get current score and rank
-        _score = KPR_players select _index select 5;
-        _rank = KPR_players select _index select 2;
+        _score = [_uid] call KPR_fnc_getScore;
+        _rank = [_uid] call KPR_fnc_getRank;
 
         // Adjust playtime of the player
         _newPlaytime = (KPR_players select _index select 6) + KPR_updateInterval;
@@ -99,7 +99,7 @@ private _keepPoints = 0;
 [KPR_players] call KPR_fnc_savePlayers;
 
 // Schedule a next call in CBA
-[{call KPR_fnc_scoreUpdate;}, [], KPR_updateInterval * 60] call CBA_fnc_waitAndExecute;
+[{[] call KPR_fnc_scoreUpdate;}, [], KPR_updateInterval * 60] call CBA_fnc_waitAndExecute;
 
 // Log update and track the runtime
 if (KPR_levelDebug) then {

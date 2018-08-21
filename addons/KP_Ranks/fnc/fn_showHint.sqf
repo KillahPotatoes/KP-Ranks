@@ -4,7 +4,7 @@
     File: fn_showHint.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-19
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -23,13 +23,13 @@ params [["_text", ""], ["_insignia", ""]];
 if (_text != "") then {
     // If no insignia texture path is provided, display just the text as hint
     if (_insignia != "") then {
-        // Add points count, if levelsystem is active
+        // Display score additionally, if levelsystem is active
         if (KPR_levelSystem) then {
-            // Get needed points for next rank and current points of the player
-            private _index = KPR_players findIf {_x select 1 == getPlayerUID player};
-            private _points = KPR_players select _index select 5;
-            private _neededPoints = missionNamespace getVariable ("KPR_rank" + str ((KPR_players select _index select 2) + 1));
-            _text = format ["%1<br /><br /><img size='4' image='%2' /><br /><br />%3 / %4", _text, _insignia, _points, _neededPoints];
+            // Get needed score for next rank and current score of the player
+            private _uid = getPlayerUID player;
+            private _score = [_uid] call KPR_fnc_getScore;
+            private _neededScore = missionNamespace getVariable ("KPR_rank" + str (([_uid] call KPR_fnc_getRank) + 1));
+            _text = format ["%1<br /><br /><img size='4' image='%2' /><br /><br />%3 / %4", _text, _insignia, _score, _neededScore];
         } else {
             _text = format ["%1<br /><br /><img size='4' image='%2' />", _text, _insignia];
         };

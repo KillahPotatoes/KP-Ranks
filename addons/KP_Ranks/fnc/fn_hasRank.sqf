@@ -21,7 +21,7 @@
 
 params ["_uid", ["_rank", 0]];
 
-private _index = KPR_players findIf {_x select 1 == _uid};
+private _index = [_uid] call KPR_fnc_getPlayerIndex;
 
 // Return false, if uid wasn't found in the players array
 if (_index == -1) exitWith {false};
