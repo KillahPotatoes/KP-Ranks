@@ -168,11 +168,23 @@ class CfgFunctions {
             // Get a players index in the KPR_players array
             class getPlayerIndex {};
 
+            // Get a players playtime formatted to days, hours and minutes
+            class getPlaytime {};
+
+            // Get a players playtime in plain minutes
+            class getPlaytimePlain {};
+
             // Get the rank of a player
             class getRank {};
 
             // Get the name of the rank of a player
             class getRankName {};
+
+            // Get the needed score to keep the current player rank
+            class getRankScore {};
+
+            // Get the needed score for a players next rank
+            class getRankScoreNext {};
 
             // Get the score of a player
             class getScore {};
