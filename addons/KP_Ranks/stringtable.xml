@@ -3,6 +3,7 @@
     <!-- English and German localization by Wyqer: https://github.com/Wyqer | Updated: 2018-08-21 -->
     <!-- Polish localization by veteran29: https://github.com/veteran29 | Updated: 2018-07-23 -->
     <!-- Portuguese localization by AngusDLX: https://github.com/AngusDLX | Updated: 2018-07-24 -->
+    <!-- Spanish localization by Jettfiremachine: https://github.com/amunoz20 | Updated: 2018-08-22 -->
     <Package name="Config and Settings">
         <Key ID="STR_KPR_CONFIG_MODULEDESC1">
             <Original>If this module is placed in the mission it'll create a dependency to this mod inside the mission.</Original>
@@ -10,6 +11,7 @@
             <German>Wenn dieses Modul gesetzt wird, wird eine Abhängigkeit zur Mod erzeugt.</German>
             <Polish>Po postawieniu tego modułu w misji, misja będzie zależna od tego moda.</Polish>
             <Portuguese>Se este módulo for colocado dentro da missão, ele criará dependência para esse mod nela.</Portuguese>
+            <Spanish>Si este módulo es colocado en la misión creará una dependecia a este mod dentro de la misión.</Spanish>
         </Key>
         <Key ID="STR_KPR_CONFIG_MODULEDESC2">
             <Original>This way it can be ensured that every player loads the mod.</Original>
@@ -17,6 +19,7 @@
             <German>Hierdurch kann sichergestellt werden, dass jeder Spieler die Mod lädt.</German>
             <Polish>W ten sposób można wymusić aby każdy gracz załadował tego moda.</Polish>
             <Portuguese>Dessa forma pode ser assegurado que cada player carrega o mod.</Portuguese>
+            <Spanish>De ese modo se puede asegurar que cada jugador cargue el mod.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOENABLE">
             <Original>Automatic Mode</Original>
@@ -24,6 +27,7 @@
             <German>Automatik Modus</German>
             <Polish>Tryb automatyczny</Polish>
             <Portuguese>Modo automático</Portuguese>
+            <Spanish>Modo automático</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOENABLEDESC">
             <Original>Enabling this will apply the insignia automatically on the players uniform.</Original>
@@ -31,6 +35,7 @@
             <German>Bei Aktivierung wird das Dienstgradabzeichen automatisch auf der Uniform gesetzt und aktualisiert.</German>
             <Polish>Właczenie tego spowoduje że insygnia bedą automatycznie dodawane do munduru gracza.</Polish>
             <Portuguese>Habilitar essa opção irá aplicar a insignia automaticamente no uniforme dos players.</Portuguese>
+            <Spanish>Habilitando esta opción se aplicará la insignia automáticamente en el uniforme de los jugadores.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOINTERVAL">
             <Original>Automatic Mode Interval</Original>
@@ -38,6 +43,7 @@
             <German>Automatik Modus Intervall</German>
             <Polish>Cykl trybu automatycznego</Polish>
             <Portuguese>Intervalo do Modo Automático</Portuguese>
+            <Spanish>Intervalo de Modo Automático</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AUTOINTERVALDESC">
             <Original>Interval between each insignia auto assignment in seconds.</Original>
@@ -45,6 +51,7 @@
             <German>Intervall in Sekunden zwischen den automatischen Aktualierungen des Dienstgradabzeichens.</German>
             <Polish>Okres czasu w sekundach między cyklami automatycznego przypisywania insygniów.</Polish>
             <Portuguese>Intervalo entre cada auto aplicação de insígnia em segundos.</Portuguese>
+            <Spanish>Intervalo entre cada auto aplicación de insigna en segundos.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYERNATION">
             <Original>Nation connected to player</Original>
@@ -52,6 +59,7 @@
             <German>Nation an Spieler gebunden</German>
             <Polish>Nacja powiązana z graczem</Polish>
             <Portuguese>Nação conectada ao player</Portuguese>
+            <Spanish>Nación conectada al jugador</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYERNATIONDESC">
             <Original>If enabled, the nationality is connected to the player, otherwise it's set by the uniform.</Original>
@@ -59,6 +67,7 @@
             <German>Wenn aktiviert, wird die Nationalität auf den Spieler bezogen, ansonsten durch die Uniform festgelegt.</German>
             <Polish>Jeżeli włączone gracz będzie otrzymywał insygnia z wybranej nacji, w przeciwnym wypadku insygnia zależą od munduru.</Polish>
             <Portuguese>Se ativada, a nacionalidade é conectada ao player, caso contrário é definda pelo uniforme.</Portuguese>
+            <Spanish>Si se activa, la nacionalidad será connectada al jugador, sino será definida por el uniforme.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_EXTLOG">
             <Original>Extended logging</Original>
@@ -66,6 +75,7 @@
             <German>Erweiterte Logausgabe</German>
             <Polish>Rozszerzone logowanie</Polish>
             <Portuguese>Logging estendido</Portuguese>
+            <Spanish>Logging extendido</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_EXTLOGDESC">
             <Original>If enabled, the serverlog will display additional information from the clients.</Original>
@@ -73,6 +83,7 @@
             <German>Wenn aktiviert, werden zusätzliche Informationen von den Clients im Serverlog ausgegeben.</German>
             <Polish>Włączenie spowoduje że log serwera będzie zawierał dodatkowe informacje o działaniu moda po stronie klientów.</Polish>
             <Portuguese>Se ativado, o serverlog irá mostrar informações adicionais dos clientes.</Portuguese>
+            <Spanish>Si se activa, el log del servidor desplegará información adicional de los clientes.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELENB">
             <Original>Activate Leveling System</Original>
@@ -80,6 +91,7 @@
             <German>Aktiviere Levelsystem</German>
             <Polish>Włącz System Poziomów</Polish>
             <Portuguese>Ativar o sistema de levels</Portuguese>
+            <Spanish>Activar Sistema de Niveles</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELENBDESC">
             <Original>Enables the KP Ranks leveling system. It takes care of promotions/degradations depending on kills, deaths and playtime.</Original>
@@ -87,6 +99,7 @@
             <German>Aktiviert das KP Ranks Levelsystem. Es kümmert sich um die Beförderungen/Degradierungen abhängig zu Kills, Toden und Spielzeit.</German>
             <Polish>Włącza funkcjonalność zdobywania poziomów w KP Ranks. Gracz otrzymuje/traci rangi zależnie od ilości zabitych przeciwników oraz czasu spędzonego na serwerze.</Polish>
             <Portuguese>Habilita o sistema de levels do KP Ranks. Levando em conta as promoções/degradações dependendo das kills, mortes e tempo de jogo.</Portuguese>
+            <Spanish>Habilita el sistema de niveles de KP Ranks. Se encarga de las promociones/degradaciones dependiendo de kills, muertes y tiempo de juego.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_UPDATEINT">
             <Original>Update Interval</Original>
@@ -94,6 +107,7 @@
             <German>Aktualisierungsintervall</German>
             <Polish>Interwał Aktualizacji</Polish>
             <Portuguese>Intervalo de update</Portuguese>
+            <Spanish>Intervalo de Actualización</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_UPDATEINTDESC">
             <Original>Interval in minutes to trigger the level and score updater.</Original>
@@ -101,6 +115,7 @@
             <German>Intervall in Minuten, bis zum Aktualisierungsdurchlauf des Levels und der Punkte.</German>
             <Polish>Interwał aktualizacji rang oraz punktów w minutach.</Polish>
             <Portuguese>Intervalo em minutos para ativar a atualização de level e pontos.</Portuguese>
+            <Spanish>Intervalo en minutos para ejecutar la actualización el nivel y puntaje.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELDEBUG">
             <Original>Leveling System Debug</Original>
@@ -108,6 +123,7 @@
             <German>Levelsystem Debug</German>
             <Polish>Debugowanie Systemu Poziomów</Polish>
             <Portuguese>Debug do Levelsystem</Portuguese>
+            <Spanish>Depuración de Sistema de Niveles</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELDEBUGDESC">
             <Original>If enabled, the serverlog will display additional information of the leveling system events.</Original>
@@ -115,6 +131,7 @@
             <German>Wenn aktiviert, werden zusätzliche Informationen vom Levelsystem im Serverlog ausgegeben.</German>
             <Polish>Po włączeniu log serwera będzie zawierał dodatkowe informacje o zdarzeniach w systemie poziomów.</Polish>
             <Portuguese>Se ativada, o serverlog irá mostrar informações adicionais dos eventos do sistema de levels.</Portuguese>
+            <Spanish>Si se activa, el log del servidor desplegará información adicional de los eventos del sistema de niveles.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELANNOUNCE">
             <Original>Announce Levelchange</Original>
@@ -122,6 +139,7 @@
             <German>Level Änderungen mitteilen</German>
             <Polish>Ogłaszaj Zmianę Poziomu</Polish>
             <Portuguese>Anunciar mudança de level</Portuguese>
+            <Spanish>Anunciar cambio de nivel</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LEVELANNOUNCEDESC">
             <Original>If enabled, other players get a notification via system chat if a player was promoted/degraded.</Original>
@@ -129,6 +147,7 @@
             <German>Wenn aktiviert, bekommen andere Spieler per Systemchat einen Hinweis über die Beförderung/Degradierung eines Spielers.</German>
             <Polish>Jeżeli włączone wszyscy gracze zostaną powiadomieni gdy któś zdobędzie/straci poziom.</Polish>
             <Portuguese>Se ativado, outros jogadores verão a notificação pelo sisteam de chat se um player foi promovido/degradado.</Portuguese>
+            <Spanish>Si se activa, los demás jugadores reciben una notificación vía chat del sistema, si un jugador es promovido/degradado.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_SCORING">
             <Original>Scoring (changes are not retroactive)</Original>
@@ -136,6 +155,7 @@
             <German>Punktevergabe (Änderungen sind nicht rückwirkend)</German>
             <Polish>Przydzielanie punktów (nie działa retroaktywnie)</Polish>
             <Portuguese>Pontuação( as mudanças não são retroativas)</Portuguese>
+            <Spanish>Puntuación (los cambios no son retroactivos)</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_REQUIREMENTS">
             <Original>Requirements</Original>
@@ -143,6 +163,7 @@
             <German>Voraussetzungen</German>
             <Polish>Wymagania</Polish>
             <Portuguese>Requerimentos</Portuguese>
+            <Spanish>Requerimientos</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_INF">
             <Original>Infantry</Original>
@@ -150,6 +171,7 @@
             <German>Infanterie</German>
             <Polish>Piechota</Polish>
             <Portuguese>Infantaria</Portuguese>
+            <Spanish>Infantería</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_INFDESC">
             <Original>Earned score for an infantry kill.</Original>
@@ -157,6 +179,7 @@
             <German>Punkte für das Töten eines feindlichen Infanteristen.</German>
             <Polish>Ilość punktów za zabicie piechoty.</Polish>
             <Portuguese>Pontos ganhos por matar infantaria.</Portuguese>
+            <Spanish>Puntos obtenidos por matar infantería.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LVH">
             <Original>Light Vehicle</Original>
@@ -164,6 +187,7 @@
             <German>Leichtes Fahrzeug</German>
             <Polish>Lekki pojazd</Polish>
             <Portuguese>Veículo Leve</Portuguese>
+            <Spanish>Vehículo Ligero</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_LVHDESC">
             <Original>Earned score for destroying a light vehicle.</Original>
@@ -171,6 +195,7 @@
             <German>Punkte für die Zerstörung eines leichten Fahrzeugs.</German>
             <Polish>Ilość punktów za zniszczenie lekkiego pojazdu.</Polish>
             <Portuguese>Pontos ganhos por destruir um veículo leve.</Portuguese>
+            <Spanish>Puntos obtenidos por destruir un vehículo ligero.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AVH">
             <Original>Armored Vehicle</Original>
@@ -178,6 +203,7 @@
             <German>Gepanzertes Fahrzeug</German>
             <Polish>Opancerzony pojazd</Polish>
             <Portuguese>Veículo blindado</Portuguese>
+            <Spanish>Vehículo blindado</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AVHDESC">
             <Original>Earned score for destroying an armored vehicle.</Original>
@@ -185,6 +211,7 @@
             <German>Punkte für die Zerstörung eines gepanzerten Fahrzeugs.</German>
             <Polish>Ilość punktów za zniszczenie pojazdu opancerzonego.</Polish>
             <Portuguese>Pontos ganhos por destruir um veículo blindado.</Portuguese>
+            <Spanish>Puntos obtenidos por destruir un vehículo blindado.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AIR">
             <Original>Air Vehicle</Original>
@@ -192,6 +219,7 @@
             <German>Luftfahrzeug</German>
             <Polish>Pojazd latający</Polish>
             <Portuguese>Veículo Aéreo</Portuguese>
+            <Spanish>Vehículo Aéreo</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_AIRDESC">
             <Original>Earned score for destroying an air vehicle.</Original>
@@ -199,6 +227,7 @@
             <German>Punkte für die Zerstörung eines Luftfahrzeugs.</German>
             <Polish>Ilość punktów za zniszczenie pojazdu latającego.</Polish>
             <Portuguese>Pontos ganhos por destruir um veículo aéreo.</Portuguese>
+            <Spanish>Puntos obtenidos por destruir un vehículo aéreo.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYTIME">
             <Original>Playtime Interval</Original>
@@ -206,6 +235,7 @@
             <German>Spielzeitintervall</German>
             <Polish>Interwał punktacji za czas gry</Polish>
             <Portuguese>Intervalo de tempo de jogo</Portuguese>
+            <Spanish>Intervalo de tiempo jugado</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYTIMEDESC">
             <Original>Interval in minutes to trigger the playtime points reward. Has to be larger than the update interval.</Original>
@@ -213,6 +243,7 @@
             <German>Intervall in Minuten, um den Erhalt der Spielzeitbelohnungspunkte auszulösen. Muss größer sein als der Aktualisierungsintervall.</German>
             <Polish>Okres co jaki są przyznawane punkty za czas gry. Musi być większy niż interwał aktualizacji.</Polish>
             <Portuguese>Intervalo em minutos para ativar a recompensa de pontos por tempo de jogo. Tem que ser maior que o intervalo de update.</Portuguese>
+            <Spanish>Intervalo en minutos para ejecutar la recompensa por tiempo de juego. Tiene que ser mayor que el intervalo de actualización</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYPOINTS">
             <Original>Playtime Points</Original>
@@ -220,6 +251,7 @@
             <German>Spielzeitpunkte</German>
             <Polish>Punkty za czas gry</Polish>
             <Portuguese>Pontos por tempo de jogo</Portuguese>
+            <Spanish>Puntos por tiempo de juego</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_PLAYPOINTSDESC">
             <Original>Earned score for playing the above playtime on the server.</Original>
@@ -227,6 +259,7 @@
             <German>Punkte für die oben angegebene Spielzeit auf dem Server.</German>
             <Polish>Ilość punktów przyznawana za czas gry</Polish>
             <Portuguese>Pontos ganhos por ficar jogando no servidor.</Portuguese>
+            <Spanish>Puntos obtenidos por jugar el tiempo indicado anteriormente en el servidor.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_TEAMKILL">
             <Original>Teamkill Penalty</Original>
@@ -234,6 +267,7 @@
             <German>Eigenbeschuss Strafe</German>
             <Polish>Kara za zabicie przyjaznych jednostek</Polish>
             <Portuguese>Penalidades por fogo amigo</Portuguese>
+            <Spanish>Penalización por fuego amigo</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_TEAMKILLDESC">
             <Original>Penalty for killing friendly units.</Original>
@@ -241,6 +275,7 @@
             <German>Strafe für das Töten von befreundeten Einheiten.</German>
             <Polish>Ilość punktów odejmowana za zabicie przyjaznych jednostek.</Polish>
             <Portuguese>Penalidade por matar unidades aliadas.</Portuguese>
+            <Spanish>Penalización por matar unidades aliadas.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_DEATH">
             <Original>Death Penalty</Original>
@@ -248,6 +283,7 @@
             <German>Ausfallstrafe</German>
             <Polish>Kara za śmierć</Polish>
             <Portuguese>Penalidade por morte</Portuguese>
+            <Spanish>Penalización por muerte</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_DEATHDESC">
             <Original>Penalty for being killed.</Original>
@@ -255,6 +291,7 @@
             <German>Strafe für den Spieler, wenn er getötet wird.</German>
             <Polish>Odejmowana ilość punktów za śmierć.</Polish>
             <Portuguese>Penalidade por ser morto.</Portuguese>
+            <Spanish>Penalización por ser asesinado.</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_RANKREQ">
             <Original>Rank Level</Original>
@@ -262,6 +299,7 @@
             <German>Dienstgradebene</German>
             <Polish>Poziomy rang</Polish>
             <Portuguese>Rank Level</Portuguese>
+            <Spanish>Rango</Spanish>
         </Key>
         <Key ID="STR_KPR_CBA_RANKREQDESC">
             <Original>Required score for a player to reach this rank level.</Original>
@@ -269,6 +307,7 @@
             <German>Benötigte Punkte, damit ein Spieler diese Dienstgradebene erreicht.</German>
             <Polish>Wymagana ilość punktów do osiągnięcia tego poziomu.</Polish>
             <Portuguese>Pontos necessários para um player alcançar esse rank.</Portuguese>
+            <Spanish>Puntaje requerido para que un jugador aclance este nivel.</Spanish>
         </Key>
     </Package>
     <Package name="General">
@@ -278,6 +317,7 @@
             <German>Punkte</German>
             <Polish>Punkty</Polish>
             <Portuguese>Pontos</Portuguese>
+            <Spanish>Puntaje</Spanish>
         </Key>
         <Key ID="STR_KPR_ACTION_CHECKRANK">
             <Original>Check Rank</Original>
@@ -285,6 +325,7 @@
             <German>Dienstgrad prüfen</German>
             <Polish>Sprawdź rangę</Polish>
             <Portuguese>Verificar Rank</Portuguese>
+            <Spanish>Verificar Rango</Spanish>
         </Key>
         <Key ID="STR_KPR_ACTION_PLAYERMANAGE">
             <Original>KPR Player Management</Original>
@@ -292,6 +333,7 @@
             <German>KPR Spielerverwaltung</German>
             <Polish>KPR Zarządzanie graczami</Polish>
             <Portuguese>Gestão de jogador KPR</Portuguese>
+            <Spanish>Gestión del jugador KPR</Spanish>
         </Key>
         <Key ID="STR_KPR_ACTION_UNIFORMMANAGE">
             <Original>KPR Uniform Management</Original>
@@ -299,6 +341,7 @@
             <German>KPR Uniformverwaltung</German>
             <Polish>KPR Zarządzanie mundurami</Polish>
             <Portuguese>Gestão de uniformes KPR</Portuguese>
+            <Spanish>Gestión de uniformes KPR</Spanish>
         </Key>
         <Key ID="STR_KPR_PLAYER_PROMOTED">
             <Original>%1 was promoted.</Original>
@@ -306,6 +349,7 @@
             <German>%1 wurde befördert.</German>
             <Polish>%1 dostał awans.</Polish>
             <Portuguese>%1 foi promovido.</Portuguese>
+            <Spanish>%1 fue promovido</Spanish>
         </Key>
         <Key ID="STR_KPR_PLAYER_DEGRADED">
             <Original>%1 was degraded.</Original>
@@ -313,6 +357,7 @@
             <German>%1 wurde degradiert.</German>
             <Polish>%1 został zdegradowany.</Polish>
             <Portuguese>%1 foi degradado.</Portuguese>
+            <Spanish>%1 fue degradado</Spanish>
         </Key>
     </Package>
     <Package name="Dialog">
@@ -322,6 +367,7 @@
             <German>KP Ranks - Spielerverwaltung</German>
             <Polish>KP Ranks - Zarządzanie graczami</Polish>
             <Portuguese>KP Ranks - Gestão de Jogador</Portuguese>
+            <Spanish>KP Ranks - Gestión de Jugador</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_YES">
             <Original>Yes</Original>
@@ -329,6 +375,7 @@
             <German>Ja</German>
             <Polish>Tak</Polish>
             <Portuguese>Sim</Portuguese>
+            <Spanish>Sí</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_NO">
             <Original>No</Original>
@@ -336,6 +383,7 @@
             <German>Nein</German>
             <Polish>Nie</Polish>
             <Portuguese>Não</Portuguese>
+            <Spanish>No</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_PLAYER">
             <Original>Player</Original>
@@ -343,6 +391,7 @@
             <German>Spieler</German>
             <Polish>Gracz</Polish>
             <Portuguese>Jogador</Portuguese>
+            <Spanish>Jugaodr</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADMIN">
             <Original>KPR Admin</Original>
@@ -350,6 +399,7 @@
             <German>KPR Admin</German>
             <Polish>KPR Admin</Polish>
             <Portuguese>Admin KPR</Portuguese>
+            <Spanish>Admin KPR</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RANK">
             <Original>Rank</Original>
@@ -357,11 +407,14 @@
             <German>Dienstgrad</German>
             <Polish>Ranga</Polish>
             <Portuguese>Rank</Portuguese>
+            <Spanish>Rango</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RANKDISABLEDTT">
             <Original>Disabled due to the enabled leveling system.</Original>
             <English>Disabled due to the enabled leveling system.</English>
             <German>Deaktiviert aufgrund des aktivierten Levelsystems.</German>
+            <Portuguese>Desativado devido ao sistema de nivelamento ativado.</Portuguese>
+            <Spanish>Deshabilitado debido a que el sistema de niveles se encuentra activado.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_NATION">
             <Original>Nation</Original>
@@ -369,6 +422,7 @@
             <German>Nation</German>
             <Polish>Nacja</Polish>
             <Portuguese>Nação</Portuguese>
+            <Spanish>Nación</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DEL">
             <Original>Delete</Original>
@@ -376,6 +430,7 @@
             <German>Löschen</German>
             <Polish>Usuń</Polish>
             <Portuguese>Excluir</Portuguese>
+            <Spanish>Eliminar</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADMINDESC">
             <Original>Should the player have access to this dialog?</Original>
@@ -383,6 +438,7 @@
             <German>Soll der Spieler Zugang zu diesem Dialog haben?</German>
             <Polish>Czy gracz powinien mieć dostęp do tego dialogu?</Polish>
             <Portuguese>Deveria o jogador ter acesso a esse menu?</Portuguese>
+            <Spanish>El jugador debería tener acceso a este diálogo?</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DELDESC">
             <Original>Marks this player for deletion upon save.</Original>
@@ -390,6 +446,7 @@
             <German>Markiert den Spieler zur Löschung.</German>
             <Polish>Oznacz gracza do usunięcia przy następnym zapisie.</Polish>
             <Portuguese>Marcar esse player para a exclusão quando salvar</Portuguese>
+            <Spanish>Marca este jugador para ser eliminado al guardar.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_BWF">
             <Original>Bundeswehr Wood</Original>
@@ -397,6 +454,7 @@
             <German>BW Flecktarn</German>
             <Polish>Bundeswehr Leśny</Polish>
             <Portuguese>Bundeswehr Selva</Portuguese>
+            <Spanish>Bundeswehr Bosque</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_BWT">
             <Original>Bundeswehr Desert</Original>
@@ -404,6 +462,7 @@
             <German>BW Tropentarn</German>
             <Polish>Bundeswehr Pustynny</Polish>
             <Portuguese>Bundeswehr Deserto</Portuguese>
+            <Spanish>Bundeswehr Desierto</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_CRO">
             <Original>Croatian Army</Original>
@@ -411,6 +470,7 @@
             <German>Kroatische Armee</German>
             <Polish>Chorwacka Armia</Polish>
             <Portuguese>Exército Croata</Portuguese>
+            <Spanish>Ejército Croata</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_USA">
             <Original>US Army</Original>
@@ -418,6 +478,7 @@
             <German>US Army</German>
             <Polish>US Army</Polish>
             <Portuguese>Exército Americano</Portuguese>
+            <Spanish>Ejército EU</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RESET">
             <Original>Reset</Original>
@@ -425,6 +486,7 @@
             <German>Zurücksetzen</German>
             <Polish>Reset</Polish>
             <Portuguese>Descartar</Portuguese>
+            <Spanish>Reiniciar</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_RESETDESC">
             <Original>Discard all current changes.</Original>
@@ -432,6 +494,7 @@
             <German>Alle momentanen Änderungen verwerfen.</German>
             <Polish>Usuń obecne zmiany.</Polish>
             <Portuguese>Descarta todas as alterações recentes.</Portuguese>
+            <Spanish>Descartar cambios</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORT">
             <Original>Import</Original>
@@ -439,13 +502,15 @@
             <German>Importieren</German>
             <Polish>Importuj</Polish>
             <Portuguese>Importar</Portuguese>
+            <Spanish>Importar</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_IMPORTDESC">
             <Original>Imports data from another server via the stored data in your profile.</Original>
             <English>Imports data from another server via the stored data in your profile.</English>
             <German>Datenimport von einem anderen Server über die gespeicherten Daten in deinem Profil.</German>
             <Polish>Importuje dane z innego serwera poprzez dane zapisane w twoim profilu użytkownika.</Polish>
-            <Portuguese>Importa dados de outros servidor via dados armazenados no seu perfil</Portuguese>
+            <Portuguese>Importa dados de outros servidor via dados armazenados no seu perfil.</Portuguese>
+            <Spanish>Importar datos de otro servidor vía datos almacenados en tu perfil.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORT">
             <Original>Export</Original>
@@ -453,6 +518,7 @@
             <German>Exportieren</German>
             <Polish>Eksportuj</Polish>
             <Portuguese>Exportar</Portuguese>
+            <Spanish>Exportar</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORTDESC">
             <Original>Exports data to a transport variable in your profile.</Original>
@@ -460,13 +526,15 @@
             <German>Datenexport der Daten über eine Transportvariable in deinem Profil.</German>
             <Polish>Eksportuje dane do zmiennej w twoim profilu użytkownika.</Polish>
             <Portuguese>Exportar dados para uma variável de transporte no seu perfil.</Portuguese>
+            <Spanish>Exportar datos a variable de transporte en tu perfil.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_EXPORTDONE">
             <Original>Export successful.</Original>
             <English>Exports successful.</English>
             <German>Datenexport erfolgreich.</German>
             <Polish>Eksport zakończony powodzeniem.</Polish>
-            <Portuguese>Exportado com sucesso</Portuguese>
+            <Portuguese>Exportado com sucesso.</Portuguese>
+            <Spanish>Exportado exitosamente.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVE">
             <Original>Save</Original>
@@ -474,6 +542,7 @@
             <German>Speichern</German>
             <Polish>Zapisz</Polish>
             <Portuguese>Salvar</Portuguese>
+            <Spanish>Guardar</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVEDESC">
             <Original>Saves current state of the list.</Original>
@@ -481,20 +550,23 @@
             <German>Speichert den aktuellen Stand der Liste.</German>
             <Polish>Zapisuje obecny stan listy.</Polish>
             <Portuguese>Salva o estado atual da lista</Portuguese>
+            <Spanish>Guarda el estado actual de la lista.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVING">
             <Original>Saving changes...</Original>
             <English>Saving changes...</English>
             <German>Änderungen werden gespeichert...</German>
             <Polish>Zapisywanie zmian...</Polish>
-            <Portuguese>Salvando as mudanças</Portuguese>
+            <Portuguese>Salvando as mudanças...</Portuguese>
+            <Spanish>Guardando cambios...</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_SAVINGDONE">
             <Original>Save finished.</Original>
             <English>Save finished.</English>
             <German>Speichern abgeschlossen.</German>
             <Polish>Zapisywanie zakończone.</Polish>
-            <Portuguese>Salvo com sucesso</Portuguese>
+            <Portuguese>Salvo com sucesso.</Portuguese>
+            <Spanish>Guardado exitosamente.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMMANAGE">
             <Original>KP Ranks - Uniform Management</Original>
@@ -502,6 +574,7 @@
             <German>KP Ranks - Uniformverwaltung</German>
             <Polish>KP Ranks - Zarządzanie mundurami</Polish>
             <Portuguese>KP Ranks - Gerenciamento de Uniforme</Portuguese>
+            <Spanish>KP Ranks - Gestión de Uniformes</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMACTIVE">
             <Original>Active Uniforms</Original>
@@ -509,6 +582,7 @@
             <German>Aktive Uniformen</German>
             <Polish>Aktywne mundury</Polish>
             <Portuguese>Uniformes Ativos</Portuguese>
+            <Spanish>Uniformes Activos</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMDETAILS">
             <Original>Uniform Details</Original>
@@ -516,6 +590,7 @@
             <German>Uniformdetails</German>
             <Polish>Szczegóły mundurów</Polish>
             <Portuguese>Detalhes do uniforme</Portuguese>
+            <Spanish>Detalles de Uniforme</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_UNIFORMINACTIVE">
             <Original>Inactive Uniforms</Original>
@@ -523,6 +598,7 @@
             <German>Inaktive Uniformen</German>
             <Polish>Nieaktywne mundury</Polish>
             <Portuguese>Uniformes Inativos</Portuguese>
+            <Spanish>Uniformes Inactivos</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_ADDUNIFORMDESC">
             <Original>Add selected uniform to the active list.</Original>
@@ -530,6 +606,7 @@
             <German>Ausgewählte Uniform den aktiven Uniformen hinzufügen.</German>
             <Polish>Dodaj wybrane mundury do aktywnych.</Polish>
             <Portuguese>Adicionar o uniforme selecionado para a lista ativa.</Portuguese>
+            <Spanish>Agregar el uniforme seleccionado a la lista activa.</Spanish>
         </Key>
         <Key ID="STR_KPR_DIALOG_DELUNIFORMDESC">
             <Original>Remove selected uniform from the active list.</Original>
@@ -537,6 +614,7 @@
             <German>Ausgewählte Uniform von den aktiven Uniformen entfernen.</German>
             <Polish>Usuń wybrane mundury z listy aktywnych.</Polish>
             <Portuguese>Remove o uniforme selecionado da lista ativa.</Portuguese>
+            <Spanish>Remover el uniforme seleccionado de la lista activa.</Spanish>
         </Key>
     </Package>
 </Project>
