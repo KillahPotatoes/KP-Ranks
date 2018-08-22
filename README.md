@@ -76,6 +76,8 @@ You should have received a copy of the GNU General Public License along with thi
     * [KPR_fnc_getRankScore](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankScore.sqf)
     * [KPR_fnc_getRankScoreNext](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankScoreNext.sqf)
 * Added: Tooltip for deactivated rank setting in the player dialog, if the leveling system is enabled.
+* Added: Playtime in the player name tooltip in the player management dialog.
+* Added: [KP Ranks Wiki](https://github.com/KillahPotatoes/KP-Ranks/wiki) on GitHub with examples to use the functions.
 * Tweaked: Undefined arguments for calls replaced with empty arrays as arguments.
 * Tweaked: Usage of getter/setter functions in internal scripts.
 * Fixed: Rank apply auto loop could be running in two instances.
