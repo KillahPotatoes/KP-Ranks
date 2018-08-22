@@ -68,6 +68,7 @@ You should have received a copy of the GNU General Public License along with thi
 ## Changelog
 ### v2.0.2
 * Added: Portuguese localization. Thanks to [AngusDLX](https://github.com/AngusDLX)
+* Added: Spanish localization. Thanks to [Jettfiremachine](https://github.com/amunoz20)
 * Added: Some more functions which could become handy for mission creators:
     * [KPR_fnc_getInsigniaData](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getInsigniaData.sqf)
     * [KPR_fnc_getRankName](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankName.sqf)
