@@ -37,6 +37,7 @@ Currently the mod is localized for:
 * German
 * Polish
 * Portuguese
+* Spanish
 
 ## Mods
 Required:
