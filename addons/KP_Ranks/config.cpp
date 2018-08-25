@@ -4,7 +4,7 @@
     File: config.cpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-23
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -22,15 +22,15 @@ class CfgPatches {
         url = "https://github.com/KillahPotatoes/KP-Ranks";
         units[] = {"KPR_force"};
         weapons[] = {};
-        requiredVersion = 1.82;
+        requiredVersion = 1.84;
         requiredAddons[] = {
             "A3_Modules_F",
             "cba_main"
         };
         versionDesc = "KP Ranks";
-        version = 2.0.1;
-        versionStr = "2.0.1";
-        versionAr[] = {2,0,1};
+        version = 2.0.2;
+        versionStr = "2.0.2";
+        versionAr[] = {2,0,2};
         authors[] = {"Wyqer"};
     };
 };
@@ -58,7 +58,7 @@ class CfgSettings {
 
 class Extended_PreInit_EventHandlers {
     class KPR_preInit {
-        init = "call KPR_fnc_initCBA";
+        init = "[] call KPR_fnc_initCBA";
     };
 };
 
@@ -68,7 +68,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class KPR_postInit {
-        init = "call KPR_fnc_initRanks";
+        init = "[] call KPR_fnc_initRanks";
     };
 };
 
@@ -162,11 +162,35 @@ class CfgFunctions {
             // Request ACE ace_medical_lastDamageSource variable from unit owner
             class getAceKiller {};
 
+            // Get data of the players rank insignia class
+            class getInsigniaData {};
+
+            // Get a players index in the KPR_players array
+            class getPlayerIndex {};
+
+            // Get a players playtime formatted to days, hours and minutes
+            class getPlaytime {};
+
+            // Get a players playtime in plain minutes
+            class getPlaytimePlain {};
+
             // Get the rank of a player
             class getRank {};
 
+            // Get the name of the rank of a player
+            class getRankName {};
+
+            // Get the needed score to keep the current player rank
+            class getRankScore {};
+
+            // Get the needed score for a players next rank
+            class getRankScoreNext {};
+
             // Get the score of a player
             class getScore {};
+
+            // Get the index in the KPR_uniforms array of an uniform
+            class getUniformIndex {};
 
             // Check if player has at least given rank
             class hasRank {};

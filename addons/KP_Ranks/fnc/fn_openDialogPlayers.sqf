@@ -47,7 +47,10 @@ private _ctrl = controlNull;
     _ctrl ctrlSetText (_x select 0);
     if (KPR_levelSystem) then {
         // Tooltip with current points if level system is enabled
-        _ctrl ctrlSetTooltip format [(localize "STR_KPR_SCORE") + ": %1", _x select 5];
+        _ctrl ctrlSetTooltip format [(localize "STR_KPR_SCORE") + ": %1\n%2", _x select 5, [_x select 1] call KPR_fnc_getPlaytime];
+    } else {
+        // Otherwise just the playtime
+        _ctrl ctrlSetTooltip ([_x select 1] call KPR_fnc_getPlaytime);
     };
     _ctrl ctrlCommit 0;
 
@@ -75,6 +78,7 @@ private _ctrl = controlNull;
     if (KPR_levelSystem) then {
         // Disable control, when level system is enabled
         _ctrl ctrlEnable false;
+        _ctrl ctrlSetTooltip localize "STR_KPR_DIALOG_RANKDISABLEDTT";
     } else {
         _ctrl ctrlAddEventHandler ["LBSelChanged", format ["['rank', ['%1', _this select 1]] call KPR_fnc_playerAddEdit", _x select 1]];
     };

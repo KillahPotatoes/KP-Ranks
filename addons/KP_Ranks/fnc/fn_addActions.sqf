@@ -4,7 +4,7 @@
     File: fn_addActions.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-19
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -31,7 +31,7 @@ if (!isNull _corpse) then {
 };
 
 KPR_actionIdCheck = player addAction [localize "STR_KPR_ACTION_CHECKRANK", {[true] call KPR_fnc_applyRank;}, nil, -1200, false, true, "", "!KPR_autoMode || KPR_levelSystem"];
-KPR_actionIdPlayers = player addAction [localize "STR_KPR_ACTION_PLAYERMANAGE", {call KPR_fnc_openDialogPlayers;}, nil, -1201, false, true, "", "KPR_isAdmin"];
-KPR_actionIdUniforms = player addAction [localize "STR_KPR_ACTION_UNIFORMMANAGE", {call KPR_fnc_openDialogUniforms;}, nil, -1201, false, true, "", "KPR_isAdmin"];
+KPR_actionIdPlayers = player addAction [localize "STR_KPR_ACTION_PLAYERMANAGE", {[] call KPR_fnc_openDialogPlayers;}, nil, -1201, false, true, "", "KPR_isAdmin"];
+KPR_actionIdUniforms = player addAction [localize "STR_KPR_ACTION_UNIFORMMANAGE", {[] call KPR_fnc_openDialogUniforms;}, nil, -1201, false, true, "", "KPR_isAdmin"];
 
 true

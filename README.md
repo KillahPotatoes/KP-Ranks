@@ -36,6 +36,8 @@ Currently the mod is localized for:
 * English
 * German
 * Polish
+* Portuguese
+* Spanish
 
 ## Mods
 Required:
@@ -65,8 +67,26 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 ## Changelog
+### v2.0.2
+* Added: Portuguese localization. Thanks to [AngusDLX](https://github.com/AngusDLX)
+* Added: Spanish localization. Thanks to [Jettfiremachine](https://github.com/amunoz20)
+* Added: Some more functions which could become handy for mission creators:
+    * [KPR_fnc_getInsigniaData](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getInsigniaData.sqf)
+    * [KPR_fnc_getRankName](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankName.sqf)
+    * [KPR_fnc_getPlaytime](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getPlaytime.sqf)
+    * [KPR_fnc_getPlaytimePlain](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getPlaytimePlain.sqf)
+    * [KPR_fnc_getRankScore](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankScore.sqf)
+    * [KPR_fnc_getRankScoreNext](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRankScoreNext.sqf)
+* Added: Tooltip for deactivated rank setting in the player dialog, if the leveling system is enabled.
+* Added: Playtime in the player name tooltip in the player management dialog.
+* Added: [KP Ranks Wiki](https://github.com/KillahPotatoes/KP-Ranks/wiki) on GitHub with examples to use the functions.
+* Tweaked: Undefined arguments for calls replaced with empty arrays as arguments.
+* Tweaked: Usage of getter/setter functions in internal scripts.
+* Fixed: Rank apply auto loop could be running in two instances.
+* Fixed: Dialogs close directly if opened with "standard action" key.
+
 ### v2.0.1
-* Added: Getter/Setter and helpful functions, so content/mission creators can easily access the KP Ranks data.
+* Added: Getter/Setter and helpful functions, so content/mission creators can easily access the KP Ranks data:
     * [KPR_fnc_getRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_getRank.sqf)
     * [KPR_fnc_setRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_setRank.sqf)
     * [KPR_fnc_hasRank](https://github.com/KillahPotatoes/KP-Ranks/blob/master/addons/KP_Ranks/fnc/fn_hasRank.sqf)

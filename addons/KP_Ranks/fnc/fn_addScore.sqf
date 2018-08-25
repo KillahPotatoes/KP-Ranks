@@ -4,7 +4,7 @@
     File: fn_addScore.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-23
-    Last Update: 2018-07-23
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -22,13 +22,21 @@ if (!isServer) exitWith {false};
 
 params ["_uid", ["_change", 0]];
 
-private _index = KPR_players findIf {_x select 1 == _uid};
+// Get current score
+private _score = [_uid] call KPR_fnc_getScore;
 
 // Return false, if uid wasn't found in the players array
-if (_index == -1) exitWith {false};
+if (_score == -1) exitWith {false};
 
-// Adjust score and save
-KPR_players select _index set [5, (KPR_players select _index select 5) + _change];
-[KPR_players] call KPR_fnc_savePlayers;
+// Adjust score
+_score = _score + _change;
+
+// Prevent negative score
+if (_score < 0) then {
+    _score = 0;
+};
+
+// Save new score
+[_uid, _score] call KPR_fnc_setScore;
 
 true

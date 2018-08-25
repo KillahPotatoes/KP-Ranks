@@ -56,7 +56,7 @@ if (_kind == "active") then {
 };
 
 // Index in uniform list, if active uniform
-private _uniformIndex = KPR_uniforms findIf {_x select 0 == configName _config};
+private _uniformIndex = [configName _config] call KPR_fnc_getUniformIndex;
 
 // Update details
 _ctrlsPicture ctrlSetText getText (_config >> "picture");

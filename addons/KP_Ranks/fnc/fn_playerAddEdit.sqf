@@ -4,7 +4,7 @@
     File: fn_playerAddEdit.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-13
-    Last Update: 2018-07-18
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -32,7 +32,7 @@ if !((KPR_editPlayers select 1) isEqualTo []) then {
 
 // If first edit, get current data
 if (_index == -1 && _kind != "delete") then {
-    _index = KPR_editPlayers select 1 pushBack +(KPR_players select (KPR_players findIf {_x select 1 == _values select 0}));
+    _index = KPR_editPlayers select 1 pushBack +(KPR_players select ([_values select 0] call KPR_fnc_getPlayerIndex));
 };
 
 // Change ActiveText control in dialog

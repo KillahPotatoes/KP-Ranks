@@ -4,11 +4,11 @@
     File: fn_playerDeath.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-19
-    Last Update: 2018-07-20
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
-    Handles respawn of players and substract the penalty to their score, if level system is activated.
+    Handles respawn of players and substract the respawn penalty to their score.
 
     Parameter(s):
         0: OBJECT - Entity which respawned
@@ -26,25 +26,16 @@ if !(isPlayer _entity) exitWith {};
 // Exit, if there is no corpse (e.g. a joining player)
 if (isNull _corpse) exitWith {};
 
-// Get some player date
+// Get player index
 private _playerId = getPlayerUID _entity;
-private _index = KPR_players findIf {_x select 1 == _playerId};
-private _score = (KPR_players select _index select 5) - KPR_killedPenalty;
+private _index = [_playerId] call KPR_fnc_getPlayerIndex;
 
-// No negative points
-if (_score < 0) then {
-    _score = 0;
-};
-
-// Update points of player
-KPR_players select _index set [5, _score];
-
-// Save updated data
-[KPR_players] call KPR_fnc_savePlayers;
+// Apply death penalty
+[_playerId, (KPR_killedPenalty * -1)] call KPR_fnc_addScore;
 
 // Log if debug is enabled
 if (KPR_levelDebug) then {
-    diag_log format ["[KP RANKS] [LEVEL] %1 respawned - New points: %2", KPR_players select _index select 0, _score];
+    diag_log format ["[KP RANKS] [LEVEL] %1 respawned - New points: %2", KPR_players select _index select 0, KPR_players select _index select 5];
 };
 
 true

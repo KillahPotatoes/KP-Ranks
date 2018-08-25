@@ -4,7 +4,7 @@
     File: fn_entityKilled.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-19
-    Last Update: 2018-07-20
+    Last Update: 2018-08-21
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -38,7 +38,7 @@ if (side group _killed == sideUnknown || side group _killed == sideEnemy || side
 private _kind = "Infantry";
 private _points = KPR_infPoints;
 
-call {
+[] call {
     if (side group _killed == side group _instigator) exitWith {_kind = "Teamkill"; _points = KPR_tkPenalty * -1;};
     if ([side group _instigator, side group _killed] call BIS_fnc_sideIsFriendly) exitWith {_kind = "Friendkill"; _points = KPR_tkPenalty * -1;};
     if (_killed isKindOf "Car") exitWith {_kind = "Light"; _points = KPR_lvhPoints;};
@@ -46,18 +46,12 @@ call {
     if (_killed isKindOf "Air") exitWith {_kind = "Air"; _points = KPR_airPoints;};
 };
 
-// Get some player date
+// Get player index
 private _playerId = getPlayerUID _instigator;
-private _index = KPR_players findIf {_x select 1 == _playerId};
-private _score = (KPR_players select _index select 5) + _points;
+private _index = [_playerId] call KPR_fnc_getPlayerIndex;
 
-// No negative points
-if (_score < 0) then {
-    _score = 0;
-};
-
-// Update points of player
-KPR_players select _index set [5, _score];
+// Apply points to player score
+[_playerId, _points] call KPR_fnc_addScore;
 
 if (KPR_levelDebug) then {
     diag_log format [
@@ -67,13 +61,10 @@ if (KPR_levelDebug) then {
         _kind,
         typeOf _killed,
         _points,
-        _score,
+        KPR_players select _index select 5,
         side group _killed == side group _instigator,
         [side group _instigator, side group _killed] call BIS_fnc_sideIsFriendly
     ];
 };
-
-// Save updated data
-[KPR_players] call KPR_fnc_savePlayers;
 
 true

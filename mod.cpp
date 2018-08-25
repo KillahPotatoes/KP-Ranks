@@ -1,8 +1,8 @@
-name = "KP Ranks 2.0.1";
+name = "KP Ranks 2.0.2";
 picture = "kplogo_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/KillahPotatoes/KP-Ranks";
-description = "KP Ranks - Version 2.0.1";
+description = "KP Ranks - Version 2.0.2";
 logo = "kplogo_ca.paa";
 logoOver = "kplogo_ca.paa";
 tooltip = "KP Ranks";

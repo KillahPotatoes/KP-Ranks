@@ -26,8 +26,6 @@ class KPR_playerList {
     };
 
     class controls {
-        class KPR_DialogCross: KP_DialogCross {};
-
         class KPR_ControlsGroup: KP_ControlsGroup {
             idc = 75801;
             x = KP_GETCX(KP_X_VAL,KP_WIDTH_VAL,0,1);
@@ -103,6 +101,8 @@ class KPR_playerList {
             tooltip = "$STR_KPR_DIALOG_SAVEDESC";
             onButtonClick = "call KPR_fnc_playerSave";
         };
+
+        class KPR_DialogCross: KP_DialogCross {};
     };
 };
 
@@ -183,8 +183,6 @@ class KPR_uniformList {
     };
 
     class controls {
-        class KPR_DialogCross: KP_DialogCross {};
-
         class KPR_ListActive: KP_Listbox {
             idc = 75801;
             x = KP_GETCX(KP_X_VAL,KP_WIDTH_VAL,0,1);
@@ -250,5 +248,7 @@ class KPR_uniformList {
             tooltip = "$STR_KPR_DIALOG_EXPORTDESC";
             onButtonClick = "call KPR_fnc_uniformExport";
         };
+
+        class KPR_DialogCross: KP_DialogCross {};
     };
 };
