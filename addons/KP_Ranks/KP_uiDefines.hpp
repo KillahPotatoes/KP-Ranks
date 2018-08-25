@@ -20,6 +20,7 @@ class RscButton;
 class RscCheckBox;
 class RscCombo;
 class RscControlsGroup;
+class RscEdit;
 class RscListBox;
 class RscListNBox;
 class RscShortcutButton;
