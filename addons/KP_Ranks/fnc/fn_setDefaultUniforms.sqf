@@ -4,7 +4,7 @@
     File: fn_setDefaultUniforms.sqf
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-09
-    Last Update: 2018-07-13
+    Last Update: 2018-12-23
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -30,10 +30,10 @@ KPR_uniforms = [
 
     // Bundeswehr Wood
     ["BWA3_Uniform_Fleck", 0],
-    ["BWA3_Uniform_idz_Fleck", 0],
+    ["BWA3_Uniform_sleeves_Fleck", 0],
+    ["BWA3_Uniform_tee_Fleck", 0],
     ["BWA3_Uniform2_Fleck", 0],
-    ["BWA3_Uniform2_idz_Fleck", 0],
-    ["BWA3_Uniform3_idz_Fleck", 0],
+    ["BWA3_Uniform2_sleeves_Fleck", 0],
     ["IP_U_B_CombatUniform_light_KSK_Tropic", 0],
     ["IP_U_B_CombatUniform_light_KSK_Tropic_shortsleeve", 0],
     ["IP_U_B_ReconUniform_KSK_Tropic", 0],
@@ -45,20 +45,22 @@ KPR_uniforms = [
     ["PBW_Uniform3K_fleck", 0],
     ["PBW_Uniform4_fleck", 0],
     ["PBW_Uniform4K_fleck", 0],
+    ["CUP_U_B_GER_Flecktarn_2", 0],
 
     // Bundeswehr Desert
     ["BWA3_Uniform_Tropen", 1],
-    ["BWA3_Uniform_idz_Tropen", 1],
+    ["BWA3_Uniform_sleeves_Tropen", 1],
+    ["BWA3_Uniform_tee_Tropen", 1],
     ["BWA3_Uniform2_Tropen", 1],
-    ["BWA3_Uniform2_idz_Tropen", 1],
-    ["BWA3_Uniform3_idz_Tropen", 1],
-    ["PBW_Uniform1_tropen", 0],
-    ["PBW_Uniform1H_tropen", 0],
-    ["PBW_Uniform2_tropen", 0],
-    ["PBW_Uniform3_tropen", 0],
-    ["PBW_Uniform3K_tropen", 0],
-    ["PBW_Uniform4_tropen", 0],
-    ["PBW_Uniform4K_tropen", 0],
+    ["BWA3_Uniform2_sleeves_Tropen", 1],
+    ["PBW_Uniform1_tropen", 1],
+    ["PBW_Uniform1H_tropen", 1],
+    ["PBW_Uniform2_tropen", 1],
+    ["PBW_Uniform3_tropen", 1],
+    ["PBW_Uniform3K_tropen", 1],
+    ["PBW_Uniform4_tropen", 1],
+    ["PBW_Uniform4K_tropen", 1],
+    ["CUP_U_B_GER_Tropentarn_2", 1],
 
     // Croatian Army
     ["U_DMan_CA_CombatUniform_Des", 2],
@@ -102,6 +104,10 @@ KPR_uniforms = [
     ["rhs_uniform_g3_mc", 3],
     ["rhs_uniform_g3_rgr", 3],
     ["rhs_uniform_g3_tan", 3],
+    ["CUP_U_B_USArmy_PilotOverall", 3],
+    ["CUP_U_B_USMC_FROG1_DMARPAT", 3],
+    ["CUP_U_B_USMC_FROG1_WMARPAT", 3],
+    ["CUP_U_B_USMC_PilotOverall", 3],
 
     // British Armed Forces (currently under development by Nils. Until it's finished, it'll be US by default)
     ["U_B_CTRG_1", 3],
